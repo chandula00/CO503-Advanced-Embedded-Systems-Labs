@@ -41,7 +41,8 @@ CO503-Advanced-Embedded-Systems-Labs/
 │
 ├── Lab01/
 │   ├── README.md
-│   ├── source_code/
+│   ├── par01/
+│   ├── par02/
 │   └── ...
 │
 ├── Lab2_Processor_Customizations/
