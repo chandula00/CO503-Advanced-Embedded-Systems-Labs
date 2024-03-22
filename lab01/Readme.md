@@ -5,7 +5,7 @@
   - **Process**: Designing top-level file, adding components in Qsys, assigning addresses and IRQs, generating SoC, and compiling with Quartus II.
 
 - **Part 2: JPEG Encoder**
-  - **Objective**: Build a SoC for JPEG image compression using onboard SDRAM⁴[4]⁵[5].
-  - **Components**: SDRAM Controller, Avalon ALTPLL, CLOCK CROSSING BRIDGE⁶[6].
-  - **Clocks**: Different clocks for timer, sysid, other components, and DRAM chip⁷[7].
+  - **Objective**: Build a SoC for JPEG image compression using onboard SDRAM.
+  - **Components**: SDRAM Controller, Avalon ALTPLL, CLOCK CROSSING BRIDGE.
+  - **Clocks**: Different clocks for timer, sysid, other components, and DRAM chip.
   - **Software**: Nios II application for JPEG encoding, displaying processing status on LEDs.
