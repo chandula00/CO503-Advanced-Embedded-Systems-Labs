@@ -1,10 +1,10 @@
-- **Part 1: First SoC - LED Counter**¹[1]
+- **Part 1: First SoC - LED Counter**
   - **Objective**: Create a simple SoC to display an increasing count on LEDs using FPGA²[2].
   - **Tools**: Quartus II software, schematic design, Qsys tool for SoC components.
   - **Components**: Processor, memory, clock source, I/O pins for LEDs.
   - **Process**: Designing top-level file, adding components in Qsys, assigning addresses and IRQs, generating SoC, and compiling with Quartus II.
 
-- **Part 2: JPEG Encoder**³[3]
+- **Part 2: JPEG Encoder**
   - **Objective**: Build a SoC for JPEG image compression using onboard SDRAM⁴[4]⁵[5].
   - **Components**: SDRAM Controller, Avalon ALTPLL, CLOCK CROSSING BRIDGE⁶[6].
   - **Clocks**: Different clocks for timer, sysid, other components, and DRAM chip⁷[7].
