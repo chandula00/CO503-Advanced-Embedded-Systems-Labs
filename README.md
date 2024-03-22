@@ -6,7 +6,7 @@ Welcome to the **CO503 Advanced Embedded Systems Labs** repository! In this repo
 
 ### Lab 1: System-on-Chip (SoC) Design
 - **Description**: In this lab, we delve into the fundamentals of SoC design. We'll explore how to integrate different components (such as processors, memory, and peripherals) into a single system.
-- **Folder**: `/Lab1_SoC_Design`
+- **Folder**: `/Lab01`
 - **Contents**:
     - **Part 1: First SoC - LED Counter**
       - Develop a basic SoC to control an LED counter on the FPGA.
@@ -39,7 +39,7 @@ Welcome to the **CO503 Advanced Embedded Systems Labs** repository! In this repo
 CO503-Advanced-Embedded-Systems-Labs/
 │   README.md
 │
-├── Lab1_SoC_Design/
+├── Lab01/
 │   ├── README.md
 │   ├── source_code/
 │   └── ...
