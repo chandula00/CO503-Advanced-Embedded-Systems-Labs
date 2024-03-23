@@ -1,73 +1,73 @@
 |TopLevel
-SDRAM_CAS_N <= <GND>
-SDRAM_CKE <= <GND>
-SDRAM_CS_N <= <GND>
-SDRAM_RAS_N <= <GND>
-SDRAM_WE_N <= <GND>
-SDRAM_CLK <= <GND>
-LED[0] <= SoC:inst1.led_out_external_connection_export[0]
-LED[1] <= SoC:inst1.led_out_external_connection_export[1]
-LED[2] <= SoC:inst1.led_out_external_connection_export[2]
-LED[3] <= SoC:inst1.led_out_external_connection_export[3]
-LED[4] <= SoC:inst1.led_out_external_connection_export[4]
-LED[5] <= SoC:inst1.led_out_external_connection_export[5]
-LED[6] <= SoC:inst1.led_out_external_connection_export[6]
-LED[7] <= SoC:inst1.led_out_external_connection_export[7]
-INPUT_CLOCK => SoC:inst1.clk_clk
-SDRAM_DQ[0] <> SoC:inst1.sdram_wire_dq[0]
-SDRAM_DQ[1] <> SoC:inst1.sdram_wire_dq[1]
-SDRAM_DQ[2] <> SoC:inst1.sdram_wire_dq[2]
-SDRAM_DQ[3] <> SoC:inst1.sdram_wire_dq[3]
-SDRAM_DQ[4] <> SoC:inst1.sdram_wire_dq[4]
-SDRAM_DQ[5] <> SoC:inst1.sdram_wire_dq[5]
-SDRAM_DQ[6] <> SoC:inst1.sdram_wire_dq[6]
-SDRAM_DQ[7] <> SoC:inst1.sdram_wire_dq[7]
-SDRAM_DQ[8] <> SoC:inst1.sdram_wire_dq[8]
-SDRAM_DQ[9] <> SoC:inst1.sdram_wire_dq[9]
-SDRAM_DQ[10] <> SoC:inst1.sdram_wire_dq[10]
-SDRAM_DQ[11] <> SoC:inst1.sdram_wire_dq[11]
-SDRAM_DQ[12] <> SoC:inst1.sdram_wire_dq[12]
-SDRAM_DQ[13] <> SoC:inst1.sdram_wire_dq[13]
-SDRAM_DQ[14] <> SoC:inst1.sdram_wire_dq[14]
-SDRAM_DQ[15] <> SoC:inst1.sdram_wire_dq[15]
-SDRAM_DQ[16] <> SoC:inst1.sdram_wire_dq[16]
-SDRAM_DQ[17] <> SoC:inst1.sdram_wire_dq[17]
-SDRAM_DQ[18] <> SoC:inst1.sdram_wire_dq[18]
-SDRAM_DQ[19] <> SoC:inst1.sdram_wire_dq[19]
-SDRAM_DQ[20] <> SoC:inst1.sdram_wire_dq[20]
-SDRAM_DQ[21] <> SoC:inst1.sdram_wire_dq[21]
-SDRAM_DQ[22] <> SoC:inst1.sdram_wire_dq[22]
-SDRAM_DQ[23] <> SoC:inst1.sdram_wire_dq[23]
-SDRAM_DQ[24] <> SoC:inst1.sdram_wire_dq[24]
-SDRAM_DQ[25] <> SoC:inst1.sdram_wire_dq[25]
-SDRAM_DQ[26] <> SoC:inst1.sdram_wire_dq[26]
-SDRAM_DQ[27] <> SoC:inst1.sdram_wire_dq[27]
-SDRAM_DQ[28] <> SoC:inst1.sdram_wire_dq[28]
-SDRAM_DQ[29] <> SoC:inst1.sdram_wire_dq[29]
-SDRAM_DQ[30] <> SoC:inst1.sdram_wire_dq[30]
-SDRAM_DQ[31] <> SoC:inst1.sdram_wire_dq[31]
-SDRAM_ADDR[0] <= SoC:inst1.sdram_wire_addr[0]
-SDRAM_ADDR[1] <= SoC:inst1.sdram_wire_addr[1]
-SDRAM_ADDR[2] <= SoC:inst1.sdram_wire_addr[2]
-SDRAM_ADDR[3] <= SoC:inst1.sdram_wire_addr[3]
-SDRAM_ADDR[4] <= SoC:inst1.sdram_wire_addr[4]
-SDRAM_ADDR[5] <= SoC:inst1.sdram_wire_addr[5]
-SDRAM_ADDR[6] <= SoC:inst1.sdram_wire_addr[6]
-SDRAM_ADDR[7] <= SoC:inst1.sdram_wire_addr[7]
-SDRAM_ADDR[8] <= SoC:inst1.sdram_wire_addr[8]
-SDRAM_ADDR[9] <= SoC:inst1.sdram_wire_addr[9]
-SDRAM_ADDR[10] <= SoC:inst1.sdram_wire_addr[10]
-SDRAM_ADDR[11] <= SoC:inst1.sdram_wire_addr[11]
-SDRAM_ADDR[12] <= SoC:inst1.sdram_wire_addr[12]
-SDRAM_BA[0] <= SoC:inst1.sdram_wire_ba[0]
-SDRAM_BA[1] <= SoC:inst1.sdram_wire_ba[1]
-SDRAM_DQM[0] <= SoC:inst1.sdram_wire_dqm[0]
-SDRAM_DQM[1] <= SoC:inst1.sdram_wire_dqm[1]
-SDRAM_DQM[2] <= SoC:inst1.sdram_wire_dqm[2]
-SDRAM_DQM[3] <= SoC:inst1.sdram_wire_dqm[3]
+SDRAM_CAS_N <= SoC:inst.sdram_wire_cas_n
+INPUT_CLOCK => SoC:inst.clk_clk
+SDRAM_DQ[0] <> SoC:inst.sdram_wire_dq[0]
+SDRAM_DQ[1] <> SoC:inst.sdram_wire_dq[1]
+SDRAM_DQ[2] <> SoC:inst.sdram_wire_dq[2]
+SDRAM_DQ[3] <> SoC:inst.sdram_wire_dq[3]
+SDRAM_DQ[4] <> SoC:inst.sdram_wire_dq[4]
+SDRAM_DQ[5] <> SoC:inst.sdram_wire_dq[5]
+SDRAM_DQ[6] <> SoC:inst.sdram_wire_dq[6]
+SDRAM_DQ[7] <> SoC:inst.sdram_wire_dq[7]
+SDRAM_DQ[8] <> SoC:inst.sdram_wire_dq[8]
+SDRAM_DQ[9] <> SoC:inst.sdram_wire_dq[9]
+SDRAM_DQ[10] <> SoC:inst.sdram_wire_dq[10]
+SDRAM_DQ[11] <> SoC:inst.sdram_wire_dq[11]
+SDRAM_DQ[12] <> SoC:inst.sdram_wire_dq[12]
+SDRAM_DQ[13] <> SoC:inst.sdram_wire_dq[13]
+SDRAM_DQ[14] <> SoC:inst.sdram_wire_dq[14]
+SDRAM_DQ[15] <> SoC:inst.sdram_wire_dq[15]
+SDRAM_DQ[16] <> SoC:inst.sdram_wire_dq[16]
+SDRAM_DQ[17] <> SoC:inst.sdram_wire_dq[17]
+SDRAM_DQ[18] <> SoC:inst.sdram_wire_dq[18]
+SDRAM_DQ[19] <> SoC:inst.sdram_wire_dq[19]
+SDRAM_DQ[20] <> SoC:inst.sdram_wire_dq[20]
+SDRAM_DQ[21] <> SoC:inst.sdram_wire_dq[21]
+SDRAM_DQ[22] <> SoC:inst.sdram_wire_dq[22]
+SDRAM_DQ[23] <> SoC:inst.sdram_wire_dq[23]
+SDRAM_DQ[24] <> SoC:inst.sdram_wire_dq[24]
+SDRAM_DQ[25] <> SoC:inst.sdram_wire_dq[25]
+SDRAM_DQ[26] <> SoC:inst.sdram_wire_dq[26]
+SDRAM_DQ[27] <> SoC:inst.sdram_wire_dq[27]
+SDRAM_DQ[28] <> SoC:inst.sdram_wire_dq[28]
+SDRAM_DQ[29] <> SoC:inst.sdram_wire_dq[29]
+SDRAM_DQ[30] <> SoC:inst.sdram_wire_dq[30]
+SDRAM_DQ[31] <> SoC:inst.sdram_wire_dq[31]
+SDRAM_CKE <= SoC:inst.sdram_wire_cke
+SDRAM_CS_N <= SoC:inst.sdram_wire_cs_n
+SDRAM_RAS_N <= SoC:inst.sdram_wire_ras_n
+SDRAM_WE_N <= SoC:inst.sdram_wire_we_n
+SDRAM_CLK <= SoC:inst.pll_c2_clk
+LED[0] <= SoC:inst.led_out_external_connection_export[0]
+LED[1] <= SoC:inst.led_out_external_connection_export[1]
+LED[2] <= SoC:inst.led_out_external_connection_export[2]
+LED[3] <= SoC:inst.led_out_external_connection_export[3]
+LED[4] <= SoC:inst.led_out_external_connection_export[4]
+LED[5] <= SoC:inst.led_out_external_connection_export[5]
+LED[6] <= SoC:inst.led_out_external_connection_export[6]
+LED[7] <= SoC:inst.led_out_external_connection_export[7]
+SDRAM_ADDR[0] <= SoC:inst.sdram_wire_addr[0]
+SDRAM_ADDR[1] <= SoC:inst.sdram_wire_addr[1]
+SDRAM_ADDR[2] <= SoC:inst.sdram_wire_addr[2]
+SDRAM_ADDR[3] <= SoC:inst.sdram_wire_addr[3]
+SDRAM_ADDR[4] <= SoC:inst.sdram_wire_addr[4]
+SDRAM_ADDR[5] <= SoC:inst.sdram_wire_addr[5]
+SDRAM_ADDR[6] <= SoC:inst.sdram_wire_addr[6]
+SDRAM_ADDR[7] <= SoC:inst.sdram_wire_addr[7]
+SDRAM_ADDR[8] <= SoC:inst.sdram_wire_addr[8]
+SDRAM_ADDR[9] <= SoC:inst.sdram_wire_addr[9]
+SDRAM_ADDR[10] <= SoC:inst.sdram_wire_addr[10]
+SDRAM_ADDR[11] <= SoC:inst.sdram_wire_addr[11]
+SDRAM_ADDR[12] <= SoC:inst.sdram_wire_addr[12]
+SDRAM_BA[0] <= SoC:inst.sdram_wire_ba[0]
+SDRAM_BA[1] <= SoC:inst.sdram_wire_ba[1]
+SDRAM_DQM[0] <= SoC:inst.sdram_wire_dqm[0]
+SDRAM_DQM[1] <= SoC:inst.sdram_wire_dqm[1]
+SDRAM_DQM[2] <= SoC:inst.sdram_wire_dqm[2]
+SDRAM_DQM[3] <= SoC:inst.sdram_wire_dqm[3]
 
 
-|TopLevel|SoC:inst1
+|TopLevel|SoC:inst
 clk_clk => clk_clk.IN3
 reset_reset_n => _.IN1
 reset_reset_n => _.IN1
@@ -140,7 +140,7 @@ sdram_wire_ras_n <= SoC_sdram:sdram.zs_ras_n
 sdram_wire_we_n <= SoC_sdram:sdram.zs_we_n
 
 
-|TopLevel|SoC:inst1|SoC_pll:pll
+|TopLevel|SoC:inst|SoC_pll:pll
 address[0] => w_select_control.IN0
 address[0] => w_select_status.IN0
 address[1] => w_select_status.IN1
@@ -224,14 +224,14 @@ writedata[30] => ~NO_FANOUT~
 writedata[31] => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_pll:pll|SoC_pll_stdsync_sv6:stdsync2
+|TopLevel|SoC:inst|SoC_pll:pll|SoC_pll_stdsync_sv6:stdsync2
 clk => clk.IN1
 din => din.IN1
 dout <= SoC_pll_dffpipe_l2c:dffpipe3.q
 reset_n => reset_n.IN1
 
 
-|TopLevel|SoC:inst1|SoC_pll:pll|SoC_pll_stdsync_sv6:stdsync2|SoC_pll_dffpipe_l2c:dffpipe3
+|TopLevel|SoC:inst|SoC_pll:pll|SoC_pll_stdsync_sv6:stdsync2|SoC_pll_dffpipe_l2c:dffpipe3
 clock => dffe6a[0].CLK
 clock => dffe5a[0].CLK
 clock => dffe4a[0].CLK
@@ -242,7 +242,7 @@ d[0] => dffe4a[0].DATAIN
 q[0] <= dffe6a[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_pll:pll|SoC_pll_altpll_bch2:sd1
+|TopLevel|SoC:inst|SoC_pll:pll|SoC_pll_altpll_bch2:sd1
 areset => pll_lock_sync.ACLR
 areset => pll7.ARESET
 clk[0] <= pll7.CLK
@@ -255,7 +255,7 @@ inclk[1] => pll7.CLK1
 locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_timer:timer
+|TopLevel|SoC:inst|SoC_timer:timer
 address[0] => Equal1.IN30
 address[0] => Equal2.IN60
 address[0] => Equal3.IN30
@@ -573,7 +573,7 @@ readdata[14] <= readdata[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 readdata[15] <= readdata[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge
 s0_clk => s0_clk.IN2
 s0_reset => _.IN1
 s0_reset => _.IN1
@@ -757,7 +757,7 @@ m0_byteenable[3] <= altera_avalon_dc_fifo:cmd_fifo.out_data
 m0_debugaccess <= altera_avalon_dc_fifo:cmd_fifo.out_data
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo
 in_clk => in_clk.IN1
 in_reset_n => in_reset_n.IN1
 out_clk => out_clk.IN1
@@ -1069,7 +1069,7 @@ space_avail_data[1] <= <GND>
 space_avail_data[2] <= <GND>
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:write_crosser
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:write_crosser
 clk => clk.IN3
 reset_n => reset_n.IN3
 din[0] => din[0].IN1
@@ -1080,7 +1080,7 @@ dout[1] <= altera_std_synchronizer:sync[1].u.dout
 dout[2] <= altera_std_synchronizer:sync[2].u.dout
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[0].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[0].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1089,7 +1089,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[1].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[1].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1098,7 +1098,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[2].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[2].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1107,7 +1107,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:read_crosser
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:read_crosser
 clk => clk.IN3
 reset_n => reset_n.IN3
 din[0] => din[0].IN1
@@ -1118,7 +1118,7 @@ dout[1] <= altera_std_synchronizer:sync[1].u.dout
 dout[2] <= altera_std_synchronizer:sync[2].u.dout
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[0].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[0].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1127,7 +1127,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[1].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[1].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1136,7 +1136,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[2].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[2].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1145,7 +1145,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo
 in_clk => in_clk.IN1
 in_reset_n => in_reset_n.IN1
 out_clk => out_clk.IN1
@@ -1403,7 +1403,7 @@ space_avail_data[1] <= in_space_avail[1].DB_MAX_OUTPUT_PORT_TYPE
 space_avail_data[2] <= in_space_avail[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:write_crosser
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:write_crosser
 clk => clk.IN3
 reset_n => reset_n.IN3
 din[0] => din[0].IN1
@@ -1414,7 +1414,7 @@ dout[1] <= altera_std_synchronizer:sync[1].u.dout
 dout[2] <= altera_std_synchronizer:sync[2].u.dout
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[0].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[0].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1423,7 +1423,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[1].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[1].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1432,7 +1432,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[2].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:write_crosser|altera_std_synchronizer:sync[2].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1441,7 +1441,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:read_crosser
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:read_crosser
 clk => clk.IN3
 reset_n => reset_n.IN3
 din[0] => din[0].IN1
@@ -1452,7 +1452,7 @@ dout[1] <= altera_std_synchronizer:sync[1].u.dout
 dout[2] <= altera_std_synchronizer:sync[2].u.dout
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[0].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[0].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1461,7 +1461,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[1].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[1].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1470,7 +1470,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[2].u
+|TopLevel|SoC:inst|altera_avalon_mm_clock_crossing_bridge:clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altera_dcfifo_synchronizer_bundle:read_crosser|altera_std_synchronizer:sync[2].u
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -1479,7 +1479,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_sysid:sysid
+|TopLevel|SoC:inst|SoC_sysid:sysid
 address => readdata[30].DATAIN
 address => readdata[29].DATAIN
 address => readdata[26].DATAIN
@@ -1535,7 +1535,7 @@ readdata[30] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[31] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart
 av_address => ien_AF.OUTPUTSELECT
 av_address => ien_AE.OUTPUTSELECT
 av_address => ac.OUTPUTSELECT
@@ -1625,7 +1625,7 @@ dataavailable <= dataavailable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 readyfordata <= readyfordata~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w
 clk => clk.IN1
 fifo_clear => fifo_clear.IN1
 fifo_wdata[0] => fifo_wdata[0].IN1
@@ -1656,7 +1656,7 @@ wfifo_used[4] <= scfifo:wfifo.usedw
 wfifo_used[5] <= scfifo:wfifo.usedw
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -1690,7 +1690,7 @@ usedw[4] <= scfifo_jr21:auto_generated.usedw[4]
 usedw[5] <= scfifo_jr21:auto_generated.usedw[5]
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
 aclr => a_dpfifo_q131:dpfifo.aclr
 clock => a_dpfifo_q131:dpfifo.clock
 data[0] => a_dpfifo_q131:dpfifo.data[0]
@@ -1721,7 +1721,7 @@ usedw[5] <= a_dpfifo_q131:dpfifo.usedw[5]
 wrreq => a_dpfifo_q131:dpfifo.wreq
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
 aclr => a_fefifo_7cf:fifo_state.aclr
 aclr => cntr_1ob:rd_ptr_count.aclr
 aclr => cntr_1ob:wr_ptr.aclr
@@ -1767,7 +1767,7 @@ wreq => dpram_nl21:FIFOram.wren
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -1799,7 +1799,7 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -1825,7 +1825,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
 data[0] => altsyncram_r1m1:altsyncram1.data_a[0]
 data[1] => altsyncram_r1m1:altsyncram1.data_a[1]
 data[2] => altsyncram_r1m1:altsyncram1.data_a[2]
@@ -1860,7 +1860,7 @@ wraddress[5] => altsyncram_r1m1:altsyncram1.address_a[5]
 wren => altsyncram_r1m1:altsyncram1.wren_a
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
 address_a[0] => ram_block2a0.PORTAADDR
 address_a[0] => ram_block2a1.PORTAADDR
 address_a[0] => ram_block2a2.PORTAADDR
@@ -2015,7 +2015,7 @@ wren_a => ram_block2a7.PORTAWE
 wren_a => ram_block2a7.ENA0
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2035,7 +2035,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2055,7 +2055,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r
 clk => clk.IN1
 fifo_clear => fifo_clear.IN1
 fifo_rd => fifo_rd.IN1
@@ -2087,7 +2087,7 @@ rfifo_used[4] <= scfifo:rfifo.usedw
 rfifo_used[5] <= scfifo:rfifo.usedw
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -2121,7 +2121,7 @@ usedw[4] <= scfifo_jr21:auto_generated.usedw[4]
 usedw[5] <= scfifo_jr21:auto_generated.usedw[5]
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
 aclr => a_dpfifo_q131:dpfifo.aclr
 clock => a_dpfifo_q131:dpfifo.clock
 data[0] => a_dpfifo_q131:dpfifo.data[0]
@@ -2152,7 +2152,7 @@ usedw[5] <= a_dpfifo_q131:dpfifo.usedw[5]
 wrreq => a_dpfifo_q131:dpfifo.wreq
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
 aclr => a_fefifo_7cf:fifo_state.aclr
 aclr => cntr_1ob:rd_ptr_count.aclr
 aclr => cntr_1ob:wr_ptr.aclr
@@ -2198,7 +2198,7 @@ wreq => dpram_nl21:FIFOram.wren
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -2230,7 +2230,7 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2256,7 +2256,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
 data[0] => altsyncram_r1m1:altsyncram1.data_a[0]
 data[1] => altsyncram_r1m1:altsyncram1.data_a[1]
 data[2] => altsyncram_r1m1:altsyncram1.data_a[2]
@@ -2291,7 +2291,7 @@ wraddress[5] => altsyncram_r1m1:altsyncram1.address_a[5]
 wren => altsyncram_r1m1:altsyncram1.wren_a
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
 address_a[0] => ram_block2a0.PORTAADDR
 address_a[0] => ram_block2a1.PORTAADDR
 address_a[0] => ram_block2a2.PORTAADDR
@@ -2446,7 +2446,7 @@ wren_a => ram_block2a7.PORTAWE
 wren_a => ram_block2a7.ENA0
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2466,7 +2466,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2486,7 +2486,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|TopLevel|SoC:inst1|SoC_jtag_uart:jtag_uart|alt_jtag_atlantic:SoC_jtag_uart_alt_jtag_atlantic
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|alt_jtag_atlantic:SoC_jtag_uart_alt_jtag_atlantic
 raw_tck => write_stalled.CLK
 raw_tck => wdata[0].CLK
 raw_tck => wdata[1].CLK
@@ -2708,7 +2708,7 @@ t_dat[7] <= t_dat[7].DB_MAX_OUTPUT_PORT_TYPE
 t_pause <= t_pause~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_led_out:led_out
+|TopLevel|SoC:inst|SoC_led_out:led_out
 address[0] => Equal0.IN31
 address[1] => Equal0.IN30
 chipselect => always0.IN0
@@ -2803,7 +2803,7 @@ readdata[30] <= <GND>
 readdata[31] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu
+|TopLevel|SoC:inst|SoC_cpu:cpu
 clk => clk.IN4
 d_irq[0] => ~NO_FANOUT~
 d_irq[1] => W_ipending_reg_nxt.IN1
@@ -3088,7 +3088,7 @@ jtag_debug_module_waitrequest <= SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci.waitreq
 no_ci_readra <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_test_bench:the_SoC_cpu_test_bench
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_test_bench:the_SoC_cpu_test_bench
 D_iw[0] => ~NO_FANOUT~
 D_iw[1] => ~NO_FANOUT~
 D_iw[2] => ~NO_FANOUT~
@@ -3429,7 +3429,7 @@ av_ld_data_aligned_filtered[31] <= av_ld_data_aligned_unfiltered[31].DB_MAX_OUTP
 test_has_ended <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a
 clock => clock.IN1
 data[0] => ram_data[0].IN1
 data[1] => ram_data[1].IN1
@@ -3508,7 +3508,7 @@ q[30] <= altsyncram:the_altsyncram.q_b
 q[31] <= altsyncram:the_altsyncram.q_b
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a|altsyncram:the_altsyncram
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a|altsyncram:the_altsyncram
 wren_a => altsyncram_6of1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -3668,7 +3668,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_6of1:auto_generated
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_6of1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4119,7 +4119,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b
 clock => clock.IN1
 data[0] => ram_data[0].IN1
 data[1] => ram_data[1].IN1
@@ -4198,7 +4198,7 @@ q[30] <= altsyncram:the_altsyncram.q_b
 q[31] <= altsyncram:the_altsyncram.q_b
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b|altsyncram:the_altsyncram
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b|altsyncram:the_altsyncram
 wren_a => altsyncram_7of1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -4358,7 +4358,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_7of1:auto_generated
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_7of1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4809,7 +4809,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci
 D_valid => D_valid.IN1
 E_st_data[0] => E_st_data[0].IN1
 E_st_data[1] => E_st_data[1].IN1
@@ -5061,7 +5061,7 @@ resetrequest <= SoC_cpu_nios2_oci_debug:the_SoC_cpu_nios2_oci_debug.resetrequest
 waitrequest <= SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem.waitrequest
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_debug:the_SoC_cpu_nios2_oci_debug
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_debug:the_SoC_cpu_nios2_oci_debug
 clk => clk.IN1
 dbrk_break => oci_hbreak_req.IN1
 debugreq => always0.IN0
@@ -5129,7 +5129,7 @@ resetlatch <= resetlatch~reg0.DB_MAX_OUTPUT_PORT_TYPE
 resetrequest <= resetrequest~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_debug:the_SoC_cpu_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_debug:the_SoC_cpu_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -5138,7 +5138,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem
 address[0] => ociram_addr.DATAA
 address[1] => ociram_addr.DATAA
 address[2] => ociram_addr.DATAA
@@ -5492,7 +5492,7 @@ ociram_readdata[31] <= SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram.q
 waitrequest <= waitrequest~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -5574,7 +5574,7 @@ q[30] <= altsyncram:the_altsyncram.q_a
 q[31] <= altsyncram:the_altsyncram.q_a
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram|altsyncram:the_altsyncram
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram|altsyncram:the_altsyncram
 wren_a => altsyncram_pu71:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -5674,7 +5674,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_pu71:auto_generated
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_pu71:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -6125,7 +6125,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_avalon_reg:the_SoC_cpu_nios2_avalon_reg
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_avalon_reg:the_SoC_cpu_nios2_avalon_reg
 address[0] => Equal0.IN8
 address[0] => Equal1.IN1
 address[1] => Equal0.IN7
@@ -6318,7 +6318,7 @@ ocireg_mrs <= writedata[0].DB_MAX_OUTPUT_PORT_TYPE
 take_action_ocireg <= take_action_ocireg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_break:the_SoC_cpu_nios2_oci_break
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_break:the_SoC_cpu_nios2_oci_break
 clk => trigger_state.CLK
 clk => break_readreg[0]~reg0.CLK
 clk => break_readreg[1]~reg0.CLK
@@ -6666,7 +6666,7 @@ xbrk_ctrl3[6] <= <GND>
 xbrk_ctrl3[7] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_xbrk:the_SoC_cpu_nios2_oci_xbrk
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_xbrk:the_SoC_cpu_nios2_oci_xbrk
 D_valid => ~NO_FANOUT~
 E_valid => xbrk_break~reg0.ENA
 F_pc[0] => ~NO_FANOUT~
@@ -6740,7 +6740,7 @@ xbrk_traceon <= <GND>
 xbrk_trigout <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_dbrk:the_SoC_cpu_nios2_oci_dbrk
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_dbrk:the_SoC_cpu_nios2_oci_dbrk
 E_st_data[0] => cpu_d_writedata[0].DATAIN
 E_st_data[1] => cpu_d_writedata[1].DATAIN
 E_st_data[2] => cpu_d_writedata[2].DATAIN
@@ -6959,7 +6959,7 @@ dbrk_traceon <= dbrk_traceon~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dbrk_trigout <= dbrk_trigout~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_itrace:the_SoC_cpu_nios2_oci_itrace
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_itrace:the_SoC_cpu_nios2_oci_itrace
 clk => dct_count[0]~reg0.CLK
 clk => dct_count[1]~reg0.CLK
 clk => dct_count[2]~reg0.CLK
@@ -7212,7 +7212,7 @@ trc_ctrl[15] <= <GND>
 trc_on <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_dtrace:the_SoC_cpu_nios2_oci_dtrace
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_dtrace:the_SoC_cpu_nios2_oci_dtrace
 clk => dtm[0]~reg0.CLK
 clk => dtm[1]~reg0.CLK
 clk => dtm[2]~reg0.CLK
@@ -7543,7 +7543,7 @@ dtm[34] <= dtm[34]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dtm[35] <= dtm[35]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_dtrace:the_SoC_cpu_nios2_oci_dtrace|SoC_cpu_nios2_oci_td_mode:SoC_cpu_nios2_oci_trc_ctrl_td_mode
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_dtrace:the_SoC_cpu_nios2_oci_dtrace|SoC_cpu_nios2_oci_td_mode:SoC_cpu_nios2_oci_trc_ctrl_td_mode
 ctrl[0] => ~NO_FANOUT~
 ctrl[1] => ~NO_FANOUT~
 ctrl[2] => ~NO_FANOUT~
@@ -7563,7 +7563,7 @@ td_mode[2] <= ctrl[6].DB_MAX_OUTPUT_PORT_TYPE
 td_mode[3] <= ctrl[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo
 atm[0] => ~NO_FANOUT~
 atm[1] => ~NO_FANOUT~
 atm[2] => ~NO_FANOUT~
@@ -7765,7 +7765,7 @@ tw[34] <= itm[34].DB_MAX_OUTPUT_PORT_TYPE
 tw[35] <= itm[35].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo|SoC_cpu_nios2_oci_compute_input_tm_cnt:the_SoC_cpu_nios2_oci_compute_input_tm_cnt
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo|SoC_cpu_nios2_oci_compute_input_tm_cnt:the_SoC_cpu_nios2_oci_compute_input_tm_cnt
 atm_valid => Decoder0.IN1
 dtm_valid => Decoder0.IN2
 itm_valid => Decoder0.IN0
@@ -7773,7 +7773,7 @@ compute_input_tm_cnt[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 compute_input_tm_cnt[1] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo|SoC_cpu_nios2_oci_fifo_wrptr_inc:the_SoC_cpu_nios2_oci_fifo_wrptr_inc
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo|SoC_cpu_nios2_oci_fifo_wrptr_inc:the_SoC_cpu_nios2_oci_fifo_wrptr_inc
 ge2_free => always0.IN1
 ge3_free => always0.IN1
 input_tm_cnt[0] => LessThan0.IN4
@@ -7788,7 +7788,7 @@ fifo_wrptr_inc[2] <= <GND>
 fifo_wrptr_inc[3] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo|SoC_cpu_nios2_oci_fifo_cnt_inc:the_SoC_cpu_nios2_oci_fifo_cnt_inc
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo|SoC_cpu_nios2_oci_fifo_cnt_inc:the_SoC_cpu_nios2_oci_fifo_cnt_inc
 empty => fifo_cnt_inc.OUTPUTSELECT
 empty => fifo_cnt_inc.OUTPUTSELECT
 empty => fifo_cnt_inc.OUTPUTSELECT
@@ -7811,7 +7811,7 @@ fifo_cnt_inc[3] <= fifo_cnt_inc.DB_MAX_OUTPUT_PORT_TYPE
 fifo_cnt_inc[4] <= fifo_cnt_inc.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo|SoC_cpu_oci_test_bench:the_SoC_cpu_oci_test_bench
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_fifo:the_SoC_cpu_nios2_oci_fifo|SoC_cpu_oci_test_bench:the_SoC_cpu_oci_test_bench
 dct_buffer[0] => ~NO_FANOUT~
 dct_buffer[1] => ~NO_FANOUT~
 dct_buffer[2] => ~NO_FANOUT~
@@ -7850,7 +7850,7 @@ test_ending => ~NO_FANOUT~
 test_has_ended => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_pib:the_SoC_cpu_nios2_oci_pib
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_pib:the_SoC_cpu_nios2_oci_pib
 clk => ~NO_FANOUT~
 clkx2 => ~NO_FANOUT~
 jrst_n => ~NO_FANOUT~
@@ -7911,7 +7911,7 @@ tr_data[16] <= <GND>
 tr_data[17] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_im:the_SoC_cpu_nios2_oci_im
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_oci_im:the_SoC_cpu_nios2_oci_im
 clk => trc_wrap~reg0.CLK
 clk => trc_im_addr[0]~reg0.CLK
 clk => trc_im_addr[1]~reg0.CLK
@@ -8074,7 +8074,7 @@ trc_wrap <= trc_wrap~reg0.DB_MAX_OUTPUT_PORT_TYPE
 xbrk_wrap_traceoff <= xbrk_wrap_traceoff.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper
 MonDReg[0] => MonDReg[0].IN1
 MonDReg[1] => MonDReg[1].IN1
 MonDReg[2] => MonDReg[2].IN1
@@ -8253,7 +8253,7 @@ take_no_action_ocimem_a <= SoC_cpu_jtag_debug_module_sysclk:the_SoC_cpu_jtag_deb
 take_no_action_tracemem_a <= SoC_cpu_jtag_debug_module_sysclk:the_SoC_cpu_jtag_debug_module_sysclk.take_no_action_tracemem_a
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_tck:the_SoC_cpu_jtag_debug_module_tck
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_tck:the_SoC_cpu_jtag_debug_module_tck
 MonDReg[0] => Mux36.IN0
 MonDReg[1] => Mux35.IN0
 MonDReg[2] => Mux34.IN0
@@ -8589,7 +8589,7 @@ st_ready_test_idle <= jtag_state_rti.DB_MAX_OUTPUT_PORT_TYPE
 tdo <= tdo.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_tck:the_SoC_cpu_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_tck:the_SoC_cpu_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -8598,7 +8598,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_tck:the_SoC_cpu_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_tck:the_SoC_cpu_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -8607,7 +8607,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_sysclk:the_SoC_cpu_jtag_debug_module_sysclk
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_sysclk:the_SoC_cpu_jtag_debug_module_sysclk
 clk => clk.IN2
 ir_in[0] => ir[0].DATAIN
 ir_in[1] => ir[1].DATAIN
@@ -8704,7 +8704,7 @@ take_no_action_ocimem_a <= take_no_action_ocimem_a.DB_MAX_OUTPUT_PORT_TYPE
 take_no_action_tracemem_a <= take_no_action_tracemem_a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_sysclk:the_SoC_cpu_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_sysclk:the_SoC_cpu_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -8713,7 +8713,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_sysclk:the_SoC_cpu_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer4
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|SoC_cpu_jtag_debug_module_sysclk:the_SoC_cpu_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer4
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -8722,7 +8722,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|sld_virtual_jtag_basic:SoC_cpu_jtag_debug_module_phy
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|sld_virtual_jtag_basic:SoC_cpu_jtag_debug_module_phy
 tck <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_tck
 tdi <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_tdi
 ir_in[0] <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_ir_in
@@ -8757,7 +8757,7 @@ jtag_state_e2ir <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_jtag_sta
 jtag_state_uir <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_jtag_state_uir
 
 
-|TopLevel|SoC:inst1|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|sld_virtual_jtag_basic:SoC_cpu_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_jtag_debug_module_wrapper:the_SoC_cpu_jtag_debug_module_wrapper|sld_virtual_jtag_basic:SoC_cpu_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst
 usr_tck <= raw_tck.DB_MAX_OUTPUT_PORT_TYPE
 usr_tdi <= tdi.DB_MAX_OUTPUT_PORT_TYPE
 usr_ir_in[0] <= ir_in[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -8829,7 +8829,7 @@ ir_out[0] <= usr_ir_out[0].DB_MAX_OUTPUT_PORT_TYPE
 ir_out[1] <= usr_ir_out[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_sdram:sdram
+|TopLevel|SoC:inst|SoC_sdram:sdram
 az_addr[0] => az_addr[0].IN1
 az_addr[1] => az_addr[1].IN1
 az_addr[2] => az_addr[2].IN1
@@ -8988,7 +8988,7 @@ zs_ras_n <= zs_ras_n.DB_MAX_OUTPUT_PORT_TYPE
 zs_we_n <= zs_we_n.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_sdram:sdram|SoC_sdram_input_efifo_module:the_SoC_sdram_input_efifo_module
+|TopLevel|SoC:inst|SoC_sdram:sdram|SoC_sdram_input_efifo_module:the_SoC_sdram_input_efifo_module
 clk => entry_0[0].CLK
 clk => entry_0[1].CLK
 clk => entry_0[2].CLK
@@ -9322,7 +9322,7 @@ rd_data[60] <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
 rd_data[61] <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0
 pll_c1_clk => pll_c1_clk.IN18
 clock_crossing_bridge_m0_reset_reset_bridge_in_reset_reset => clock_crossing_bridge_m0_reset_reset_bridge_in_reset_reset.IN18
 clock_crossing_bridge_m0_address[0] => clock_crossing_bridge_m0_address[0].IN1
@@ -9481,7 +9481,7 @@ timer_s1_writedata[15] <= altera_merlin_slave_translator:timer_s1_translator.av_
 timer_s1_chipselect <= altera_merlin_slave_translator:timer_s1_translator.av_chipselect
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:clock_crossing_bridge_m0_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_translator:clock_crossing_bridge_m0_translator
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 uav_write <= av_write.DB_MAX_OUTPUT_PORT_TYPE
@@ -9671,7 +9671,7 @@ av_writeresponserequest => ~NO_FANOUT~
 av_writeresponsevalid <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_s1_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:timer_s1_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -9881,7 +9881,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_control_slave_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sysid_control_slave_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -10165,7 +10165,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:clock_crossing_bridge_m0_translator_avalon_universal_master_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:clock_crossing_bridge_m0_translator_avalon_universal_master_0_agent
 clk => hold_waitrequest.CLK
 reset => hold_waitrequest.PRESET
 av_address[0] => ~NO_FANOUT~
@@ -10436,7 +10436,7 @@ rp_endofpacket => ~NO_FANOUT~
 rp_ready <= <VCC>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:timer_s1_translator_avalon_universal_slave_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:timer_s1_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -10981,7 +10981,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:timer_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:timer_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -11133,7 +11133,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:timer_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -11814,7 +11814,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sysid_control_slave_translator_avalon_universal_slave_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sysid_control_slave_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -12359,7 +12359,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sysid_control_slave_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sysid_control_slave_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -12511,7 +12511,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sysid_control_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -13192,7 +13192,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_addr_router:addr_router
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_addr_router:addr_router
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -13374,7 +13374,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_addr_router:addr_router|SoC_mm_interconnect_0_addr_router_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_addr_router:addr_router|SoC_mm_interconnect_0_addr_router_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_wr_channel[0] <= <GND>
 default_wr_channel[1] <= <GND>
@@ -13384,7 +13384,7 @@ default_src_channel[0] <= <VCC>
 default_src_channel[1] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_id_router:id_router
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_id_router:id_router
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -13561,7 +13561,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_id_router:id_router|SoC_mm_interconnect_0_id_router_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_id_router:id_router|SoC_mm_interconnect_0_id_router_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_wr_channel[0] <= <GND>
 default_wr_channel[1] <= <GND>
@@ -13571,7 +13571,7 @@ default_src_channel[0] <= <VCC>
 default_src_channel[1] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_id_router:id_router_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_id_router:id_router_001
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -13748,7 +13748,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_id_router:id_router_001|SoC_mm_interconnect_0_id_router_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_id_router:id_router_001|SoC_mm_interconnect_0_id_router_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_wr_channel[0] <= <GND>
 default_wr_channel[1] <= <GND>
@@ -13758,7 +13758,7 @@ default_src_channel[0] <= <VCC>
 default_src_channel[1] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_traffic_limiter:limiter
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|altera_merlin_traffic_limiter:limiter
 clk => has_pending_responses.CLK
 clk => pending_response_count[0].CLK
 clk => last_channel[0].CLK
@@ -14133,7 +14133,7 @@ rsp_src_ready => response_sink_accepted.IN1
 rsp_src_ready => rsp_sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_cmd_xbar_demux:cmd_xbar_demux
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_cmd_xbar_demux:cmd_xbar_demux
 sink_valid[0] => src0_valid.IN0
 sink_valid[1] => src1_valid.IN0
 sink_data[0] => src1_data[0].DATAIN
@@ -14481,7 +14481,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_cmd_xbar_mux:cmd_xbar_mux
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_cmd_xbar_mux:cmd_xbar_mux
 sink0_valid => src_valid.DATAIN
 sink0_data[0] => src_data[0].DATAIN
 sink0_data[1] => src_data[1].DATAIN
@@ -14658,7 +14658,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_cmd_xbar_mux:cmd_xbar_mux_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_cmd_xbar_mux:cmd_xbar_mux_001
 sink0_valid => src_valid.DATAIN
 sink0_data[0] => src_data[0].DATAIN
 sink0_data[1] => src_data[1].DATAIN
@@ -14835,7 +14835,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_demux:rsp_xbar_demux
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_demux:rsp_xbar_demux
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -15013,7 +15013,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_demux:rsp_xbar_demux_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_demux:rsp_xbar_demux_001
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -15191,7 +15191,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_mux:rsp_xbar_mux
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_mux:rsp_xbar_mux
 sink0_valid => request[0].IN1
 sink0_data[0] => src_payload.IN1
 sink0_data[1] => src_payload.IN1
@@ -15458,7 +15458,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 request[0] => grant[0].DATAIN
@@ -15473,7 +15473,7 @@ increment_top_priority => ~NO_FANOUT~
 save_top_priority => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0|SoC_mm_interconnect_0_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => sum.IN0
 a[0] => full_adder.cout[0].IN0
 a[1] => cout.IN0
@@ -15494,7 +15494,7 @@ sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1
 clock_clk_clk => clock_clk_clk.IN9
 pll_c0_clk => pll_c0_clk.IN42
 cpu_reset_n_reset_bridge_in_reset_reset => cpu_reset_n_reset_bridge_in_reset_reset.IN24
@@ -16134,7 +16134,7 @@ sdram_s1_waitrequest => sdram_s1_waitrequest.IN1
 sdram_s1_chipselect <= altera_merlin_slave_translator:sdram_s1_translator.av_chipselect
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_master_translator:cpu_instruction_master_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_master_translator:cpu_instruction_master_translator
 clk => read_accepted.CLK
 reset => read_accepted.ACLR
 uav_write <= <GND>
@@ -16367,7 +16367,7 @@ av_writeresponserequest => ~NO_FANOUT~
 av_writeresponsevalid <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_master_translator:cpu_data_master_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_master_translator:cpu_data_master_translator
 clk => end_begintransfer.CLK
 clk => write_accepted.CLK
 clk => read_accepted.CLK
@@ -16608,7 +16608,7 @@ av_writeresponserequest => ~NO_FANOUT~
 av_writeresponsevalid <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:cpu_jtag_debug_module_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:cpu_jtag_debug_module_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -16917,7 +16917,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:sdram_s1_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:sdram_s1_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -17174,7 +17174,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:led_out_s1_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:led_out_s1_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -17466,7 +17466,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:jtag_uart_avalon_jtag_slave_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:jtag_uart_avalon_jtag_slave_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -17755,7 +17755,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:clock_crossing_bridge_s0_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:clock_crossing_bridge_s0_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -18002,7 +18002,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:pll_pll_slave_translator
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_translator:pll_pll_slave_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -18302,7 +18302,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_master_agent:cpu_instruction_master_translator_avalon_universal_master_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_master_agent:cpu_instruction_master_translator_avalon_universal_master_0_agent
 clk => hold_waitrequest.CLK
 reset => hold_waitrequest.PRESET
 av_address[0] => ~NO_FANOUT~
@@ -18646,7 +18646,7 @@ rp_endofpacket => ~NO_FANOUT~
 rp_ready <= <VCC>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_master_agent:cpu_data_master_translator_avalon_universal_master_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_master_agent:cpu_data_master_translator_avalon_universal_master_0_agent
 clk => hold_waitrequest.CLK
 reset => hold_waitrequest.PRESET
 av_address[0] => ~NO_FANOUT~
@@ -18990,7 +18990,7 @@ rp_endofpacket => ~NO_FANOUT~
 rp_ready <= <VCC>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -19677,7 +19677,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -20023,7 +20023,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -20854,7 +20854,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -21541,7 +21541,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -21887,7 +21887,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -24674,7 +24674,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:led_out_s1_translator_avalon_universal_slave_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:led_out_s1_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -25361,7 +25361,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:led_out_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:led_out_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -25707,7 +25707,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:led_out_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:led_out_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -26538,7 +26538,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -27225,7 +27225,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -27571,7 +27571,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -28402,7 +28402,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:clock_crossing_bridge_s0_translator_avalon_universal_slave_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:clock_crossing_bridge_s0_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -29089,7 +29089,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:clock_crossing_bridge_s0_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:clock_crossing_bridge_s0_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -29435,7 +29435,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:clock_crossing_bridge_s0_translator_avalon_universal_slave_0_agent_rsp_fifo
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:clock_crossing_bridge_s0_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -32548,7 +32548,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:pll_pll_slave_translator_avalon_universal_slave_0_agent
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:pll_pll_slave_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -33235,7 +33235,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:pll_pll_slave_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_merlin_slave_agent:pll_pll_slave_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -33581,7 +33581,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:pll_pll_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:pll_pll_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -34412,7 +34412,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:pll_pll_slave_translator_avalon_universal_slave_0_agent_rdata_fifo
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_sc_fifo:pll_pll_slave_translator_avalon_universal_slave_0_agent_rdata_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -34839,7 +34839,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_addr_router:addr_router
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_addr_router:addr_router
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -35088,7 +35088,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_addr_router:addr_router|SoC_mm_interconnect_1_addr_router_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_addr_router:addr_router|SoC_mm_interconnect_1_addr_router_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <VCC>
@@ -35112,7 +35112,7 @@ default_src_channel[4] <= <GND>
 default_src_channel[5] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_addr_router_001:addr_router_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_addr_router_001:addr_router_001
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -35456,7 +35456,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_addr_router_001:addr_router_001|SoC_mm_interconnect_1_addr_router_001_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_addr_router_001:addr_router_001|SoC_mm_interconnect_1_addr_router_001_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <VCC>
@@ -35480,7 +35480,7 @@ default_src_channel[4] <= <GND>
 default_src_channel[5] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router:id_router
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router:id_router
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -35716,7 +35716,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router:id_router|SoC_mm_interconnect_1_id_router_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router:id_router|SoC_mm_interconnect_1_id_router_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -35740,7 +35740,7 @@ default_src_channel[4] <= <GND>
 default_src_channel[5] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router:id_router_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router:id_router_001
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -35976,7 +35976,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router:id_router_001|SoC_mm_interconnect_1_id_router_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router:id_router_001|SoC_mm_interconnect_1_id_router_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -36000,7 +36000,7 @@ default_src_channel[4] <= <GND>
 default_src_channel[5] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_002
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_002
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -36232,7 +36232,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_002|SoC_mm_interconnect_1_id_router_002_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_002|SoC_mm_interconnect_1_id_router_002_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -36256,7 +36256,7 @@ default_src_channel[4] <= <GND>
 default_src_channel[5] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_003
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_003
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -36488,7 +36488,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_003|SoC_mm_interconnect_1_id_router_002_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_003|SoC_mm_interconnect_1_id_router_002_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -36512,7 +36512,7 @@ default_src_channel[4] <= <GND>
 default_src_channel[5] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_004
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_004
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -36744,7 +36744,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_004|SoC_mm_interconnect_1_id_router_002_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_002:id_router_004|SoC_mm_interconnect_1_id_router_002_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -36768,7 +36768,7 @@ default_src_channel[4] <= <GND>
 default_src_channel[5] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_005:id_router_005
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_005:id_router_005
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -37000,7 +37000,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_005:id_router_005|SoC_mm_interconnect_1_id_router_005_default_decode:the_default_decode
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_id_router_005:id_router_005|SoC_mm_interconnect_1_id_router_005_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -37024,7 +37024,7 @@ default_src_channel[4] <= <GND>
 default_src_channel[5] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_demux:cmd_xbar_demux
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_demux:cmd_xbar_demux
 sink_valid[0] => src0_valid.IN0
 sink_valid[0] => src1_valid.IN0
 sink_data[0] => src1_data[0].DATAIN
@@ -37488,7 +37488,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_demux_001:cmd_xbar_demux_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_demux_001:cmd_xbar_demux_001
 sink_valid[0] => src0_valid.IN0
 sink_valid[0] => src1_valid.IN0
 sink_valid[0] => src2_valid.IN0
@@ -38844,7 +38844,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux
 sink0_valid => request.IN1
 sink0_valid => src_valid.IN1
 sink0_data[0] => src_payload.IN1
@@ -39200,7 +39200,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb
 clk => top_priority_reg[0].CLK
 clk => top_priority_reg[1].CLK
 reset => top_priority_reg[0].PRESET
@@ -39222,7 +39222,7 @@ increment_top_priority => top_priority_reg.OUTPUTSELECT
 save_top_priority => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => sum.IN0
 a[0] => full_adder.cout[0].IN0
 a[1] => cout.IN0
@@ -39243,7 +39243,7 @@ sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux_001
 sink0_valid => request.IN1
 sink0_valid => src_valid.IN1
 sink0_data[0] => src_payload.IN1
@@ -39599,7 +39599,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux_001|altera_merlin_arbitrator:arb
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux_001|altera_merlin_arbitrator:arb
 clk => top_priority_reg[0].CLK
 clk => top_priority_reg[1].CLK
 reset => top_priority_reg[0].PRESET
@@ -39621,7 +39621,7 @@ increment_top_priority => top_priority_reg.OUTPUTSELECT
 save_top_priority => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux_001|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux:cmd_xbar_mux_001|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => sum.IN0
 a[0] => full_adder.cout[0].IN0
 a[1] => cout.IN0
@@ -39642,7 +39642,7 @@ sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux_002:cmd_xbar_mux_002
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux_002:cmd_xbar_mux_002
 sink0_valid => src_valid.DATAIN
 sink0_data[0] => src_data[0].DATAIN
 sink0_data[1] => src_data[1].DATAIN
@@ -39877,7 +39877,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux_002:cmd_xbar_mux_003
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux_002:cmd_xbar_mux_003
 sink0_valid => src_valid.DATAIN
 sink0_data[0] => src_data[0].DATAIN
 sink0_data[1] => src_data[1].DATAIN
@@ -40112,7 +40112,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux_002:cmd_xbar_mux_004
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux_002:cmd_xbar_mux_004
 sink0_valid => src_valid.DATAIN
 sink0_data[0] => src_data[0].DATAIN
 sink0_data[1] => src_data[1].DATAIN
@@ -40347,7 +40347,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux_005:cmd_xbar_mux_005
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_mux_005:cmd_xbar_mux_005
 sink0_valid => src_valid.DATAIN
 sink0_data[0] => src_data[0].DATAIN
 sink0_data[1] => src_data[1].DATAIN
@@ -40582,7 +40582,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_demux:rsp_xbar_demux
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_demux:rsp_xbar_demux
 sink_valid[0] => src0_valid.IN0
 sink_valid[0] => src1_valid.IN0
 sink_data[0] => src1_data[0].DATAIN
@@ -41046,7 +41046,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_demux:rsp_xbar_demux_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_cmd_xbar_demux:rsp_xbar_demux_001
 sink_valid[0] => src0_valid.IN0
 sink_valid[0] => src1_valid.IN0
 sink_data[0] => src1_data[0].DATAIN
@@ -41510,7 +41510,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_demux_002:rsp_xbar_demux_002
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_demux_002:rsp_xbar_demux_002
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -41746,7 +41746,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_demux_002:rsp_xbar_demux_003
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_demux_002:rsp_xbar_demux_003
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -41982,7 +41982,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_demux_002:rsp_xbar_demux_004
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_demux_002:rsp_xbar_demux_004
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -42218,7 +42218,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_demux_005:rsp_xbar_demux_005
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_demux_005:rsp_xbar_demux_005
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -42454,7 +42454,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux:rsp_xbar_mux
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux:rsp_xbar_mux
 sink0_valid => request[0].IN1
 sink0_data[0] => src_payload.IN1
 sink0_data[1] => src_payload.IN1
@@ -42808,7 +42808,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 request[0] => grant[0].DATAIN
@@ -42823,7 +42823,7 @@ increment_top_priority => ~NO_FANOUT~
 save_top_priority => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => sum.IN0
 a[0] => full_adder.cout[0].IN0
 a[1] => cout.IN0
@@ -42844,7 +42844,7 @@ sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux_001:rsp_xbar_mux_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux_001:rsp_xbar_mux_001
 sink0_valid => request[0].IN1
 sink0_data[0] => src_payload.IN1
 sink0_data[1] => src_payload.IN1
@@ -43666,7 +43666,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 request[0] => grant[0].DATAIN
@@ -43697,7 +43697,7 @@ increment_top_priority => ~NO_FANOUT~
 save_top_priority => ~NO_FANOUT~
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|SoC_mm_interconnect_1_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => Add0.IN12
 a[1] => Add0.IN11
 a[2] => Add0.IN10
@@ -43736,7 +43736,7 @@ sum[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 sum[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser
 in_clk => in_clk.IN1
 in_reset => in_reset.IN1
 out_clk => out_clk.IN1
@@ -43977,7 +43977,7 @@ out_endofpacket <= altera_avalon_st_clock_crosser:clock_xer.out_data
 out_empty[0] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser|altera_avalon_st_clock_crosser:clock_xer
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser|altera_avalon_st_clock_crosser:clock_xer
 in_clk => in_clk.IN1
 in_reset => in_data_toggle.ACLR
 in_reset => in_data_buffer[0].ACLR
@@ -44442,7 +44442,7 @@ out_data[111] <= out_data_buffer[111].DB_MAX_OUTPUT_PORT_TYPE
 out_data[112] <= out_data_buffer[112].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser|altera_avalon_st_clock_crosser:clock_xer|altera_std_synchronizer:in_to_out_synchronizer
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser|altera_avalon_st_clock_crosser:clock_xer|altera_std_synchronizer:in_to_out_synchronizer
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -44451,7 +44451,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser|altera_avalon_st_clock_crosser:clock_xer|altera_std_synchronizer:out_to_in_synchronizer
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser|altera_avalon_st_clock_crosser:clock_xer|altera_std_synchronizer:out_to_in_synchronizer
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -44460,7 +44460,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser_001
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser_001
 in_clk => in_clk.IN1
 in_reset => in_reset.IN1
 out_clk => out_clk.IN1
@@ -44701,7 +44701,7 @@ out_endofpacket <= altera_avalon_st_clock_crosser:clock_xer.out_data
 out_empty[0] <= <GND>
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser_001|altera_avalon_st_clock_crosser:clock_xer
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser_001|altera_avalon_st_clock_crosser:clock_xer
 in_clk => in_clk.IN1
 in_reset => in_data_toggle.ACLR
 in_reset => in_data_buffer[0].ACLR
@@ -45166,7 +45166,7 @@ out_data[111] <= out_data_buffer[111].DB_MAX_OUTPUT_PORT_TYPE
 out_data[112] <= out_data_buffer[112].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser_001|altera_avalon_st_clock_crosser:clock_xer|altera_std_synchronizer:in_to_out_synchronizer
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser_001|altera_avalon_st_clock_crosser:clock_xer|altera_std_synchronizer:in_to_out_synchronizer
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -45175,7 +45175,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser_001|altera_avalon_st_clock_crosser:clock_xer|altera_std_synchronizer:out_to_in_synchronizer
+|TopLevel|SoC:inst|SoC_mm_interconnect_1:mm_interconnect_1|altera_avalon_st_handshake_clock_crosser:crosser_001|altera_avalon_st_clock_crosser:clock_xer|altera_std_synchronizer:out_to_in_synchronizer
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -45184,7 +45184,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|SoC_irq_mapper:irq_mapper
+|TopLevel|SoC:inst|SoC_irq_mapper:irq_mapper
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 receiver0_irq => sender_irq[16].DATAIN
@@ -45223,7 +45223,7 @@ sender_irq[30] <= <GND>
 sender_irq[31] <= <GND>
 
 
-|TopLevel|SoC:inst1|altera_irq_clock_crosser:irq_synchronizer
+|TopLevel|SoC:inst|altera_irq_clock_crosser:irq_synchronizer
 receiver_clk => ~NO_FANOUT~
 receiver_reset => ~NO_FANOUT~
 sender_clk => sender_clk.IN1
@@ -45232,14 +45232,14 @@ receiver_irq[0] => receiver_irq[0].IN1
 sender_irq[0] <= altera_std_synchronizer_bundle:sync.dout
 
 
-|TopLevel|SoC:inst1|altera_irq_clock_crosser:irq_synchronizer|altera_std_synchronizer_bundle:sync
+|TopLevel|SoC:inst|altera_irq_clock_crosser:irq_synchronizer|altera_std_synchronizer_bundle:sync
 clk => clk.IN1
 reset_n => reset_n.IN1
 din[0] => din[0].IN1
 dout[0] <= altera_std_synchronizer:sync[0].u.dout
 
 
-|TopLevel|SoC:inst1|altera_irq_clock_crosser:irq_synchronizer|altera_std_synchronizer_bundle:sync|altera_std_synchronizer:sync[0].u
+|TopLevel|SoC:inst|altera_irq_clock_crosser:irq_synchronizer|altera_std_synchronizer_bundle:sync|altera_std_synchronizer:sync[0].u
 clk => dreg[0].CLK
 clk => dreg[1].CLK
 clk => din_s1.CLK
@@ -45250,7 +45250,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller
 reset_in0 => merged_reset.IN0
 reset_in1 => merged_reset.IN1
 reset_in2 => merged_reset.IN1
@@ -45288,7 +45288,7 @@ reset_out <= altera_reset_synchronizer:alt_rst_sync_uq1.reset_out
 reset_req <= altera_reset_synchronizer:alt_rst_req_sync_uq1.reset_out
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain_out.PRESET
 reset_in => altera_reset_synchronizer_int_chain[0].PRESET
 reset_in => altera_reset_synchronizer_int_chain[1].PRESET
@@ -45298,7 +45298,7 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain[1].DATAIN
 clk => altera_reset_synchronizer_int_chain_out.CLK
 clk => altera_reset_synchronizer_int_chain[0].CLK
@@ -45306,7 +45306,7 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller_001
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller_001
 reset_in0 => merged_reset.IN0
 reset_in1 => merged_reset.IN1
 reset_in2 => merged_reset.IN1
@@ -45344,7 +45344,7 @@ reset_out <= altera_reset_synchronizer:alt_rst_sync_uq1.reset_out
 reset_req <= altera_reset_synchronizer:alt_rst_req_sync_uq1.reset_out
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain_out.PRESET
 reset_in => altera_reset_synchronizer_int_chain[0].PRESET
 reset_in => altera_reset_synchronizer_int_chain[1].PRESET
@@ -45354,7 +45354,7 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain[1].DATAIN
 clk => altera_reset_synchronizer_int_chain_out.CLK
 clk => altera_reset_synchronizer_int_chain[0].CLK
@@ -45362,7 +45362,7 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller_002
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller_002
 reset_in0 => merged_reset.IN0
 reset_in1 => merged_reset.IN1
 reset_in2 => merged_reset.IN1
@@ -45400,7 +45400,7 @@ reset_out <= altera_reset_synchronizer:alt_rst_sync_uq1.reset_out
 reset_req <= altera_reset_synchronizer:alt_rst_req_sync_uq1.reset_out
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller_002|altera_reset_synchronizer:alt_rst_sync_uq1
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller_002|altera_reset_synchronizer:alt_rst_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain_out.PRESET
 reset_in => altera_reset_synchronizer_int_chain[0].PRESET
 reset_in => altera_reset_synchronizer_int_chain[1].PRESET
@@ -45410,7 +45410,7 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller_002|altera_reset_synchronizer:alt_rst_req_sync_uq1
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller_002|altera_reset_synchronizer:alt_rst_req_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain[1].DATAIN
 clk => altera_reset_synchronizer_int_chain_out.CLK
 clk => altera_reset_synchronizer_int_chain[0].CLK
@@ -45418,7 +45418,7 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller_003
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller_003
 reset_in0 => merged_reset.IN0
 reset_in1 => merged_reset.IN1
 reset_in2 => merged_reset.IN1
@@ -45456,7 +45456,7 @@ reset_out <= r_sync_rst.DB_MAX_OUTPUT_PORT_TYPE
 reset_req <= r_early_rst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller_003|altera_reset_synchronizer:alt_rst_sync_uq1
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller_003|altera_reset_synchronizer:alt_rst_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain_out.PRESET
 reset_in => altera_reset_synchronizer_int_chain[0].PRESET
 reset_in => altera_reset_synchronizer_int_chain[1].PRESET
@@ -45466,7 +45466,7 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|SoC:inst1|altera_reset_controller:rst_controller_003|altera_reset_synchronizer:alt_rst_req_sync_uq1
+|TopLevel|SoC:inst|altera_reset_controller:rst_controller_003|altera_reset_synchronizer:alt_rst_req_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain[1].DATAIN
 clk => altera_reset_synchronizer_int_chain_out.CLK
 clk => altera_reset_synchronizer_int_chain[0].CLK

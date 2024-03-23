@@ -11,12 +11,20 @@
 
 #include "application/jpeg_encoding.h"
 #include "application/bmp_extract.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <io.h>
+#include <unistd.h>
 
 #define NO_OF_FILES 7
 
-
 void convert_picture(const char *jtag_input);
+#define LED_BASE 0x11001010 // INSERT BASE ADDRESS OF "led_out" PIO DEVICE FROM QSYS
+#define OFFSET 0x00000000
 
+static uint8_t count;
+static uint8_t countShow;
+static uint8_t countItr = 0;
 
 int main()
 {
@@ -25,17 +33,35 @@ int main()
 	// Print that welcome message. Programmers looove welcome messages! ;)
 	printf("CO503 JPEG Encoder \n\n");
 
-	while(1) {
+	while (countItr < NO_OF_FILES)
+	{
 		printf("Input file: ");
+		IOWR_8DIRECT(LED_BASE, OFFSET, 0xF0);
 		scanf("%s", jtag_input); // Ask for the input BMP file
 
 		// Check if the filename ends in '.bmp'
-		if(strcmp(&jtag_input[strlen(jtag_input) - 4], ".bmp") == 0) {
+		if (strcmp(&jtag_input[strlen(jtag_input) - 4], ".bmp") == 0)
+		{
 
 			convert_picture(jtag_input); // See function at the bottom
-
 		}
 		printf("\n\n");
+		countItr++;
+	}
+	count = 15;
+	while (count > 1)
+	{
+		usleep(100000); // Wait for about 0.1 seconds
+
+		IOWR_8DIRECT(LED_BASE, OFFSET, count); // Write the value of "count" to the "led_out" PIO device
+		count /= 2;
+	}
+	while (1)
+	{
+		IOWR_8DIRECT(LED_BASE, OFFSET, count);
+		usleep(200000); // Wait for about 0.2 seconds
+		IOWR_8DIRECT(LED_BASE, OFFSET, 0);
+		usleep(200000); // Wait for about 0.2 seconds
 	}
 
 	return 0;
@@ -53,13 +79,26 @@ void convert_picture(const char *jtag_input)
 	strcat(file_name, jtag_input);
 	strcat(destination, jtag_input);
 
+	count = 1;
+	countShow = 0;
+	while (count < 9)
+	{
+		usleep(100000); // Wait for about 0.1 seconds
+		countShow += count;
+		IOWR_8DIRECT(LED_BASE, OFFSET, countShow); // Write the value of "count" to the "led_out" PIO device
+		count *= 2;
+	}
+
 	// Replace the '.bmp' with '.jpg'
 	strcpy(&destination[strlen(destination) - 3], "jpg");
 
-	if(bmp_extract(file_name, &pic_data) == 0) {
+	if (bmp_extract(file_name, &pic_data) == 0)
+	{
 		// Convert to JPEG. This is where the magic happens!
 		jpeg_encode(destination, pic_data.bitmap, pic_data.header->BMPHeight, pic_data.header->BMPWidth, 90);
-	} else {
+	}
+	else
+	{
 		// An error has happened
 	}
 }
