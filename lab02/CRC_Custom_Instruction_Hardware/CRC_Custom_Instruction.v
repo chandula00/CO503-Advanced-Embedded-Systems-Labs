@@ -27,6 +27,9 @@
   n = 7, Read 128 bits data from the custom instruction 
 */
 
+// include 
+`include "CRC_Component.v"
+
 
 
 module CRC_Custom_Instruction(clk,
