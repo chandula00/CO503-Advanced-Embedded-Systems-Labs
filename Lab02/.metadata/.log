@@ -1,0 +1,47 @@
+!SESSION 2024-04-17 14:40:55.635 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-17 14:44:18.246
+!MESSAGE Indexed 'CRC_P2_bsp' (82 sources, 60 headers) in 1.16 sec: 961 declarations; 2,374 references; 117 unresolved inclusions; 5 syntax errors; 200 unresolved names (5.66%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-17 14:44:22.509
+!MESSAGE Indexed 'CRC_P2' (0 sources, 13 headers) in 0.01 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-17 14:54:03.189
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81030 --id=0x0 --timestamp=1713344567]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-17 14:54:06.335
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81030 --id=0x0 --timestamp=1713344567 /cygdrive/d/PE19/CO503_Labs/Lab02/software/CRC_P2/CRC_P2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-17 14:58:50.252
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81030 --id=0x0 --timestamp=1713344567]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-17 14:58:53.391
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81030 --id=0x0 --timestamp=1713344567 /cygdrive/d/PE19/CO503_Labs/Lab02/software/CRC_P2/CRC_P2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-18 15:30:16.693
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81030 --id=0x0 --timestamp=1713344567]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-18 15:30:19.658
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81030 --id=0x0 --timestamp=1713344567 /cygdrive/d/PE19/CO503_Labs/Lab02/software/CRC_P2/CRC_P2.elf]
+!SESSION 2024-04-18 16:12:39.564 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-18 16:16:16.553
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-18 16:16:42.471
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81030 --id=0x0 --timestamp=1713344567]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-18 16:16:45.048
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81030 --id=0x0 --timestamp=1713344567 /cygdrive/d/PE19/CO503_Labs/Lab02/software/CRC_P2/CRC_P2.elf]
