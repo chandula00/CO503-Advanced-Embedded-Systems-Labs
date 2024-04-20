@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+<<<<<<< HEAD
+newSoftwareExampleWizardPage.defaultLocation=E\:\\Education\\Academic\\workspaces\\CO503-Advanced-Embedded-Systems-Labs\\lab02\\software\\my_soc
+newSoftwareExampleWizardPage.sopcinfoFile=E\:\\Education\\Academic\\workspaces\\CO503-Advanced-Embedded-Systems-Labs\\lab02\\SoC.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=E\:\\Education\\Academic\\workspaces\\CO503-Advanced-Embedded-Systems-Labs\\lab02\\software\\my_soc_bsp
+=======
+newSoftwareExampleWizardPage.defaultLocation=E\:\\Education\\Academic\\workspaces\\co503_labs\\lab02\\software\\SoC
+newSoftwareExampleWizardPage.sopcinfoFile=E\:\\Education\\Academic\\workspaces\\co503_labs\\lab02\\SoC.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=E\:\\Education\\Academic\\workspaces\\co503_labs\\lab02\\software\\SoC_bsp
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0

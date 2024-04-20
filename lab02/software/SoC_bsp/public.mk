@@ -85,9 +85,19 @@ ACDS_VERSION := 13.1
 # used to generate this makefile. 
 # BUILD_NUMBER: 162
 
+<<<<<<< HEAD
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
 SOPCINFO_FILE := E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/SoC.sopcinfo
+=======
+# Quartus Generated JDI File. Required for resolving node instance ID's with 
+# design component names. 
+JDI_FILE := E:/Education/Academic/workspaces/co503_labs/lab02/TopLevel.jdi
+
+# Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
+# design component names. 
+SOPCINFO_FILE := E:/Education/Academic/workspaces/co503_labs/lab02/SoC.sopcinfo
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 
 # Big-Endian operation. 
 # setting BIG_ENDIAN is false
@@ -152,9 +162,15 @@ SOPC_SYSID_FLAG += --sidp=0x10000040
 ELF_PATCH_FLAG  += --sidp 0x10000040
 
 # The SOPC Timestamp 
+<<<<<<< HEAD
 # setting SOPC_TIMESTAMP is 1713438907
 SOPC_SYSID_FLAG += --timestamp=1713438907
 ELF_PATCH_FLAG  += --timestamp 1713438907
+=======
+# setting SOPC_TIMESTAMP is 1712072293
+SOPC_SYSID_FLAG += --timestamp=1712072293
+ELF_PATCH_FLAG  += --timestamp 1712072293
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 
 # Enable JTAG UART driver to recover when host is inactive causing buffer to 
 # full without returning error. Printf will not fail with this recovery. none 

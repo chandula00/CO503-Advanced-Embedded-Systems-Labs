@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+<<<<<<< HEAD
+			<item value="E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab02\CRC_Source_Code"/>
+			<item value="E:\Education\Academic\workspaces\co503_labs\lab01\part02\JPEG_Encoder"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+=======
+			<item value="E:\Education\Academic\workspaces\co503_labs\lab02\CRC_Source_Code"/>
+		</list>
+	</section>
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+</section>

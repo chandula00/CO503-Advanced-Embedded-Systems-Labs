@@ -22,7 +22,11 @@
 // Parameters
 //   NUM_RCVRS        : 3
 //   SENDER_IRW_WIDTH : 32
+<<<<<<< HEAD
 //   IRQ_MAP          : 0:16,1:2,2:1
+=======
+//   IRQ_MAP          : 0:16,1:1,2:2
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 //
 // -------------------------------------------------------
 
@@ -54,8 +58,13 @@ module SoC_irq_mapper
 	sender_irq = 0;
 
         sender_irq[16] = receiver0_irq;
+<<<<<<< HEAD
         sender_irq[2] = receiver1_irq;
         sender_irq[1] = receiver2_irq;
+=======
+        sender_irq[1] = receiver1_irq;
+        sender_irq[2] = receiver2_irq;
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
     end
 
 endmodule

@@ -2,7 +2,11 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
+<<<<<<< HEAD
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.834104404;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.834104404.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.1847439824;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1224142944">
+=======
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1011942183;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1011942183.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.1612845961;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.853227770">
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\i686-pc-cygwin"/>
@@ -223,7 +227,11 @@
 <definedSymbol symbol="__unix=1"/>
 </collector>
 </instance>
+<<<<<<< HEAD
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.834104404;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.834104404.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.874764873;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.460867764">
+=======
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1011942183;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1011942183.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.1743038122;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.932600952">
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include-fixed"/>

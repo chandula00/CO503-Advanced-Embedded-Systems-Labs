@@ -82,6 +82,10 @@ led_out_external_connection_export[4] <= SoC_led_out:led_out.out_port
 led_out_external_connection_export[5] <= SoC_led_out:led_out.out_port
 led_out_external_connection_export[6] <= SoC_led_out:led_out.out_port
 led_out_external_connection_export[7] <= SoC_led_out:led_out.out_port
+<<<<<<< HEAD
+=======
+pll_c2_clk <= SoC_pll:pll.c2
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 sdram_wire_addr[0] <= SoC_sdram:sdram.zs_addr
 sdram_wire_addr[1] <= SoC_sdram:sdram.zs_addr
 sdram_wire_addr[2] <= SoC_sdram:sdram.zs_addr
@@ -138,7 +142,10 @@ sdram_wire_dqm[2] <= SoC_sdram:sdram.zs_dqm
 sdram_wire_dqm[3] <= SoC_sdram:sdram.zs_dqm
 sdram_wire_ras_n <= SoC_sdram:sdram.zs_ras_n
 sdram_wire_we_n <= SoC_sdram:sdram.zs_we_n
+<<<<<<< HEAD
 pll_c2_clk <= SoC_pll:pll.c2
+=======
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 
 
 |TopLevel|SoC:inst|SoC_pll:pll
@@ -147,9 +154,15 @@ address[0] => w_select_status.IN0
 address[1] => w_select_status.IN1
 address[1] => w_select_control.IN1
 areset => comb.IN1
+<<<<<<< HEAD
 c0 <= SoC_pll_altpll_bch2:sd1.clk
 c1 <= SoC_pll_altpll_bch2:sd1.clk
 c2 <= SoC_pll_altpll_bch2:sd1.clk
+=======
+c0 <= SoC_pll_altpll_b6h2:sd1.clk
+c1 <= SoC_pll_altpll_b6h2:sd1.clk
+c2 <= SoC_pll_altpll_b6h2:sd1.clk
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 clk => clk.IN2
 locked <= wire_sd1_locked.DB_MAX_OUTPUT_PORT_TYPE
 phasedone <= <GND>
@@ -243,8 +256,12 @@ d[0] => dffe4a[0].DATAIN
 q[0] <= dffe6a[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_pll:pll|SoC_pll_altpll_bch2:sd1
 areset => pll_lock_sync.ACLR
+=======
+|TopLevel|SoC:inst|SoC_pll:pll|SoC_pll_altpll_b6h2:sd1
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 areset => pll7.ARESET
 clk[0] <= pll7.CLK
 clk[1] <= pll7.CLK1
@@ -253,7 +270,11 @@ clk[3] <= pll7.CLK3
 clk[4] <= pll7.CLK4
 inclk[0] => pll7.CLK
 inclk[1] => pll7.CLK1
+<<<<<<< HEAD
 locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
+=======
+locked <= pll7.LOCKED
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 
 
 |TopLevel|SoC:inst|SoC_timer:timer
@@ -1485,6 +1506,7 @@ address => readdata[30].DATAIN
 address => readdata[29].DATAIN
 address => readdata[26].DATAIN
 address => readdata[25].DATAIN
+<<<<<<< HEAD
 address => readdata[21].DATAIN
 address => readdata[16].DATAIN
 address => readdata[14].DATAIN
@@ -1519,6 +1541,41 @@ readdata[18] <= <GND>
 readdata[19] <= <GND>
 readdata[20] <= <GND>
 readdata[21] <= address.DB_MAX_OUTPUT_PORT_TYPE
+=======
+address => readdata[19].DATAIN
+address => readdata[18].DATAIN
+address => readdata[13].DATAIN
+address => readdata[10].DATAIN
+address => readdata[9].DATAIN
+address => readdata[6].DATAIN
+address => readdata[5].DATAIN
+address => readdata[2].DATAIN
+address => readdata[0].DATAIN
+clock => ~NO_FANOUT~
+reset_n => ~NO_FANOUT~
+readdata[0] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[1] <= <GND>
+readdata[2] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[3] <= <GND>
+readdata[4] <= <GND>
+readdata[5] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[6] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[7] <= <GND>
+readdata[8] <= <GND>
+readdata[9] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[10] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[11] <= <GND>
+readdata[12] <= <GND>
+readdata[13] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[14] <= <GND>
+readdata[15] <= <GND>
+readdata[16] <= <GND>
+readdata[17] <= <GND>
+readdata[18] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[19] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[20] <= <GND>
+readdata[21] <= <GND>
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 readdata[22] <= <GND>
 readdata[23] <= <GND>
 readdata[24] <= <GND>
@@ -1653,6 +1710,7 @@ wfifo_used[5] <= scfifo:wfifo.usedw
 
 
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo
+<<<<<<< HEAD
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -1752,6 +1810,107 @@ sclr => _.IN1
 sclr => _.IN0
 sclr => cntr_1ob:rd_ptr_count.sclr
 sclr => cntr_1ob:wr_ptr.sclr
+=======
+data[0] => scfifo_dv21:auto_generated.data[0]
+data[1] => scfifo_dv21:auto_generated.data[1]
+data[2] => scfifo_dv21:auto_generated.data[2]
+data[3] => scfifo_dv21:auto_generated.data[3]
+data[4] => scfifo_dv21:auto_generated.data[4]
+data[5] => scfifo_dv21:auto_generated.data[5]
+data[6] => scfifo_dv21:auto_generated.data[6]
+data[7] => scfifo_dv21:auto_generated.data[7]
+q[0] <= scfifo_dv21:auto_generated.q[0]
+q[1] <= scfifo_dv21:auto_generated.q[1]
+q[2] <= scfifo_dv21:auto_generated.q[2]
+q[3] <= scfifo_dv21:auto_generated.q[3]
+q[4] <= scfifo_dv21:auto_generated.q[4]
+q[5] <= scfifo_dv21:auto_generated.q[5]
+q[6] <= scfifo_dv21:auto_generated.q[6]
+q[7] <= scfifo_dv21:auto_generated.q[7]
+wrreq => scfifo_dv21:auto_generated.wrreq
+rdreq => scfifo_dv21:auto_generated.rdreq
+clock => scfifo_dv21:auto_generated.clock
+aclr => scfifo_dv21:auto_generated.aclr
+sclr => ~NO_FANOUT~
+empty <= scfifo_dv21:auto_generated.empty
+full <= scfifo_dv21:auto_generated.full
+almost_full <= <GND>
+almost_empty <= <GND>
+usedw[0] <= scfifo_dv21:auto_generated.usedw[0]
+usedw[1] <= scfifo_dv21:auto_generated.usedw[1]
+usedw[2] <= scfifo_dv21:auto_generated.usedw[2]
+usedw[3] <= scfifo_dv21:auto_generated.usedw[3]
+usedw[4] <= scfifo_dv21:auto_generated.usedw[4]
+usedw[5] <= scfifo_dv21:auto_generated.usedw[5]
+
+
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_dv21:auto_generated
+aclr => a_dpfifo_k531:dpfifo.aclr
+clock => a_dpfifo_k531:dpfifo.clock
+data[0] => a_dpfifo_k531:dpfifo.data[0]
+data[1] => a_dpfifo_k531:dpfifo.data[1]
+data[2] => a_dpfifo_k531:dpfifo.data[2]
+data[3] => a_dpfifo_k531:dpfifo.data[3]
+data[4] => a_dpfifo_k531:dpfifo.data[4]
+data[5] => a_dpfifo_k531:dpfifo.data[5]
+data[6] => a_dpfifo_k531:dpfifo.data[6]
+data[7] => a_dpfifo_k531:dpfifo.data[7]
+empty <= a_dpfifo_k531:dpfifo.empty
+full <= a_dpfifo_k531:dpfifo.full
+q[0] <= a_dpfifo_k531:dpfifo.q[0]
+q[1] <= a_dpfifo_k531:dpfifo.q[1]
+q[2] <= a_dpfifo_k531:dpfifo.q[2]
+q[3] <= a_dpfifo_k531:dpfifo.q[3]
+q[4] <= a_dpfifo_k531:dpfifo.q[4]
+q[5] <= a_dpfifo_k531:dpfifo.q[5]
+q[6] <= a_dpfifo_k531:dpfifo.q[6]
+q[7] <= a_dpfifo_k531:dpfifo.q[7]
+rdreq => a_dpfifo_k531:dpfifo.rreq
+usedw[0] <= a_dpfifo_k531:dpfifo.usedw[0]
+usedw[1] <= a_dpfifo_k531:dpfifo.usedw[1]
+usedw[2] <= a_dpfifo_k531:dpfifo.usedw[2]
+usedw[3] <= a_dpfifo_k531:dpfifo.usedw[3]
+usedw[4] <= a_dpfifo_k531:dpfifo.usedw[4]
+usedw[5] <= a_dpfifo_k531:dpfifo.usedw[5]
+wrreq => a_dpfifo_k531:dpfifo.wreq
+
+
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo
+aclr => a_fefifo_7cf:fifo_state.aclr
+aclr => cntr_rrb:rd_ptr_count.aclr
+aclr => cntr_rrb:wr_ptr.aclr
+clock => a_fefifo_7cf:fifo_state.clock
+clock => dpram_hp21:FIFOram.inclock
+clock => dpram_hp21:FIFOram.outclock
+clock => cntr_rrb:rd_ptr_count.clock
+clock => cntr_rrb:wr_ptr.clock
+data[0] => dpram_hp21:FIFOram.data[0]
+data[1] => dpram_hp21:FIFOram.data[1]
+data[2] => dpram_hp21:FIFOram.data[2]
+data[3] => dpram_hp21:FIFOram.data[3]
+data[4] => dpram_hp21:FIFOram.data[4]
+data[5] => dpram_hp21:FIFOram.data[5]
+data[6] => dpram_hp21:FIFOram.data[6]
+data[7] => dpram_hp21:FIFOram.data[7]
+empty <= a_fefifo_7cf:fifo_state.empty
+full <= a_fefifo_7cf:fifo_state.full
+q[0] <= dpram_hp21:FIFOram.q[0]
+q[1] <= dpram_hp21:FIFOram.q[1]
+q[2] <= dpram_hp21:FIFOram.q[2]
+q[3] <= dpram_hp21:FIFOram.q[3]
+q[4] <= dpram_hp21:FIFOram.q[4]
+q[5] <= dpram_hp21:FIFOram.q[5]
+q[6] <= dpram_hp21:FIFOram.q[6]
+q[7] <= dpram_hp21:FIFOram.q[7]
+rreq => a_fefifo_7cf:fifo_state.rreq
+rreq => _.IN0
+rreq => cntr_rrb:rd_ptr_count.cnt_en
+sclr => a_fefifo_7cf:fifo_state.sclr
+sclr => _.IN1
+sclr => _.IN0
+sclr => cntr_rrb:rd_ptr_count.sclr
+sclr => cntr_rrb:wr_ptr.sclr
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 usedw[0] <= a_fefifo_7cf:fifo_state.usedw_out[0]
 usedw[1] <= a_fefifo_7cf:fifo_state.usedw_out[1]
 usedw[2] <= a_fefifo_7cf:fifo_state.usedw_out[2]
@@ -1759,11 +1918,19 @@ usedw[3] <= a_fefifo_7cf:fifo_state.usedw_out[3]
 usedw[4] <= a_fefifo_7cf:fifo_state.usedw_out[4]
 usedw[5] <= a_fefifo_7cf:fifo_state.usedw_out[5]
 wreq => a_fefifo_7cf:fifo_state.wreq
+<<<<<<< HEAD
 wreq => dpram_nl21:FIFOram.wren
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+=======
+wreq => dpram_hp21:FIFOram.wren
+wreq => cntr_rrb:wr_ptr.cnt_en
+
+
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|a_fefifo_7cf:fifo_state
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -1795,7 +1962,11 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+=======
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -1821,6 +1992,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
 data[0] => altsyncram_r1m1:altsyncram1.data_a[0]
 data[1] => altsyncram_r1m1:altsyncram1.data_a[1]
@@ -1857,6 +2029,44 @@ wren => altsyncram_r1m1:altsyncram1.wren_a
 
 
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+=======
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|dpram_hp21:FIFOram
+data[0] => altsyncram_l5m1:altsyncram1.data_a[0]
+data[1] => altsyncram_l5m1:altsyncram1.data_a[1]
+data[2] => altsyncram_l5m1:altsyncram1.data_a[2]
+data[3] => altsyncram_l5m1:altsyncram1.data_a[3]
+data[4] => altsyncram_l5m1:altsyncram1.data_a[4]
+data[5] => altsyncram_l5m1:altsyncram1.data_a[5]
+data[6] => altsyncram_l5m1:altsyncram1.data_a[6]
+data[7] => altsyncram_l5m1:altsyncram1.data_a[7]
+inclock => altsyncram_l5m1:altsyncram1.clock0
+outclock => altsyncram_l5m1:altsyncram1.clock1
+outclocken => altsyncram_l5m1:altsyncram1.clocken1
+q[0] <= altsyncram_l5m1:altsyncram1.q_b[0]
+q[1] <= altsyncram_l5m1:altsyncram1.q_b[1]
+q[2] <= altsyncram_l5m1:altsyncram1.q_b[2]
+q[3] <= altsyncram_l5m1:altsyncram1.q_b[3]
+q[4] <= altsyncram_l5m1:altsyncram1.q_b[4]
+q[5] <= altsyncram_l5m1:altsyncram1.q_b[5]
+q[6] <= altsyncram_l5m1:altsyncram1.q_b[6]
+q[7] <= altsyncram_l5m1:altsyncram1.q_b[7]
+rdaddress[0] => altsyncram_l5m1:altsyncram1.address_b[0]
+rdaddress[1] => altsyncram_l5m1:altsyncram1.address_b[1]
+rdaddress[2] => altsyncram_l5m1:altsyncram1.address_b[2]
+rdaddress[3] => altsyncram_l5m1:altsyncram1.address_b[3]
+rdaddress[4] => altsyncram_l5m1:altsyncram1.address_b[4]
+rdaddress[5] => altsyncram_l5m1:altsyncram1.address_b[5]
+wraddress[0] => altsyncram_l5m1:altsyncram1.address_a[0]
+wraddress[1] => altsyncram_l5m1:altsyncram1.address_a[1]
+wraddress[2] => altsyncram_l5m1:altsyncram1.address_a[2]
+wraddress[3] => altsyncram_l5m1:altsyncram1.address_a[3]
+wraddress[4] => altsyncram_l5m1:altsyncram1.address_a[4]
+wraddress[5] => altsyncram_l5m1:altsyncram1.address_a[5]
+wren => altsyncram_l5m1:altsyncram1.wren_a
+
+
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|dpram_hp21:FIFOram|altsyncram_l5m1:altsyncram1
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 address_a[0] => ram_block2a0.PORTAADDR
 address_a[0] => ram_block2a1.PORTAADDR
 address_a[0] => ram_block2a2.PORTAADDR
@@ -2011,7 +2221,11 @@ wren_a => ram_block2a7.PORTAWE
 wren_a => ram_block2a7.ENA0
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+=======
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|cntr_rrb:rd_ptr_count
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2031,7 +2245,11 @@ sclr => _.IN0
 sclr => _.IN0
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+=======
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|cntr_rrb:wr_ptr
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2084,6 +2302,7 @@ rfifo_used[5] <= scfifo:rfifo.usedw
 
 
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo
+<<<<<<< HEAD
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -2183,6 +2402,107 @@ sclr => _.IN1
 sclr => _.IN0
 sclr => cntr_1ob:rd_ptr_count.sclr
 sclr => cntr_1ob:wr_ptr.sclr
+=======
+data[0] => scfifo_dv21:auto_generated.data[0]
+data[1] => scfifo_dv21:auto_generated.data[1]
+data[2] => scfifo_dv21:auto_generated.data[2]
+data[3] => scfifo_dv21:auto_generated.data[3]
+data[4] => scfifo_dv21:auto_generated.data[4]
+data[5] => scfifo_dv21:auto_generated.data[5]
+data[6] => scfifo_dv21:auto_generated.data[6]
+data[7] => scfifo_dv21:auto_generated.data[7]
+q[0] <= scfifo_dv21:auto_generated.q[0]
+q[1] <= scfifo_dv21:auto_generated.q[1]
+q[2] <= scfifo_dv21:auto_generated.q[2]
+q[3] <= scfifo_dv21:auto_generated.q[3]
+q[4] <= scfifo_dv21:auto_generated.q[4]
+q[5] <= scfifo_dv21:auto_generated.q[5]
+q[6] <= scfifo_dv21:auto_generated.q[6]
+q[7] <= scfifo_dv21:auto_generated.q[7]
+wrreq => scfifo_dv21:auto_generated.wrreq
+rdreq => scfifo_dv21:auto_generated.rdreq
+clock => scfifo_dv21:auto_generated.clock
+aclr => scfifo_dv21:auto_generated.aclr
+sclr => ~NO_FANOUT~
+empty <= scfifo_dv21:auto_generated.empty
+full <= scfifo_dv21:auto_generated.full
+almost_full <= <GND>
+almost_empty <= <GND>
+usedw[0] <= scfifo_dv21:auto_generated.usedw[0]
+usedw[1] <= scfifo_dv21:auto_generated.usedw[1]
+usedw[2] <= scfifo_dv21:auto_generated.usedw[2]
+usedw[3] <= scfifo_dv21:auto_generated.usedw[3]
+usedw[4] <= scfifo_dv21:auto_generated.usedw[4]
+usedw[5] <= scfifo_dv21:auto_generated.usedw[5]
+
+
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_dv21:auto_generated
+aclr => a_dpfifo_k531:dpfifo.aclr
+clock => a_dpfifo_k531:dpfifo.clock
+data[0] => a_dpfifo_k531:dpfifo.data[0]
+data[1] => a_dpfifo_k531:dpfifo.data[1]
+data[2] => a_dpfifo_k531:dpfifo.data[2]
+data[3] => a_dpfifo_k531:dpfifo.data[3]
+data[4] => a_dpfifo_k531:dpfifo.data[4]
+data[5] => a_dpfifo_k531:dpfifo.data[5]
+data[6] => a_dpfifo_k531:dpfifo.data[6]
+data[7] => a_dpfifo_k531:dpfifo.data[7]
+empty <= a_dpfifo_k531:dpfifo.empty
+full <= a_dpfifo_k531:dpfifo.full
+q[0] <= a_dpfifo_k531:dpfifo.q[0]
+q[1] <= a_dpfifo_k531:dpfifo.q[1]
+q[2] <= a_dpfifo_k531:dpfifo.q[2]
+q[3] <= a_dpfifo_k531:dpfifo.q[3]
+q[4] <= a_dpfifo_k531:dpfifo.q[4]
+q[5] <= a_dpfifo_k531:dpfifo.q[5]
+q[6] <= a_dpfifo_k531:dpfifo.q[6]
+q[7] <= a_dpfifo_k531:dpfifo.q[7]
+rdreq => a_dpfifo_k531:dpfifo.rreq
+usedw[0] <= a_dpfifo_k531:dpfifo.usedw[0]
+usedw[1] <= a_dpfifo_k531:dpfifo.usedw[1]
+usedw[2] <= a_dpfifo_k531:dpfifo.usedw[2]
+usedw[3] <= a_dpfifo_k531:dpfifo.usedw[3]
+usedw[4] <= a_dpfifo_k531:dpfifo.usedw[4]
+usedw[5] <= a_dpfifo_k531:dpfifo.usedw[5]
+wrreq => a_dpfifo_k531:dpfifo.wreq
+
+
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo
+aclr => a_fefifo_7cf:fifo_state.aclr
+aclr => cntr_rrb:rd_ptr_count.aclr
+aclr => cntr_rrb:wr_ptr.aclr
+clock => a_fefifo_7cf:fifo_state.clock
+clock => dpram_hp21:FIFOram.inclock
+clock => dpram_hp21:FIFOram.outclock
+clock => cntr_rrb:rd_ptr_count.clock
+clock => cntr_rrb:wr_ptr.clock
+data[0] => dpram_hp21:FIFOram.data[0]
+data[1] => dpram_hp21:FIFOram.data[1]
+data[2] => dpram_hp21:FIFOram.data[2]
+data[3] => dpram_hp21:FIFOram.data[3]
+data[4] => dpram_hp21:FIFOram.data[4]
+data[5] => dpram_hp21:FIFOram.data[5]
+data[6] => dpram_hp21:FIFOram.data[6]
+data[7] => dpram_hp21:FIFOram.data[7]
+empty <= a_fefifo_7cf:fifo_state.empty
+full <= a_fefifo_7cf:fifo_state.full
+q[0] <= dpram_hp21:FIFOram.q[0]
+q[1] <= dpram_hp21:FIFOram.q[1]
+q[2] <= dpram_hp21:FIFOram.q[2]
+q[3] <= dpram_hp21:FIFOram.q[3]
+q[4] <= dpram_hp21:FIFOram.q[4]
+q[5] <= dpram_hp21:FIFOram.q[5]
+q[6] <= dpram_hp21:FIFOram.q[6]
+q[7] <= dpram_hp21:FIFOram.q[7]
+rreq => a_fefifo_7cf:fifo_state.rreq
+rreq => _.IN0
+rreq => cntr_rrb:rd_ptr_count.cnt_en
+sclr => a_fefifo_7cf:fifo_state.sclr
+sclr => _.IN1
+sclr => _.IN0
+sclr => cntr_rrb:rd_ptr_count.sclr
+sclr => cntr_rrb:wr_ptr.sclr
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 usedw[0] <= a_fefifo_7cf:fifo_state.usedw_out[0]
 usedw[1] <= a_fefifo_7cf:fifo_state.usedw_out[1]
 usedw[2] <= a_fefifo_7cf:fifo_state.usedw_out[2]
@@ -2190,11 +2510,19 @@ usedw[3] <= a_fefifo_7cf:fifo_state.usedw_out[3]
 usedw[4] <= a_fefifo_7cf:fifo_state.usedw_out[4]
 usedw[5] <= a_fefifo_7cf:fifo_state.usedw_out[5]
 wreq => a_fefifo_7cf:fifo_state.wreq
+<<<<<<< HEAD
 wreq => dpram_nl21:FIFOram.wren
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+=======
+wreq => dpram_hp21:FIFOram.wren
+wreq => cntr_rrb:wr_ptr.cnt_en
+
+
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|a_fefifo_7cf:fifo_state
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -2226,7 +2554,11 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+=======
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2252,6 +2584,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
 data[0] => altsyncram_r1m1:altsyncram1.data_a[0]
 data[1] => altsyncram_r1m1:altsyncram1.data_a[1]
@@ -2288,6 +2621,44 @@ wren => altsyncram_r1m1:altsyncram1.wren_a
 
 
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+=======
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|dpram_hp21:FIFOram
+data[0] => altsyncram_l5m1:altsyncram1.data_a[0]
+data[1] => altsyncram_l5m1:altsyncram1.data_a[1]
+data[2] => altsyncram_l5m1:altsyncram1.data_a[2]
+data[3] => altsyncram_l5m1:altsyncram1.data_a[3]
+data[4] => altsyncram_l5m1:altsyncram1.data_a[4]
+data[5] => altsyncram_l5m1:altsyncram1.data_a[5]
+data[6] => altsyncram_l5m1:altsyncram1.data_a[6]
+data[7] => altsyncram_l5m1:altsyncram1.data_a[7]
+inclock => altsyncram_l5m1:altsyncram1.clock0
+outclock => altsyncram_l5m1:altsyncram1.clock1
+outclocken => altsyncram_l5m1:altsyncram1.clocken1
+q[0] <= altsyncram_l5m1:altsyncram1.q_b[0]
+q[1] <= altsyncram_l5m1:altsyncram1.q_b[1]
+q[2] <= altsyncram_l5m1:altsyncram1.q_b[2]
+q[3] <= altsyncram_l5m1:altsyncram1.q_b[3]
+q[4] <= altsyncram_l5m1:altsyncram1.q_b[4]
+q[5] <= altsyncram_l5m1:altsyncram1.q_b[5]
+q[6] <= altsyncram_l5m1:altsyncram1.q_b[6]
+q[7] <= altsyncram_l5m1:altsyncram1.q_b[7]
+rdaddress[0] => altsyncram_l5m1:altsyncram1.address_b[0]
+rdaddress[1] => altsyncram_l5m1:altsyncram1.address_b[1]
+rdaddress[2] => altsyncram_l5m1:altsyncram1.address_b[2]
+rdaddress[3] => altsyncram_l5m1:altsyncram1.address_b[3]
+rdaddress[4] => altsyncram_l5m1:altsyncram1.address_b[4]
+rdaddress[5] => altsyncram_l5m1:altsyncram1.address_b[5]
+wraddress[0] => altsyncram_l5m1:altsyncram1.address_a[0]
+wraddress[1] => altsyncram_l5m1:altsyncram1.address_a[1]
+wraddress[2] => altsyncram_l5m1:altsyncram1.address_a[2]
+wraddress[3] => altsyncram_l5m1:altsyncram1.address_a[3]
+wraddress[4] => altsyncram_l5m1:altsyncram1.address_a[4]
+wraddress[5] => altsyncram_l5m1:altsyncram1.address_a[5]
+wren => altsyncram_l5m1:altsyncram1.wren_a
+
+
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|dpram_hp21:FIFOram|altsyncram_l5m1:altsyncram1
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 address_a[0] => ram_block2a0.PORTAADDR
 address_a[0] => ram_block2a1.PORTAADDR
 address_a[0] => ram_block2a2.PORTAADDR
@@ -2442,7 +2813,11 @@ wren_a => ram_block2a7.PORTAWE
 wren_a => ram_block2a7.ENA0
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+=======
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|cntr_rrb:rd_ptr_count
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2462,7 +2837,11 @@ sclr => _.IN0
 sclr => _.IN0
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+=======
+|TopLevel|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_dv21:auto_generated|a_dpfifo_k531:dpfifo|cntr_rrb:wr_ptr
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2800,8 +3179,11 @@ readdata[31] <= <GND>
 
 
 |TopLevel|SoC:inst|SoC_cpu:cpu
+<<<<<<< HEAD
 E_ci_multi_done => E_ci_multi_clk_en.DATAB
 E_ci_multi_done => E_ci_multi_stall.IN1
+=======
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 E_ci_result[0] => E_alu_result.DATAB
 E_ci_result[1] => E_alu_result.DATAB
 E_ci_result[2] => E_alu_result.DATAB
@@ -3073,11 +3455,17 @@ E_ci_datab[28] <= E_src2[28].DB_MAX_OUTPUT_PORT_TYPE
 E_ci_datab[29] <= E_src2[29].DB_MAX_OUTPUT_PORT_TYPE
 E_ci_datab[30] <= E_src2[30].DB_MAX_OUTPUT_PORT_TYPE
 E_ci_datab[31] <= E_src2[31].DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< HEAD
 E_ci_multi_clk_en <= E_ci_multi_clk_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
 E_ci_multi_clock <= clk.DB_MAX_OUTPUT_PORT_TYPE
 E_ci_multi_reset <= reset_n.DB_MAX_OUTPUT_PORT_TYPE
 E_ci_multi_reset_req <= reset_req.DB_MAX_OUTPUT_PORT_TYPE
 E_ci_multi_start <= E_ci_multi_start~reg0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+E_ci_multi_clock <= clk.DB_MAX_OUTPUT_PORT_TYPE
+E_ci_multi_reset <= reset_n.DB_MAX_OUTPUT_PORT_TYPE
+E_ci_multi_reset_req <= reset_req.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 W_ci_estatus <= W_estatus_reg.DB_MAX_OUTPUT_PORT_TYPE
 W_ci_ipending[0] <= W_ipending_reg[0].DB_MAX_OUTPUT_PORT_TYPE
 W_ci_ipending[1] <= W_ipending_reg[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -3388,6 +3776,7 @@ W_vinst[52] => ~NO_FANOUT~
 W_vinst[53] => ~NO_FANOUT~
 W_vinst[54] => ~NO_FANOUT~
 W_vinst[55] => ~NO_FANOUT~
+<<<<<<< HEAD
 W_vinst[56] => ~NO_FANOUT~
 W_vinst[57] => ~NO_FANOUT~
 W_vinst[58] => ~NO_FANOUT~
@@ -3524,6 +3913,8 @@ W_vinst[188] => ~NO_FANOUT~
 W_vinst[189] => ~NO_FANOUT~
 W_vinst[190] => ~NO_FANOUT~
 W_vinst[191] => ~NO_FANOUT~
+=======
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 W_wr_data[0] => ~NO_FANOUT~
 W_wr_data[1] => ~NO_FANOUT~
 W_wr_data[2] => ~NO_FANOUT~
@@ -3803,6 +4194,7 @@ q[31] <= altsyncram:the_altsyncram.q_b
 
 
 |TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a|altsyncram:the_altsyncram
+<<<<<<< HEAD
 wren_a => altsyncram_6of1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -3839,6 +4231,44 @@ data_a[28] => altsyncram_6of1:auto_generated.data_a[28]
 data_a[29] => altsyncram_6of1:auto_generated.data_a[29]
 data_a[30] => altsyncram_6of1:auto_generated.data_a[30]
 data_a[31] => altsyncram_6of1:auto_generated.data_a[31]
+=======
+wren_a => altsyncram_0sf1:auto_generated.wren_a
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => altsyncram_0sf1:auto_generated.data_a[0]
+data_a[1] => altsyncram_0sf1:auto_generated.data_a[1]
+data_a[2] => altsyncram_0sf1:auto_generated.data_a[2]
+data_a[3] => altsyncram_0sf1:auto_generated.data_a[3]
+data_a[4] => altsyncram_0sf1:auto_generated.data_a[4]
+data_a[5] => altsyncram_0sf1:auto_generated.data_a[5]
+data_a[6] => altsyncram_0sf1:auto_generated.data_a[6]
+data_a[7] => altsyncram_0sf1:auto_generated.data_a[7]
+data_a[8] => altsyncram_0sf1:auto_generated.data_a[8]
+data_a[9] => altsyncram_0sf1:auto_generated.data_a[9]
+data_a[10] => altsyncram_0sf1:auto_generated.data_a[10]
+data_a[11] => altsyncram_0sf1:auto_generated.data_a[11]
+data_a[12] => altsyncram_0sf1:auto_generated.data_a[12]
+data_a[13] => altsyncram_0sf1:auto_generated.data_a[13]
+data_a[14] => altsyncram_0sf1:auto_generated.data_a[14]
+data_a[15] => altsyncram_0sf1:auto_generated.data_a[15]
+data_a[16] => altsyncram_0sf1:auto_generated.data_a[16]
+data_a[17] => altsyncram_0sf1:auto_generated.data_a[17]
+data_a[18] => altsyncram_0sf1:auto_generated.data_a[18]
+data_a[19] => altsyncram_0sf1:auto_generated.data_a[19]
+data_a[20] => altsyncram_0sf1:auto_generated.data_a[20]
+data_a[21] => altsyncram_0sf1:auto_generated.data_a[21]
+data_a[22] => altsyncram_0sf1:auto_generated.data_a[22]
+data_a[23] => altsyncram_0sf1:auto_generated.data_a[23]
+data_a[24] => altsyncram_0sf1:auto_generated.data_a[24]
+data_a[25] => altsyncram_0sf1:auto_generated.data_a[25]
+data_a[26] => altsyncram_0sf1:auto_generated.data_a[26]
+data_a[27] => altsyncram_0sf1:auto_generated.data_a[27]
+data_a[28] => altsyncram_0sf1:auto_generated.data_a[28]
+data_a[29] => altsyncram_0sf1:auto_generated.data_a[29]
+data_a[30] => altsyncram_0sf1:auto_generated.data_a[30]
+data_a[31] => altsyncram_0sf1:auto_generated.data_a[31]
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 data_b[0] => ~NO_FANOUT~
 data_b[1] => ~NO_FANOUT~
 data_b[2] => ~NO_FANOUT~
@@ -3871,6 +4301,7 @@ data_b[28] => ~NO_FANOUT~
 data_b[29] => ~NO_FANOUT~
 data_b[30] => ~NO_FANOUT~
 data_b[31] => ~NO_FANOUT~
+<<<<<<< HEAD
 address_a[0] => altsyncram_6of1:auto_generated.address_a[0]
 address_a[1] => altsyncram_6of1:auto_generated.address_a[1]
 address_a[2] => altsyncram_6of1:auto_generated.address_a[2]
@@ -3884,6 +4315,21 @@ address_b[4] => altsyncram_6of1:auto_generated.address_b[4]
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
 clock0 => altsyncram_6of1:auto_generated.clock0
+=======
+address_a[0] => altsyncram_0sf1:auto_generated.address_a[0]
+address_a[1] => altsyncram_0sf1:auto_generated.address_a[1]
+address_a[2] => altsyncram_0sf1:auto_generated.address_a[2]
+address_a[3] => altsyncram_0sf1:auto_generated.address_a[3]
+address_a[4] => altsyncram_0sf1:auto_generated.address_a[4]
+address_b[0] => altsyncram_0sf1:auto_generated.address_b[0]
+address_b[1] => altsyncram_0sf1:auto_generated.address_b[1]
+address_b[2] => altsyncram_0sf1:auto_generated.address_b[2]
+address_b[3] => altsyncram_0sf1:auto_generated.address_b[3]
+address_b[4] => altsyncram_0sf1:auto_generated.address_b[4]
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0sf1:auto_generated.clock0
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -3925,6 +4371,7 @@ q_a[28] <= <GND>
 q_a[29] <= <GND>
 q_a[30] <= <GND>
 q_a[31] <= <GND>
+<<<<<<< HEAD
 q_b[0] <= altsyncram_6of1:auto_generated.q_b[0]
 q_b[1] <= altsyncram_6of1:auto_generated.q_b[1]
 q_b[2] <= altsyncram_6of1:auto_generated.q_b[2]
@@ -3957,12 +4404,50 @@ q_b[28] <= altsyncram_6of1:auto_generated.q_b[28]
 q_b[29] <= altsyncram_6of1:auto_generated.q_b[29]
 q_b[30] <= altsyncram_6of1:auto_generated.q_b[30]
 q_b[31] <= altsyncram_6of1:auto_generated.q_b[31]
+=======
+q_b[0] <= altsyncram_0sf1:auto_generated.q_b[0]
+q_b[1] <= altsyncram_0sf1:auto_generated.q_b[1]
+q_b[2] <= altsyncram_0sf1:auto_generated.q_b[2]
+q_b[3] <= altsyncram_0sf1:auto_generated.q_b[3]
+q_b[4] <= altsyncram_0sf1:auto_generated.q_b[4]
+q_b[5] <= altsyncram_0sf1:auto_generated.q_b[5]
+q_b[6] <= altsyncram_0sf1:auto_generated.q_b[6]
+q_b[7] <= altsyncram_0sf1:auto_generated.q_b[7]
+q_b[8] <= altsyncram_0sf1:auto_generated.q_b[8]
+q_b[9] <= altsyncram_0sf1:auto_generated.q_b[9]
+q_b[10] <= altsyncram_0sf1:auto_generated.q_b[10]
+q_b[11] <= altsyncram_0sf1:auto_generated.q_b[11]
+q_b[12] <= altsyncram_0sf1:auto_generated.q_b[12]
+q_b[13] <= altsyncram_0sf1:auto_generated.q_b[13]
+q_b[14] <= altsyncram_0sf1:auto_generated.q_b[14]
+q_b[15] <= altsyncram_0sf1:auto_generated.q_b[15]
+q_b[16] <= altsyncram_0sf1:auto_generated.q_b[16]
+q_b[17] <= altsyncram_0sf1:auto_generated.q_b[17]
+q_b[18] <= altsyncram_0sf1:auto_generated.q_b[18]
+q_b[19] <= altsyncram_0sf1:auto_generated.q_b[19]
+q_b[20] <= altsyncram_0sf1:auto_generated.q_b[20]
+q_b[21] <= altsyncram_0sf1:auto_generated.q_b[21]
+q_b[22] <= altsyncram_0sf1:auto_generated.q_b[22]
+q_b[23] <= altsyncram_0sf1:auto_generated.q_b[23]
+q_b[24] <= altsyncram_0sf1:auto_generated.q_b[24]
+q_b[25] <= altsyncram_0sf1:auto_generated.q_b[25]
+q_b[26] <= altsyncram_0sf1:auto_generated.q_b[26]
+q_b[27] <= altsyncram_0sf1:auto_generated.q_b[27]
+q_b[28] <= altsyncram_0sf1:auto_generated.q_b[28]
+q_b[29] <= altsyncram_0sf1:auto_generated.q_b[29]
+q_b[30] <= altsyncram_0sf1:auto_generated.q_b[30]
+q_b[31] <= altsyncram_0sf1:auto_generated.q_b[31]
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_6of1:auto_generated
+=======
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_0sf1:auto_generated
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4493,6 +4978,7 @@ q[31] <= altsyncram:the_altsyncram.q_b
 
 
 |TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b|altsyncram:the_altsyncram
+<<<<<<< HEAD
 wren_a => altsyncram_7of1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -4529,6 +5015,44 @@ data_a[28] => altsyncram_7of1:auto_generated.data_a[28]
 data_a[29] => altsyncram_7of1:auto_generated.data_a[29]
 data_a[30] => altsyncram_7of1:auto_generated.data_a[30]
 data_a[31] => altsyncram_7of1:auto_generated.data_a[31]
+=======
+wren_a => altsyncram_1sf1:auto_generated.wren_a
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => altsyncram_1sf1:auto_generated.data_a[0]
+data_a[1] => altsyncram_1sf1:auto_generated.data_a[1]
+data_a[2] => altsyncram_1sf1:auto_generated.data_a[2]
+data_a[3] => altsyncram_1sf1:auto_generated.data_a[3]
+data_a[4] => altsyncram_1sf1:auto_generated.data_a[4]
+data_a[5] => altsyncram_1sf1:auto_generated.data_a[5]
+data_a[6] => altsyncram_1sf1:auto_generated.data_a[6]
+data_a[7] => altsyncram_1sf1:auto_generated.data_a[7]
+data_a[8] => altsyncram_1sf1:auto_generated.data_a[8]
+data_a[9] => altsyncram_1sf1:auto_generated.data_a[9]
+data_a[10] => altsyncram_1sf1:auto_generated.data_a[10]
+data_a[11] => altsyncram_1sf1:auto_generated.data_a[11]
+data_a[12] => altsyncram_1sf1:auto_generated.data_a[12]
+data_a[13] => altsyncram_1sf1:auto_generated.data_a[13]
+data_a[14] => altsyncram_1sf1:auto_generated.data_a[14]
+data_a[15] => altsyncram_1sf1:auto_generated.data_a[15]
+data_a[16] => altsyncram_1sf1:auto_generated.data_a[16]
+data_a[17] => altsyncram_1sf1:auto_generated.data_a[17]
+data_a[18] => altsyncram_1sf1:auto_generated.data_a[18]
+data_a[19] => altsyncram_1sf1:auto_generated.data_a[19]
+data_a[20] => altsyncram_1sf1:auto_generated.data_a[20]
+data_a[21] => altsyncram_1sf1:auto_generated.data_a[21]
+data_a[22] => altsyncram_1sf1:auto_generated.data_a[22]
+data_a[23] => altsyncram_1sf1:auto_generated.data_a[23]
+data_a[24] => altsyncram_1sf1:auto_generated.data_a[24]
+data_a[25] => altsyncram_1sf1:auto_generated.data_a[25]
+data_a[26] => altsyncram_1sf1:auto_generated.data_a[26]
+data_a[27] => altsyncram_1sf1:auto_generated.data_a[27]
+data_a[28] => altsyncram_1sf1:auto_generated.data_a[28]
+data_a[29] => altsyncram_1sf1:auto_generated.data_a[29]
+data_a[30] => altsyncram_1sf1:auto_generated.data_a[30]
+data_a[31] => altsyncram_1sf1:auto_generated.data_a[31]
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 data_b[0] => ~NO_FANOUT~
 data_b[1] => ~NO_FANOUT~
 data_b[2] => ~NO_FANOUT~
@@ -4561,6 +5085,7 @@ data_b[28] => ~NO_FANOUT~
 data_b[29] => ~NO_FANOUT~
 data_b[30] => ~NO_FANOUT~
 data_b[31] => ~NO_FANOUT~
+<<<<<<< HEAD
 address_a[0] => altsyncram_7of1:auto_generated.address_a[0]
 address_a[1] => altsyncram_7of1:auto_generated.address_a[1]
 address_a[2] => altsyncram_7of1:auto_generated.address_a[2]
@@ -4574,6 +5099,21 @@ address_b[4] => altsyncram_7of1:auto_generated.address_b[4]
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
 clock0 => altsyncram_7of1:auto_generated.clock0
+=======
+address_a[0] => altsyncram_1sf1:auto_generated.address_a[0]
+address_a[1] => altsyncram_1sf1:auto_generated.address_a[1]
+address_a[2] => altsyncram_1sf1:auto_generated.address_a[2]
+address_a[3] => altsyncram_1sf1:auto_generated.address_a[3]
+address_a[4] => altsyncram_1sf1:auto_generated.address_a[4]
+address_b[0] => altsyncram_1sf1:auto_generated.address_b[0]
+address_b[1] => altsyncram_1sf1:auto_generated.address_b[1]
+address_b[2] => altsyncram_1sf1:auto_generated.address_b[2]
+address_b[3] => altsyncram_1sf1:auto_generated.address_b[3]
+address_b[4] => altsyncram_1sf1:auto_generated.address_b[4]
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_1sf1:auto_generated.clock0
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -4615,6 +5155,7 @@ q_a[28] <= <GND>
 q_a[29] <= <GND>
 q_a[30] <= <GND>
 q_a[31] <= <GND>
+<<<<<<< HEAD
 q_b[0] <= altsyncram_7of1:auto_generated.q_b[0]
 q_b[1] <= altsyncram_7of1:auto_generated.q_b[1]
 q_b[2] <= altsyncram_7of1:auto_generated.q_b[2]
@@ -4647,12 +5188,50 @@ q_b[28] <= altsyncram_7of1:auto_generated.q_b[28]
 q_b[29] <= altsyncram_7of1:auto_generated.q_b[29]
 q_b[30] <= altsyncram_7of1:auto_generated.q_b[30]
 q_b[31] <= altsyncram_7of1:auto_generated.q_b[31]
+=======
+q_b[0] <= altsyncram_1sf1:auto_generated.q_b[0]
+q_b[1] <= altsyncram_1sf1:auto_generated.q_b[1]
+q_b[2] <= altsyncram_1sf1:auto_generated.q_b[2]
+q_b[3] <= altsyncram_1sf1:auto_generated.q_b[3]
+q_b[4] <= altsyncram_1sf1:auto_generated.q_b[4]
+q_b[5] <= altsyncram_1sf1:auto_generated.q_b[5]
+q_b[6] <= altsyncram_1sf1:auto_generated.q_b[6]
+q_b[7] <= altsyncram_1sf1:auto_generated.q_b[7]
+q_b[8] <= altsyncram_1sf1:auto_generated.q_b[8]
+q_b[9] <= altsyncram_1sf1:auto_generated.q_b[9]
+q_b[10] <= altsyncram_1sf1:auto_generated.q_b[10]
+q_b[11] <= altsyncram_1sf1:auto_generated.q_b[11]
+q_b[12] <= altsyncram_1sf1:auto_generated.q_b[12]
+q_b[13] <= altsyncram_1sf1:auto_generated.q_b[13]
+q_b[14] <= altsyncram_1sf1:auto_generated.q_b[14]
+q_b[15] <= altsyncram_1sf1:auto_generated.q_b[15]
+q_b[16] <= altsyncram_1sf1:auto_generated.q_b[16]
+q_b[17] <= altsyncram_1sf1:auto_generated.q_b[17]
+q_b[18] <= altsyncram_1sf1:auto_generated.q_b[18]
+q_b[19] <= altsyncram_1sf1:auto_generated.q_b[19]
+q_b[20] <= altsyncram_1sf1:auto_generated.q_b[20]
+q_b[21] <= altsyncram_1sf1:auto_generated.q_b[21]
+q_b[22] <= altsyncram_1sf1:auto_generated.q_b[22]
+q_b[23] <= altsyncram_1sf1:auto_generated.q_b[23]
+q_b[24] <= altsyncram_1sf1:auto_generated.q_b[24]
+q_b[25] <= altsyncram_1sf1:auto_generated.q_b[25]
+q_b[26] <= altsyncram_1sf1:auto_generated.q_b[26]
+q_b[27] <= altsyncram_1sf1:auto_generated.q_b[27]
+q_b[28] <= altsyncram_1sf1:auto_generated.q_b[28]
+q_b[29] <= altsyncram_1sf1:auto_generated.q_b[29]
+q_b[30] <= altsyncram_1sf1:auto_generated.q_b[30]
+q_b[31] <= altsyncram_1sf1:auto_generated.q_b[31]
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_7of1:auto_generated
+=======
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_1sf1:auto_generated
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -5869,6 +6448,7 @@ q[31] <= altsyncram:the_altsyncram.q_a
 
 
 |TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram|altsyncram:the_altsyncram
+<<<<<<< HEAD
 wren_a => altsyncram_pu71:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -5920,11 +6500,65 @@ addressstall_b => ~NO_FANOUT~
 clock0 => altsyncram_pu71:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => altsyncram_pu71:auto_generated.clocken0
+=======
+wren_a => altsyncram_j281:auto_generated.wren_a
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => altsyncram_j281:auto_generated.data_a[0]
+data_a[1] => altsyncram_j281:auto_generated.data_a[1]
+data_a[2] => altsyncram_j281:auto_generated.data_a[2]
+data_a[3] => altsyncram_j281:auto_generated.data_a[3]
+data_a[4] => altsyncram_j281:auto_generated.data_a[4]
+data_a[5] => altsyncram_j281:auto_generated.data_a[5]
+data_a[6] => altsyncram_j281:auto_generated.data_a[6]
+data_a[7] => altsyncram_j281:auto_generated.data_a[7]
+data_a[8] => altsyncram_j281:auto_generated.data_a[8]
+data_a[9] => altsyncram_j281:auto_generated.data_a[9]
+data_a[10] => altsyncram_j281:auto_generated.data_a[10]
+data_a[11] => altsyncram_j281:auto_generated.data_a[11]
+data_a[12] => altsyncram_j281:auto_generated.data_a[12]
+data_a[13] => altsyncram_j281:auto_generated.data_a[13]
+data_a[14] => altsyncram_j281:auto_generated.data_a[14]
+data_a[15] => altsyncram_j281:auto_generated.data_a[15]
+data_a[16] => altsyncram_j281:auto_generated.data_a[16]
+data_a[17] => altsyncram_j281:auto_generated.data_a[17]
+data_a[18] => altsyncram_j281:auto_generated.data_a[18]
+data_a[19] => altsyncram_j281:auto_generated.data_a[19]
+data_a[20] => altsyncram_j281:auto_generated.data_a[20]
+data_a[21] => altsyncram_j281:auto_generated.data_a[21]
+data_a[22] => altsyncram_j281:auto_generated.data_a[22]
+data_a[23] => altsyncram_j281:auto_generated.data_a[23]
+data_a[24] => altsyncram_j281:auto_generated.data_a[24]
+data_a[25] => altsyncram_j281:auto_generated.data_a[25]
+data_a[26] => altsyncram_j281:auto_generated.data_a[26]
+data_a[27] => altsyncram_j281:auto_generated.data_a[27]
+data_a[28] => altsyncram_j281:auto_generated.data_a[28]
+data_a[29] => altsyncram_j281:auto_generated.data_a[29]
+data_a[30] => altsyncram_j281:auto_generated.data_a[30]
+data_a[31] => altsyncram_j281:auto_generated.data_a[31]
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_j281:auto_generated.address_a[0]
+address_a[1] => altsyncram_j281:auto_generated.address_a[1]
+address_a[2] => altsyncram_j281:auto_generated.address_a[2]
+address_a[3] => altsyncram_j281:auto_generated.address_a[3]
+address_a[4] => altsyncram_j281:auto_generated.address_a[4]
+address_a[5] => altsyncram_j281:auto_generated.address_a[5]
+address_a[6] => altsyncram_j281:auto_generated.address_a[6]
+address_a[7] => altsyncram_j281:auto_generated.address_a[7]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_j281:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => altsyncram_j281:auto_generated.clocken0
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 clocken1 => ~NO_FANOUT~
 clocken2 => ~NO_FANOUT~
 clocken3 => ~NO_FANOUT~
 aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
+<<<<<<< HEAD
 byteena_a[0] => altsyncram_pu71:auto_generated.byteena_a[0]
 byteena_a[1] => altsyncram_pu71:auto_generated.byteena_a[1]
 byteena_a[2] => altsyncram_pu71:auto_generated.byteena_a[2]
@@ -5962,13 +6596,56 @@ q_a[28] <= altsyncram_pu71:auto_generated.q_a[28]
 q_a[29] <= altsyncram_pu71:auto_generated.q_a[29]
 q_a[30] <= altsyncram_pu71:auto_generated.q_a[30]
 q_a[31] <= altsyncram_pu71:auto_generated.q_a[31]
+=======
+byteena_a[0] => altsyncram_j281:auto_generated.byteena_a[0]
+byteena_a[1] => altsyncram_j281:auto_generated.byteena_a[1]
+byteena_a[2] => altsyncram_j281:auto_generated.byteena_a[2]
+byteena_a[3] => altsyncram_j281:auto_generated.byteena_a[3]
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_j281:auto_generated.q_a[0]
+q_a[1] <= altsyncram_j281:auto_generated.q_a[1]
+q_a[2] <= altsyncram_j281:auto_generated.q_a[2]
+q_a[3] <= altsyncram_j281:auto_generated.q_a[3]
+q_a[4] <= altsyncram_j281:auto_generated.q_a[4]
+q_a[5] <= altsyncram_j281:auto_generated.q_a[5]
+q_a[6] <= altsyncram_j281:auto_generated.q_a[6]
+q_a[7] <= altsyncram_j281:auto_generated.q_a[7]
+q_a[8] <= altsyncram_j281:auto_generated.q_a[8]
+q_a[9] <= altsyncram_j281:auto_generated.q_a[9]
+q_a[10] <= altsyncram_j281:auto_generated.q_a[10]
+q_a[11] <= altsyncram_j281:auto_generated.q_a[11]
+q_a[12] <= altsyncram_j281:auto_generated.q_a[12]
+q_a[13] <= altsyncram_j281:auto_generated.q_a[13]
+q_a[14] <= altsyncram_j281:auto_generated.q_a[14]
+q_a[15] <= altsyncram_j281:auto_generated.q_a[15]
+q_a[16] <= altsyncram_j281:auto_generated.q_a[16]
+q_a[17] <= altsyncram_j281:auto_generated.q_a[17]
+q_a[18] <= altsyncram_j281:auto_generated.q_a[18]
+q_a[19] <= altsyncram_j281:auto_generated.q_a[19]
+q_a[20] <= altsyncram_j281:auto_generated.q_a[20]
+q_a[21] <= altsyncram_j281:auto_generated.q_a[21]
+q_a[22] <= altsyncram_j281:auto_generated.q_a[22]
+q_a[23] <= altsyncram_j281:auto_generated.q_a[23]
+q_a[24] <= altsyncram_j281:auto_generated.q_a[24]
+q_a[25] <= altsyncram_j281:auto_generated.q_a[25]
+q_a[26] <= altsyncram_j281:auto_generated.q_a[26]
+q_a[27] <= altsyncram_j281:auto_generated.q_a[27]
+q_a[28] <= altsyncram_j281:auto_generated.q_a[28]
+q_a[29] <= altsyncram_j281:auto_generated.q_a[29]
+q_a[30] <= altsyncram_j281:auto_generated.q_a[30]
+q_a[31] <= altsyncram_j281:auto_generated.q_a[31]
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_pu71:auto_generated
+=======
+|TopLevel|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_j281:auto_generated
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -9616,6 +10293,7 @@ rd_data[60] <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
 rd_data[61] <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_high_resolution_timer:high_resolution_timer
 address[0] => Equal1.IN30
 address[0] => Equal2.IN60
@@ -9935,6 +10613,9 @@ readdata[15] <= readdata[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 clk => clk.IN1
 reset => reset.IN1
 dataa[0] => dataa[0].IN1
@@ -10047,7 +10728,11 @@ result[30] <= CRC_Component:wrapper_wiring.readdata
 result[31] <= CRC_Component:wrapper_wiring.readdata
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 clk => readdata[0]~reg0.CLK
 clk => readdata[1]~reg0.CLK
 clk => readdata[2]~reg0.CLK
@@ -10268,7 +10953,11 @@ readdata[30] <= readdata[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 readdata[31] <= readdata[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 block_input[0] => block_input[0].IN1
 block_input[1] => block_input[1].IN1
 block_input[2] => block_input[2].IN1
@@ -10375,7 +11064,11 @@ block_output[30] <= XOR_Shift:bit_7.stage_output
 block_output[31] <= XOR_Shift:bit_7.stage_output
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_0
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_0
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -10475,7 +11168,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_1
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_1
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -10575,7 +11272,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_2
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_2
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -10675,7 +11376,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_3
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_3
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -10775,7 +11480,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_4
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_4
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -10875,7 +11584,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_5
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_5
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -10975,7 +11688,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_6
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_6
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -11075,7 +11792,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_7
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block0|XOR_Shift:bit_7
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -11175,7 +11896,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 block_input[0] => block_input[0].IN1
 block_input[1] => block_input[1].IN1
 block_input[2] => block_input[2].IN1
@@ -11282,7 +12007,11 @@ block_output[30] <= XOR_Shift:bit_7.stage_output
 block_output[31] <= XOR_Shift:bit_7.stage_output
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_0
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_0
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -11382,7 +12111,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_1
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_1
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -11482,7 +12215,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_2
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_2
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -11582,7 +12319,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_3
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_3
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -11682,7 +12423,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_4
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_4
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -11782,7 +12527,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_5
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_5
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -11882,7 +12631,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_6
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_6
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -11982,7 +12735,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_7
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block1|XOR_Shift:bit_7
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -12082,7 +12839,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 block_input[0] => block_input[0].IN1
 block_input[1] => block_input[1].IN1
 block_input[2] => block_input[2].IN1
@@ -12189,7 +12950,11 @@ block_output[30] <= XOR_Shift:bit_7.stage_output
 block_output[31] <= XOR_Shift:bit_7.stage_output
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_0
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_0
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -12289,7 +13054,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_1
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_1
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -12389,7 +13158,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_2
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_2
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -12489,7 +13262,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_3
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_3
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -12589,7 +13366,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_4
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_4
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -12689,7 +13470,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_5
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_5
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -12789,7 +13574,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_6
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_6
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -12889,7 +13678,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_7
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block2|XOR_Shift:bit_7
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -12989,7 +13782,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 block_input[0] => block_input[0].IN1
 block_input[1] => block_input[1].IN1
 block_input[2] => block_input[2].IN1
@@ -13096,7 +13893,11 @@ block_output[30] <= XOR_Shift:bit_7.stage_output
 block_output[31] <= XOR_Shift:bit_7.stage_output
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_0
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_0
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -13196,7 +13997,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_1
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_1
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -13296,7 +14101,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_2
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_2
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -13396,7 +14205,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_3
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_3
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -13496,7 +14309,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_4
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_4
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -13596,7 +14413,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_5
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_5
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -13696,7 +14517,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_6
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_6
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -13796,7 +14621,11 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|CRC_Custom_Instruction:crc_0|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_7
+=======
+|TopLevel|SoC:inst|CRC_Custom_Instruction:crc|CRC_Component:wrapper_wiring|XOR_Shift_Block:cascade_block3|XOR_Shift:bit_7
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 stage_input[0] => stage_output.IN1
 stage_input[1] => stage_output.IN1
 stage_input[2] => stage_output.IN1
@@ -13896,6 +14725,327 @@ stage_output[30] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 stage_output[31] <= stage_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
+=======
+|TopLevel|SoC:inst|SoC_high_resolution_timer:high_resolution_timer
+address[0] => Equal1.IN30
+address[0] => Equal2.IN60
+address[0] => Equal3.IN30
+address[0] => Equal4.IN60
+address[0] => Equal5.IN60
+address[0] => Equal6.IN31
+address[1] => Equal1.IN60
+address[1] => Equal2.IN59
+address[1] => Equal3.IN29
+address[1] => Equal4.IN29
+address[1] => Equal5.IN30
+address[1] => Equal6.IN30
+address[2] => Equal1.IN29
+address[2] => Equal2.IN29
+address[2] => Equal3.IN60
+address[2] => Equal4.IN59
+address[2] => Equal5.IN29
+address[2] => Equal6.IN29
+chipselect => period_l_wr_strobe.IN0
+clk => control_register[0].CLK
+clk => control_register[1].CLK
+clk => control_register[2].CLK
+clk => control_register[3].CLK
+clk => counter_snapshot[0].CLK
+clk => counter_snapshot[1].CLK
+clk => counter_snapshot[2].CLK
+clk => counter_snapshot[3].CLK
+clk => counter_snapshot[4].CLK
+clk => counter_snapshot[5].CLK
+clk => counter_snapshot[6].CLK
+clk => counter_snapshot[7].CLK
+clk => counter_snapshot[8].CLK
+clk => counter_snapshot[9].CLK
+clk => counter_snapshot[10].CLK
+clk => counter_snapshot[11].CLK
+clk => counter_snapshot[12].CLK
+clk => counter_snapshot[13].CLK
+clk => counter_snapshot[14].CLK
+clk => counter_snapshot[15].CLK
+clk => counter_snapshot[16].CLK
+clk => counter_snapshot[17].CLK
+clk => counter_snapshot[18].CLK
+clk => counter_snapshot[19].CLK
+clk => counter_snapshot[20].CLK
+clk => counter_snapshot[21].CLK
+clk => counter_snapshot[22].CLK
+clk => counter_snapshot[23].CLK
+clk => counter_snapshot[24].CLK
+clk => counter_snapshot[25].CLK
+clk => counter_snapshot[26].CLK
+clk => counter_snapshot[27].CLK
+clk => counter_snapshot[28].CLK
+clk => counter_snapshot[29].CLK
+clk => counter_snapshot[30].CLK
+clk => counter_snapshot[31].CLK
+clk => period_h_register[0].CLK
+clk => period_h_register[1].CLK
+clk => period_h_register[2].CLK
+clk => period_h_register[3].CLK
+clk => period_h_register[4].CLK
+clk => period_h_register[5].CLK
+clk => period_h_register[6].CLK
+clk => period_h_register[7].CLK
+clk => period_h_register[8].CLK
+clk => period_h_register[9].CLK
+clk => period_h_register[10].CLK
+clk => period_h_register[11].CLK
+clk => period_h_register[12].CLK
+clk => period_h_register[13].CLK
+clk => period_h_register[14].CLK
+clk => period_h_register[15].CLK
+clk => period_l_register[0].CLK
+clk => period_l_register[1].CLK
+clk => period_l_register[2].CLK
+clk => period_l_register[3].CLK
+clk => period_l_register[4].CLK
+clk => period_l_register[5].CLK
+clk => period_l_register[6].CLK
+clk => period_l_register[7].CLK
+clk => period_l_register[8].CLK
+clk => period_l_register[9].CLK
+clk => period_l_register[10].CLK
+clk => period_l_register[11].CLK
+clk => period_l_register[12].CLK
+clk => period_l_register[13].CLK
+clk => period_l_register[14].CLK
+clk => period_l_register[15].CLK
+clk => readdata[0]~reg0.CLK
+clk => readdata[1]~reg0.CLK
+clk => readdata[2]~reg0.CLK
+clk => readdata[3]~reg0.CLK
+clk => readdata[4]~reg0.CLK
+clk => readdata[5]~reg0.CLK
+clk => readdata[6]~reg0.CLK
+clk => readdata[7]~reg0.CLK
+clk => readdata[8]~reg0.CLK
+clk => readdata[9]~reg0.CLK
+clk => readdata[10]~reg0.CLK
+clk => readdata[11]~reg0.CLK
+clk => readdata[12]~reg0.CLK
+clk => readdata[13]~reg0.CLK
+clk => readdata[14]~reg0.CLK
+clk => readdata[15]~reg0.CLK
+clk => timeout_occurred.CLK
+clk => delayed_unxcounter_is_zeroxx0.CLK
+clk => counter_is_running.CLK
+clk => force_reload.CLK
+clk => internal_counter[0].CLK
+clk => internal_counter[1].CLK
+clk => internal_counter[2].CLK
+clk => internal_counter[3].CLK
+clk => internal_counter[4].CLK
+clk => internal_counter[5].CLK
+clk => internal_counter[6].CLK
+clk => internal_counter[7].CLK
+clk => internal_counter[8].CLK
+clk => internal_counter[9].CLK
+clk => internal_counter[10].CLK
+clk => internal_counter[11].CLK
+clk => internal_counter[12].CLK
+clk => internal_counter[13].CLK
+clk => internal_counter[14].CLK
+clk => internal_counter[15].CLK
+clk => internal_counter[16].CLK
+clk => internal_counter[17].CLK
+clk => internal_counter[18].CLK
+clk => internal_counter[19].CLK
+clk => internal_counter[20].CLK
+clk => internal_counter[21].CLK
+clk => internal_counter[22].CLK
+clk => internal_counter[23].CLK
+clk => internal_counter[24].CLK
+clk => internal_counter[25].CLK
+clk => internal_counter[26].CLK
+clk => internal_counter[27].CLK
+clk => internal_counter[28].CLK
+clk => internal_counter[29].CLK
+clk => internal_counter[30].CLK
+clk => internal_counter[31].CLK
+reset_n => internal_counter[0].PRESET
+reset_n => internal_counter[1].ACLR
+reset_n => internal_counter[2].ACLR
+reset_n => internal_counter[3].PRESET
+reset_n => internal_counter[4].ACLR
+reset_n => internal_counter[5].ACLR
+reset_n => internal_counter[6].ACLR
+reset_n => internal_counter[7].ACLR
+reset_n => internal_counter[8].ACLR
+reset_n => internal_counter[9].ACLR
+reset_n => internal_counter[10].ACLR
+reset_n => internal_counter[11].ACLR
+reset_n => internal_counter[12].ACLR
+reset_n => internal_counter[13].ACLR
+reset_n => internal_counter[14].ACLR
+reset_n => internal_counter[15].ACLR
+reset_n => internal_counter[16].ACLR
+reset_n => internal_counter[17].ACLR
+reset_n => internal_counter[18].ACLR
+reset_n => internal_counter[19].ACLR
+reset_n => internal_counter[20].ACLR
+reset_n => internal_counter[21].ACLR
+reset_n => internal_counter[22].ACLR
+reset_n => internal_counter[23].ACLR
+reset_n => internal_counter[24].ACLR
+reset_n => internal_counter[25].ACLR
+reset_n => internal_counter[26].ACLR
+reset_n => internal_counter[27].ACLR
+reset_n => internal_counter[28].ACLR
+reset_n => internal_counter[29].ACLR
+reset_n => internal_counter[30].ACLR
+reset_n => internal_counter[31].ACLR
+reset_n => readdata[0]~reg0.ACLR
+reset_n => readdata[1]~reg0.ACLR
+reset_n => readdata[2]~reg0.ACLR
+reset_n => readdata[3]~reg0.ACLR
+reset_n => readdata[4]~reg0.ACLR
+reset_n => readdata[5]~reg0.ACLR
+reset_n => readdata[6]~reg0.ACLR
+reset_n => readdata[7]~reg0.ACLR
+reset_n => readdata[8]~reg0.ACLR
+reset_n => readdata[9]~reg0.ACLR
+reset_n => readdata[10]~reg0.ACLR
+reset_n => readdata[11]~reg0.ACLR
+reset_n => readdata[12]~reg0.ACLR
+reset_n => readdata[13]~reg0.ACLR
+reset_n => readdata[14]~reg0.ACLR
+reset_n => readdata[15]~reg0.ACLR
+reset_n => force_reload.ACLR
+reset_n => counter_is_running.ACLR
+reset_n => delayed_unxcounter_is_zeroxx0.ACLR
+reset_n => timeout_occurred.ACLR
+reset_n => period_l_register[0].PRESET
+reset_n => period_l_register[1].ACLR
+reset_n => period_l_register[2].ACLR
+reset_n => period_l_register[3].PRESET
+reset_n => period_l_register[4].ACLR
+reset_n => period_l_register[5].ACLR
+reset_n => period_l_register[6].ACLR
+reset_n => period_l_register[7].ACLR
+reset_n => period_l_register[8].ACLR
+reset_n => period_l_register[9].ACLR
+reset_n => period_l_register[10].ACLR
+reset_n => period_l_register[11].ACLR
+reset_n => period_l_register[12].ACLR
+reset_n => period_l_register[13].ACLR
+reset_n => period_l_register[14].ACLR
+reset_n => period_l_register[15].ACLR
+reset_n => period_h_register[0].ACLR
+reset_n => period_h_register[1].ACLR
+reset_n => period_h_register[2].ACLR
+reset_n => period_h_register[3].ACLR
+reset_n => period_h_register[4].ACLR
+reset_n => period_h_register[5].ACLR
+reset_n => period_h_register[6].ACLR
+reset_n => period_h_register[7].ACLR
+reset_n => period_h_register[8].ACLR
+reset_n => period_h_register[9].ACLR
+reset_n => period_h_register[10].ACLR
+reset_n => period_h_register[11].ACLR
+reset_n => period_h_register[12].ACLR
+reset_n => period_h_register[13].ACLR
+reset_n => period_h_register[14].ACLR
+reset_n => period_h_register[15].ACLR
+reset_n => control_register[0].ACLR
+reset_n => control_register[1].ACLR
+reset_n => control_register[2].ACLR
+reset_n => control_register[3].ACLR
+reset_n => counter_snapshot[0].ACLR
+reset_n => counter_snapshot[1].ACLR
+reset_n => counter_snapshot[2].ACLR
+reset_n => counter_snapshot[3].ACLR
+reset_n => counter_snapshot[4].ACLR
+reset_n => counter_snapshot[5].ACLR
+reset_n => counter_snapshot[6].ACLR
+reset_n => counter_snapshot[7].ACLR
+reset_n => counter_snapshot[8].ACLR
+reset_n => counter_snapshot[9].ACLR
+reset_n => counter_snapshot[10].ACLR
+reset_n => counter_snapshot[11].ACLR
+reset_n => counter_snapshot[12].ACLR
+reset_n => counter_snapshot[13].ACLR
+reset_n => counter_snapshot[14].ACLR
+reset_n => counter_snapshot[15].ACLR
+reset_n => counter_snapshot[16].ACLR
+reset_n => counter_snapshot[17].ACLR
+reset_n => counter_snapshot[18].ACLR
+reset_n => counter_snapshot[19].ACLR
+reset_n => counter_snapshot[20].ACLR
+reset_n => counter_snapshot[21].ACLR
+reset_n => counter_snapshot[22].ACLR
+reset_n => counter_snapshot[23].ACLR
+reset_n => counter_snapshot[24].ACLR
+reset_n => counter_snapshot[25].ACLR
+reset_n => counter_snapshot[26].ACLR
+reset_n => counter_snapshot[27].ACLR
+reset_n => counter_snapshot[28].ACLR
+reset_n => counter_snapshot[29].ACLR
+reset_n => counter_snapshot[30].ACLR
+reset_n => counter_snapshot[31].ACLR
+write_n => period_l_wr_strobe.IN1
+writedata[0] => period_l_register[0].DATAIN
+writedata[0] => control_register[0].DATAIN
+writedata[0] => period_h_register[0].DATAIN
+writedata[1] => period_l_register[1].DATAIN
+writedata[1] => period_h_register[1].DATAIN
+writedata[1] => control_register[1].DATAIN
+writedata[2] => start_strobe.IN1
+writedata[2] => period_l_register[2].DATAIN
+writedata[2] => period_h_register[2].DATAIN
+writedata[2] => control_register[2].DATAIN
+writedata[3] => stop_strobe.IN1
+writedata[3] => period_l_register[3].DATAIN
+writedata[3] => period_h_register[3].DATAIN
+writedata[3] => control_register[3].DATAIN
+writedata[4] => period_l_register[4].DATAIN
+writedata[4] => period_h_register[4].DATAIN
+writedata[5] => period_l_register[5].DATAIN
+writedata[5] => period_h_register[5].DATAIN
+writedata[6] => period_l_register[6].DATAIN
+writedata[6] => period_h_register[6].DATAIN
+writedata[7] => period_l_register[7].DATAIN
+writedata[7] => period_h_register[7].DATAIN
+writedata[8] => period_l_register[8].DATAIN
+writedata[8] => period_h_register[8].DATAIN
+writedata[9] => period_l_register[9].DATAIN
+writedata[9] => period_h_register[9].DATAIN
+writedata[10] => period_l_register[10].DATAIN
+writedata[10] => period_h_register[10].DATAIN
+writedata[11] => period_l_register[11].DATAIN
+writedata[11] => period_h_register[11].DATAIN
+writedata[12] => period_l_register[12].DATAIN
+writedata[12] => period_h_register[12].DATAIN
+writedata[13] => period_l_register[13].DATAIN
+writedata[13] => period_h_register[13].DATAIN
+writedata[14] => period_l_register[14].DATAIN
+writedata[14] => period_h_register[14].DATAIN
+writedata[15] => period_l_register[15].DATAIN
+writedata[15] => period_h_register[15].DATAIN
+irq <= irq.DB_MAX_OUTPUT_PORT_TYPE
+readdata[0] <= readdata[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[1] <= readdata[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[2] <= readdata[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[3] <= readdata[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[4] <= readdata[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[5] <= readdata[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[6] <= readdata[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[7] <= readdata[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[8] <= readdata[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[9] <= readdata[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[10] <= readdata[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[11] <= readdata[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[12] <= readdata[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[13] <= readdata[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[14] <= readdata[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readdata[15] <= readdata[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 |TopLevel|SoC:inst|altera_customins_master_translator:cpu_custom_instruction_master_translator
 ci_slave_dataa[0] => multi_ci_master_dataa[0].DATAIN
 ci_slave_dataa[0] => comb_ci_master_dataa[0].DATAIN
@@ -14587,7 +15737,11 @@ multi_ci_master_c[3] <= ci_slave_c[3].DB_MAX_OUTPUT_PORT_TYPE
 multi_ci_master_c[4] <= ci_slave_c[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|SoC_cpu_custom_instruction_master_multi_xconnect:cpu_custom_instruction_master_multi_xconnect
+=======
+|TopLevel|SoC:inst|SoC_cpu_custom_instruction_master_comb_xconnect:cpu_custom_instruction_master_comb_xconnect
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 ci_master0_dataa[0] <= ci_slave_dataa[0].DB_MAX_OUTPUT_PORT_TYPE
 ci_master0_dataa[1] <= ci_slave_dataa[1].DB_MAX_OUTPUT_PORT_TYPE
 ci_master0_dataa[2] <= ci_slave_dataa[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -14743,6 +15897,7 @@ ci_master0_ipending[29] <= ci_slave_ipending[29].DB_MAX_OUTPUT_PORT_TYPE
 ci_master0_ipending[30] <= ci_slave_ipending[30].DB_MAX_OUTPUT_PORT_TYPE
 ci_master0_ipending[31] <= ci_slave_ipending[31].DB_MAX_OUTPUT_PORT_TYPE
 ci_master0_estatus <= ci_slave_estatus.DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< HEAD
 ci_master0_clk <= ci_slave_clk.DB_MAX_OUTPUT_PORT_TYPE
 ci_master0_clken <= ci_slave_clken.DB_MAX_OUTPUT_PORT_TYPE
 ci_master0_reset <= ci_slave_reset.DB_MAX_OUTPUT_PORT_TYPE
@@ -14755,6 +15910,8 @@ ci_slave_reset => ci_master0_reset.DATAIN
 ci_slave_reset_req => ci_master0_reset_req.DATAIN
 ci_slave_start => ci_master0_start.IN1
 ci_slave_done <= ci_slave_done.DB_MAX_OUTPUT_PORT_TYPE
+=======
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 ci_slave_dataa[0] => ci_master0_dataa[0].DATAIN
 ci_slave_dataa[1] => ci_master0_dataa[1].DATAIN
 ci_slave_dataa[2] => ci_master0_dataa[2].DATAIN
@@ -14928,7 +16085,11 @@ ci_slave_ipending[31] => ci_master0_ipending[31].DATAIN
 ci_slave_estatus => ci_master0_estatus.DATAIN
 
 
+<<<<<<< HEAD
 |TopLevel|SoC:inst|altera_customins_slave_translator:cpu_custom_instruction_master_multi_slave_translator0
+=======
+|TopLevel|SoC:inst|altera_customins_slave_translator:cpu_custom_instruction_master_comb_slave_translator0
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 ci_slave_dataa[0] => ci_master_dataa[0].DATAIN
 ci_slave_dataa[1] => ci_master_dataa[1].DATAIN
 ci_slave_dataa[2] => ci_master_dataa[2].DATAIN
@@ -53746,11 +54907,19 @@ dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 receiver0_irq => sender_irq[16].DATAIN
+<<<<<<< HEAD
 receiver1_irq => sender_irq[2].DATAIN
 receiver2_irq => sender_irq[1].DATAIN
 sender_irq[0] <= <GND>
 sender_irq[1] <= receiver2_irq.DB_MAX_OUTPUT_PORT_TYPE
 sender_irq[2] <= receiver1_irq.DB_MAX_OUTPUT_PORT_TYPE
+=======
+receiver1_irq => sender_irq[1].DATAIN
+receiver2_irq => sender_irq[2].DATAIN
+sender_irq[0] <= <GND>
+sender_irq[1] <= receiver1_irq.DB_MAX_OUTPUT_PORT_TYPE
+sender_irq[2] <= receiver2_irq.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 sender_irq[3] <= <GND>
 sender_irq[4] <= <GND>
 sender_irq[5] <= <GND>

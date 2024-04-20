@@ -2,6 +2,7 @@
 **** Clean-only build of configuration Nios II for project SoC_bsp ****
 
 make clean 
+<<<<<<< HEAD
       2 [main] pwd 7836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
       1 [main] sh 15908 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
@@ -9,6 +10,15 @@ the public mailing list cygwin@cygwin.com
       1 [main] rm 2876 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
       1 [main] sh 7204 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+=======
+      0 [main] pwd 13932 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 13284 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] rm 15480 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3724 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 the public mailing list cygwin@cygwin.com
 [BSP clean complete]
 

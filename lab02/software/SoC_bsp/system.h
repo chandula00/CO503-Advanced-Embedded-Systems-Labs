@@ -2,9 +2,15 @@
  * system.h - SOPC Builder system and BSP software package information
  *
  * Machine generated for CPU 'cpu' in SOPC Builder design 'SoC'
+<<<<<<< HEAD
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/SoC.sopcinfo
  *
  * Generated: Thu Apr 18 22:02:01 IST 2024
+=======
+ * SOPC Builder design path: E:/Education/Academic/workspaces/co503_labs/lab02/SoC.sopcinfo
+ *
+ * Generated: Tue Apr 02 21:23:55 IST 2024
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
  */
 
 /*
@@ -123,9 +129,15 @@
  *
  */
 
+<<<<<<< HEAD
 #define ALT_CI_CRC_CUSTOM_INSTRUCTION_0(n,A,B) __builtin_custom_inii(ALT_CI_CRC_CUSTOM_INSTRUCTION_0_N+(n&ALT_CI_CRC_CUSTOM_INSTRUCTION_0_N_MASK),(A),(B))
 #define ALT_CI_CRC_CUSTOM_INSTRUCTION_0_N 0x0
 #define ALT_CI_CRC_CUSTOM_INSTRUCTION_0_N_MASK ((1<<3)-1)
+=======
+#define ALT_CI_CRC_0(n,A) __builtin_custom_ini(ALT_CI_CRC_0_N+(n&ALT_CI_CRC_0_N_MASK),(A))
+#define ALT_CI_CRC_0_N 0x0
+#define ALT_CI_CRC_0_N_MASK ((1<<3)-1)
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 
 
 /*
@@ -140,7 +152,11 @@
 #define __ALTERA_AVALON_TIMER
 #define __ALTERA_NIOS2_QSYS
 #define __ALTPLL
+<<<<<<< HEAD
 #define __CRC_CUSTOM_INSTRUCTION
+=======
+#define __CRC
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 
 
 /*
@@ -148,7 +164,11 @@
  *
  */
 
+<<<<<<< HEAD
 #define ALT_DEVICE_FAMILY "Cyclone IV E"
+=======
+#define ALT_DEVICE_FAMILY "Cyclone IV GX"
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 #define ALT_ENHANCED_INTERRUPT_API_PRESENT
 #define ALT_IRQ_BASE NULL
 #define ALT_LOG_PORT "/dev/null"
@@ -199,10 +219,17 @@
 #define HIGH_RESOLUTION_TIMER_BASE 0x10000000
 #define HIGH_RESOLUTION_TIMER_COUNTER_SIZE 32
 #define HIGH_RESOLUTION_TIMER_FIXED_PERIOD 0
+<<<<<<< HEAD
 #define HIGH_RESOLUTION_TIMER_FREQ 100000000
 #define HIGH_RESOLUTION_TIMER_IRQ 2
 #define HIGH_RESOLUTION_TIMER_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define HIGH_RESOLUTION_TIMER_LOAD_VALUE 99
+=======
+#define HIGH_RESOLUTION_TIMER_FREQ 10000000
+#define HIGH_RESOLUTION_TIMER_IRQ 2
+#define HIGH_RESOLUTION_TIMER_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define HIGH_RESOLUTION_TIMER_LOAD_VALUE 9
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 #define HIGH_RESOLUTION_TIMER_MULT 1.0E-6
 #define HIGH_RESOLUTION_TIMER_NAME "/dev/high_resolution_timer"
 #define HIGH_RESOLUTION_TIMER_PERIOD 1
@@ -325,7 +352,11 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
+<<<<<<< HEAD
 #define SYSID_TIMESTAMP 1713438907
+=======
+#define SYSID_TIMESTAMP 1712072293
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 

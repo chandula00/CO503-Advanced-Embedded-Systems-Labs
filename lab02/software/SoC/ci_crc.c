@@ -51,7 +51,11 @@
  * n = 5, Read  64 bits data from the custom instruction
  * n = 6, Read  96 bits data from the custom instruction
  * n = 7, Read 128 bits data from the custom instruction*/
+<<<<<<< HEAD
 #define CRC_CI_MACRO(n, A)        __builtin_custom_ini(ALT_CI_CRC_CUSTOM_INSTRUCTION_0_N + (n & 0x7), (A))
+=======
+#define CRC_CI_MACRO(n, A)        __builtin_custom_ini(ALT_CI_CRC_0_N + (n & 0x7), (A))
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 
 unsigned long crcCI(unsigned char * input_data, unsigned long input_data_length)
 {

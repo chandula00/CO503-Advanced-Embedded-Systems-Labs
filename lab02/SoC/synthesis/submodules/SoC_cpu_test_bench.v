@@ -66,7 +66,11 @@ module SoC_cpu_test_bench (
   input   [  4: 0] R_dst_regnum;
   input            R_wr_dst_reg;
   input            W_valid;
+<<<<<<< HEAD
   input   [191: 0] W_vinst;
+=======
+  input   [ 55: 0] W_vinst;
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
   input   [ 31: 0] W_wr_data;
   input   [ 31: 0] av_ld_data_aligned_unfiltered;
   input            clk;
@@ -108,7 +112,11 @@ module SoC_cpu_test_bench (
   wire             D_op_cmpltui;
   wire             D_op_cmpne;
   wire             D_op_cmpnei;
+<<<<<<< HEAD
   wire             D_op_crc_custom_instruction_0;
+=======
+  wire             D_op_crc_0;
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
   wire             D_op_crst;
   wire             D_op_custom;
   wire             D_op_div;
@@ -369,7 +377,11 @@ module SoC_cpu_test_bench (
   assign D_op_rsvx56 = D_op_opx & (D_iw_opx == 56);
   assign D_op_rsvx60 = D_op_opx & (D_iw_opx == 60);
   assign D_op_rsvx63 = D_op_opx & (D_iw_opx == 63);
+<<<<<<< HEAD
   assign D_op_crc_custom_instruction_0 = D_op_custom & 1'b1;
+=======
+  assign D_op_crc_0 = D_op_custom & 1'b1;
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
   assign D_op_opx = D_iw_op == 58;
   assign D_op_custom = D_iw_op == 50;
   assign test_has_ended = 1'b0;

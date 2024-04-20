@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 Analysis & Synthesis Status : Successful - Thu Apr 18 23:13:33 2024
+=======
+Analysis & Synthesis Status : Successful - Sat Mar 23 10:18:55 2024
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : TopLevel
 Top-level Entity Name : TopLevel
 Family : Cyclone IV E
+<<<<<<< HEAD
 Total logic elements : 3,334
     Total combinational functions : 2,766
     Dedicated logic registers : 1,860
@@ -10,5 +15,14 @@ Total registers : 1860
 Total pins : 66
 Total virtual pins : 0
 Total memory bits : 11,444
+=======
+Total logic elements : 2,716
+    Total combinational functions : 2,233
+    Dedicated logic registers : 1,639
+Total registers : 1639
+Total pins : 66
+Total virtual pins : 0
+Total memory bits : 11,460
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 1

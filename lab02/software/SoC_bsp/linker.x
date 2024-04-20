@@ -2,9 +2,15 @@
  * linker.x - Linker script
  *
  * Machine generated for CPU 'cpu' in SOPC Builder design 'SoC'
+<<<<<<< HEAD
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/SoC.sopcinfo
  *
  * Generated: Thu Apr 18 21:59:48 IST 2024
+=======
+ * SOPC Builder design path: E:/Education/Academic/workspaces/co503_labs/lab02/SoC.sopcinfo
+ *
+ * Generated: Tue Apr 02 20:54:37 IST 2024
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
  */
 
 /*

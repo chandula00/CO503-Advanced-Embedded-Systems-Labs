@@ -2,11 +2,19 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
+<<<<<<< HEAD
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1965334508;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1965334508.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.557372878;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1152060245">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/SoC_bsp/HAL/inc"/>
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/SoC_bsp/"/>
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/SoC_bsp/drivers/inc"/>
+=======
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1029743762;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1029743762.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.592894568;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1025941864">
+<collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab02/software/SoC_bsp/HAL/inc"/>
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab02/software/SoC_bsp/"/>
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab02/software/SoC_bsp/drivers/inc"/>
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\i686-pc-cygwin"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\backward"/>
@@ -230,11 +238,19 @@
 <definedSymbol symbol="ALT_SINGLE_THREADED=1"/>
 </collector>
 </instance>
+<<<<<<< HEAD
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1965334508;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1965334508.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.70969542;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.472756315">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/SoC_bsp/HAL/inc"/>
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/SoC_bsp/"/>
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/SoC_bsp/drivers/inc"/>
+=======
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1029743762;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1029743762.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.1906031768;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.145772428">
+<collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab02/software/SoC_bsp/HAL/inc"/>
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab02/software/SoC_bsp/"/>
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab02/software/SoC_bsp/drivers/inc"/>
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include-fixed"/>
 <includePath path="F:\altera\quartus\bin\cygwin\usr\include"/>

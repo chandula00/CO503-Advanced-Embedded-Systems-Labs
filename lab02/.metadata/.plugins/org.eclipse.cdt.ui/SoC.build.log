@@ -2,6 +2,7 @@
 **** Build of configuration Nios II for project SoC ****
 
 make all 
+<<<<<<< HEAD
       1 [main] sh 4152 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
       1 [main] sh 11612 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
@@ -20,6 +21,26 @@ the public mailing list cygwin@cygwin.com
       1 [main] true 11240 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
       1 [main] sh 9120 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+=======
+      0 [main] sh 15156 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 11824 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2564 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../SoC_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../SoC_bsp/
+      0 [main] pwd 16264 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 15192 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 18072 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 18180 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1480 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 the public mailing list cygwin@cygwin.com
 [SoC build complete]
 

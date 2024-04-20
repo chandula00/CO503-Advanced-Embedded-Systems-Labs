@@ -1,6 +1,10 @@
 <sld_project_info>
   <project>
+<<<<<<< HEAD
     <hash md5_digest_80b="4c2c91dd7985df7fe2c7"/>
+=======
+    <hash md5_digest_80b="4c2ba1f5fe65f25aaf61"/>
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
   </project>
   <file_info>
     <file device="EP4CE115F29C7" path="TopLevel.sof" usercode="0xFFFFFFFF"/>
@@ -144,7 +148,11 @@
   <sld_infos>
     <sld_info hpath="SoC:inst" name="inst">
       <assignment_values>
+<<<<<<< HEAD
         <assignment_value text="QSYS_NAME SoC HAS_SOPCINFO 1 GENERATION_ID 1713462038"/>
+=======
+        <assignment_value text="QSYS_NAME SoC HAS_SOPCINFO 1 GENERATION_ID 1710961558"/>
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
       </assignment_values>
       <parameters/>
     </sld_info>

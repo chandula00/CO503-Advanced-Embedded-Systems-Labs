@@ -2,7 +2,11 @@ set_global_assignment -entity "SoC" -library "SoC" -name IP_TOOL_NAME "Qsys"
 set_global_assignment -entity "SoC" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "SoC" -library "SoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "SoC" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../SoC.sopcinfo"]
+<<<<<<< HEAD
 set_global_assignment -entity "SoC" -library "SoC" -name SLD_INFO "QSYS_NAME SoC HAS_SOPCINFO 1 GENERATION_ID 1713462038"
+=======
+set_global_assignment -entity "SoC" -library "SoC" -name SLD_INFO "QSYS_NAME SoC HAS_SOPCINFO 1 GENERATION_ID 1712072293"
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 set_global_assignment -library "SoC" -name MISC_FILE [file join $::quartus(qip_path) "../../SoC.cmp"]
 set_global_assignment -library "SoC" -name SLD_FILE [file join $::quartus(qip_path) "SoC.regmap"]
 set_global_assignment -library "SoC" -name SLD_FILE [file join $::quartus(qip_path) "SoC.debuginfo"]
@@ -50,11 +54,19 @@ set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quar
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_id_router.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_addr_router.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_customins_slave_translator.sv"]
+<<<<<<< HEAD
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_cpu_custom_instruction_master_multi_xconnect.sv"]
 set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_customins_master_translator.v"]
 set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/CRC_Component.v"]
 set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/CRC_Custom_Instruction.v"]
 set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_high_resolution_timer.v"]
+=======
+set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_cpu_custom_instruction_master_comb_xconnect.sv"]
+set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_customins_master_translator.v"]
+set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_high_resolution_timer.v"]
+set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/CRC_Component.v"]
+set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/CRC_Custom_Instruction.v"]
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_sdram.v"]
 set_global_assignment -library "SoC" -name SDC_FILE [file join $::quartus(qip_path) "submodules/SoC_cpu.sdc"]
 set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_cpu.v"]
@@ -174,9 +186,15 @@ set_global_assignment -entity "SoC_mm_interconnect_0_addr_router" -library "SoC"
 set_global_assignment -entity "altera_customins_slave_translator" -library "SoC" -name IP_TOOL_NAME "altera_customins_slave_translator"
 set_global_assignment -entity "altera_customins_slave_translator" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "altera_customins_slave_translator" -library "SoC" -name IP_TOOL_ENV "Qsys"
+<<<<<<< HEAD
 set_global_assignment -entity "SoC_cpu_custom_instruction_master_multi_xconnect" -library "SoC" -name IP_TOOL_NAME "altera_customins_xconnect"
 set_global_assignment -entity "SoC_cpu_custom_instruction_master_multi_xconnect" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "SoC_cpu_custom_instruction_master_multi_xconnect" -library "SoC" -name IP_TOOL_ENV "Qsys"
+=======
+set_global_assignment -entity "SoC_cpu_custom_instruction_master_comb_xconnect" -library "SoC" -name IP_TOOL_NAME "altera_customins_xconnect"
+set_global_assignment -entity "SoC_cpu_custom_instruction_master_comb_xconnect" -library "SoC" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "SoC_cpu_custom_instruction_master_comb_xconnect" -library "SoC" -name IP_TOOL_ENV "Qsys"
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 set_global_assignment -entity "altera_customins_master_translator" -library "SoC" -name IP_TOOL_NAME "altera_customins_master_translator"
 set_global_assignment -entity "altera_customins_master_translator" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "altera_customins_master_translator" -library "SoC" -name IP_TOOL_ENV "Qsys"

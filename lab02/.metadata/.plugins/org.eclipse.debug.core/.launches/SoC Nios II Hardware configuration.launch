@@ -6,7 +6,11 @@
 <stringAttribute key="byteStreamDeviceDeviceID" value="1"/>
 <stringAttribute key="byteStreamDeviceInstanceID" value="0"/>
 <booleanAttribute key="downloadProgram" value="true"/>
+<<<<<<< HEAD
 <stringAttribute key="elfFile" value="E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab02\software\SoC\SoC.elf"/>
+=======
+<stringAttribute key="elfFile" value="E:\Education\Academic\workspaces\co503_labs\lab02\software\SoC\SoC.elf"/>
+>>>>>>> 33cb8d86f87de572c0883e5f5ba2f3cf9d1f65c0
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.altera.debug.cdi.gdb.plugin.Nios2GdbCdiDebugger"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
 <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
