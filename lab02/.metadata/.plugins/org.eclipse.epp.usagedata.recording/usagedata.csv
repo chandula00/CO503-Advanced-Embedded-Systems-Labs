@@ -1,0 +1,21 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Unhandled event loop exception",1713462583936
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462588872
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462589827
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462627110
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1713462629532
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462632641
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462635048
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1713462635684
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1713462639830
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1713462640162
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x10000040, /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/my_soc/my_soc.elf] return code: 4, 'other error'",1713462652681
+error,log,,,"Downloading ELF Process failed",1713462652684
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462652768
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462663562
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462664590
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462699775
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462704330
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462706562
+started,bundle,org.eclipse.cdt.mylyn.ui,3.6.0.v20110608-1400,"org.eclipse.cdt.mylyn.ui",1713462707018
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1713462707489
