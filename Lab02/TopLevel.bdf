@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 632 264 808 280)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "INPUT_CLOCK" (rect 5 0 82 12)(font "Arial" ))
+	(text "INPUT_CLOCK" (rect 5 0 81 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(output)
 	(rect 640 344 816 360)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "LED[7..0]" (rect 5 0 53 12)(font "Arial" ))
+	(text "LED[7..0]" (rect 5 0 52 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -56,7 +56,7 @@ applicable agreement for further details.
 	(output)
 	(rect 616 384 816 400)
 	(text "OUTPUT" (rect 161 0 199 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_ADDR[12..0]" (rect 5 0 114 12)(font "Arial" ))
+	(text "SDRAM_ADDR[12..0]" (rect 5 0 113 12)(font "Arial" ))
 	(pt 200 8)
 	(drawing
 		(line (pt 200 8)(pt 148 8))
@@ -73,7 +73,7 @@ applicable agreement for further details.
 	(output)
 	(rect 632 400 816 416)
 	(text "OUTPUT" (rect 145 0 183 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_BA[1..0] " (rect 5 0 94 12)(font "Arial" ))
+	(text "SDRAM_BA[1..0] " (rect 5 0 93 12)(font "Arial" ))
 	(pt 184 8)
 	(drawing
 		(line (pt 184 8)(pt 132 8))
@@ -90,7 +90,7 @@ applicable agreement for further details.
 	(output)
 	(rect 640 416 816 432)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_CAS_N" (rect 5 0 87 12)(font "Arial" ))
+	(text "SDRAM_CAS_N" (rect 5 0 86 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -107,7 +107,7 @@ applicable agreement for further details.
 	(output)
 	(rect 640 432 816 448)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_CKE" (rect 5 0 73 12)(font "Arial" ))
+	(text "SDRAM_CKE" (rect 5 0 72 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -124,7 +124,7 @@ applicable agreement for further details.
 	(output)
 	(rect 640 448 816 464)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_CS_N" (rect 5 0 80 12)(font "Arial" ))
+	(text "SDRAM_CS_N" (rect 5 0 79 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -141,7 +141,7 @@ applicable agreement for further details.
 	(output)
 	(rect 624 480 816 496)
 	(text "OUTPUT" (rect 153 0 191 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_DQM[3..0] " (rect 5 0 105 12)(font "Arial" ))
+	(text "SDRAM_DQM[3..0] " (rect 5 0 104 12)(font "Arial" ))
 	(pt 192 8)
 	(drawing
 		(line (pt 192 8)(pt 140 8))
@@ -158,7 +158,7 @@ applicable agreement for further details.
 	(output)
 	(rect 640 496 816 512)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_RAS_N" (rect 5 0 87 12)(font "Arial" ))
+	(text "SDRAM_RAS_N" (rect 5 0 86 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -175,7 +175,7 @@ applicable agreement for further details.
 	(output)
 	(rect 640 512 816 528)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_WE_N" (rect 5 0 82 12)(font "Arial" ))
+	(text "SDRAM_WE_N" (rect 5 0 81 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -192,7 +192,7 @@ applicable agreement for further details.
 	(output)
 	(rect 640 576 816 592)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_CLK" (rect 5 0 72 12)(font "Arial" ))
+	(text "SDRAM_CLK" (rect 5 0 71 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -209,7 +209,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 624 464 816 480)
 	(text "BIDIR" (rect 167 0 191 10)(font "Arial" (font_size 6)))
-	(text "SDRAM_DQ[31..0] " (rect 5 0 102 12)(font "Arial" ))
+	(text "SDRAM_DQ[31..0] " (rect 5 0 101 12)(font "Arial" ))
 	(pt 192 8)
 	(drawing
 		(line (pt 136 4)(pt 114 4))
