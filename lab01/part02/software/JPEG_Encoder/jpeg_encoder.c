@@ -17,6 +17,7 @@
 #include <unistd.h>
 
 #define NO_OF_FILES 7
+#include <time.h>
 
 void convert_picture(const char *jtag_input);
 #define LED_BASE 0x11001010 // INSERT BASE ADDRESS OF "led_out" PIO DEVICE FROM QSYS
@@ -95,8 +96,18 @@ void convert_picture(const char *jtag_input)
 
 	if (bmp_extract(file_name, &pic_data) == 0)
 	{
+		clock_t start, end;
+		double cpu_time;
+		start = clock();
+
 		// Convert to JPEG. This is where the magic happens!
 		jpeg_encode(destination, pic_data.bitmap, pic_data.header->BMPHeight, pic_data.header->BMPWidth, 90);
+
+		end = clock();
+
+		cpu_time = ((double)(end-start))/ CLOCKS_PER_SEC;
+
+		printf("Time - %f", cpu_time);
 	}
 	else
 	{

@@ -4,6 +4,9 @@
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1812769304;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1812769304.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.275930331;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.27405978">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab01/part02/software/JPEG_Encoder_bsp/HAL/inc"/>
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab01/part02/software/JPEG_Encoder_bsp/"/>
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab01/part02/software/JPEG_Encoder_bsp/drivers/inc"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\i686-pc-cygwin"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\backward"/>
@@ -221,10 +224,17 @@
 <definedSymbol symbol="unix=1"/>
 <definedSymbol symbol="__unix__=1"/>
 <definedSymbol symbol="__unix=1"/>
+<definedSymbol symbol="SYSTEM_BUS_WIDTH=32"/>
+<definedSymbol symbol="__hal__=1"/>
+<definedSymbol symbol="ALT_NO_INSTRUCTION_EMULATION=1"/>
+<definedSymbol symbol="ALT_SINGLE_THREADED=1"/>
 </collector>
 </instance>
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1812769304;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1812769304.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.1272174727;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.200770335">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab01/part02/software/JPEG_Encoder_bsp/HAL/inc"/>
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab01/part02/software/JPEG_Encoder_bsp/"/>
+<includePath path="E:/Education/Academic/workspaces/co503_labs/lab01/part02/software/JPEG_Encoder_bsp/drivers/inc"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include"/>
 <includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include-fixed"/>
 <includePath path="F:\altera\quartus\bin\cygwin\usr\include"/>
@@ -432,6 +442,10 @@
 <definedSymbol symbol="unix=1"/>
 <definedSymbol symbol="__unix__=1"/>
 <definedSymbol symbol="__unix=1"/>
+<definedSymbol symbol="SYSTEM_BUS_WIDTH=32"/>
+<definedSymbol symbol="__hal__=1"/>
+<definedSymbol symbol="ALT_NO_INSTRUCTION_EMULATION=1"/>
+<definedSymbol symbol="ALT_SINGLE_THREADED=1"/>
 </collector>
 </instance>
 </scannerInfo>

@@ -100,19 +100,19 @@
          type = "String";
       }
    }
-   element timer.s1
-   {
-      datum baseAddress
-      {
-         value = "0";
-         type = "String";
-      }
-   }
    element sdram.s1
    {
       datum baseAddress
       {
          value = "134217728";
+         type = "String";
+      }
+   }
+   element timer.s1
+   {
+      datum baseAddress
+      {
+         value = "0";
          type = "String";
       }
    }

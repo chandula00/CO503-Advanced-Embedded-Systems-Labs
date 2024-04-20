@@ -7,6 +7,8 @@
 			<item value="E:\Education\Academic\workspaces\co503_labs\lab01\part02\JPEG_Encoder"/>
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
