@@ -770,7 +770,7 @@
 														<format>dock.PlaceholderList</format>
 													</placeholder-map>
 												</leaf>
-												<leaf id="1" nodeId="1375985011087">
+												<leaf id="0" nodeId="1375985011087">
 													<placeholders>
 														<placeholder>dock.single.Hierarchy</placeholder>
 													</placeholders>
@@ -779,7 +779,7 @@
 											<node nodeId="1372710005725" orientation="VERTICAL" divider="0.75">
 												<node nodeId="1372710005727" orientation="HORIZONTAL" divider="0.75">
 													<node nodeId="1372710005733" orientation="VERTICAL" divider="0.75">
-														<leaf id="0" nodeId="1372710005735">
+														<leaf id="1" nodeId="1372710005735">
 															<placeholders>
 																<placeholder>dock.single.Clocks</placeholder>
 																<placeholder>dock.single.Project\ Settings</placeholder>
@@ -845,6 +845,16 @@
 								</layout>
 							</adjacent>
 							<children ignore="false">
+								<child>
+									<layout factory="predefined" placeholder="dock.single.Hierarchy">
+										<replacement id="dockablesingle Hierarchy"/>
+										<delegate id="delegate_ccontrol backup factory id">
+											<id>Hierarchy</id>
+											<area/>
+										</delegate>
+									</layout>
+									<children ignore="false"/>
+								</child>
 								<child>
 									<layout factory="delegate_StackDockStationFactory">
 										<selected>0</selected>
@@ -967,16 +977,6 @@
 											<children ignore="false"/>
 										</child>
 									</children>
-								</child>
-								<child>
-									<layout factory="predefined" placeholder="dock.single.Hierarchy">
-										<replacement id="dockablesingle Hierarchy"/>
-										<delegate id="delegate_ccontrol backup factory id">
-											<id>Hierarchy</id>
-											<area/>
-										</delegate>
-									</layout>
-									<children ignore="false"/>
 								</child>
 								<child>
 									<layout factory="predefined" placeholder="dock.single.Library">
@@ -1245,6 +1245,34 @@
 									<replacement id="dockablesingle Parameters"/>
 									<delegate id="delegate_ccontrol backup factory id">
 										<id>Parameters</id>
+										<area/>
+									</delegate>
+								</layout>
+								<children ignore="false"/>
+							</layout>
+						</child>
+						<child key="single Element Docs" root="ccontrol center" location="true">
+							<location>
+								<property factory="SplitDockPlaceholderProperty">
+									<placeholder>dock.single.Element\ Docs</placeholder>
+									<backup-path>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="RIGHT" size="0.25"/>
+										<node location="TOP" size="0.5"/>
+										<leaf id="-1"/>
+									</backup-path>
+								</property>
+								<property factory="StackDockPropertyFactory">
+									<index>1</index>
+									<placeholder>dock.single.Element\ Docs</placeholder>
+								</property>
+							</location>
+							<layout>
+								<layout factory="predefined" placeholder="dock.single.Element\ Docs">
+									<replacement id="dockablesingle Element Docs"/>
+									<delegate id="delegate_ccontrol backup factory id">
+										<id>Element Docs</id>
 										<area/>
 									</delegate>
 								</layout>
@@ -1599,6 +1627,33 @@
 										<property factory="StackDockPropertyFactory">
 											<index>7</index>
 											<placeholder>dock.single.Connections\ \-\ Beta</placeholder>
+										</property>
+									</location>
+								</property>
+							</properties>
+						</entry>
+						<entry id="single Element Docs">
+							<history>
+								<mode>dock.mode.normal</mode>
+							</history>
+							<properties>
+								<property id="dock.mode.normal">
+									<mode>dock.mode.normal</mode>
+									<root>ccontrol center</root>
+									<location>
+										<property factory="SplitDockPlaceholderProperty">
+											<placeholder>dock.single.Element\ Docs</placeholder>
+											<backup-path>
+												<node location="RIGHT" size="0.8" id="1713862603709"/>
+												<node location="TOP" size="0.75" id="1713862603714"/>
+												<node location="RIGHT" size="0.25" id="1713862603716"/>
+												<node location="TOP" size="0.5" id="1713862603724"/>
+												<leaf id="1713862603726"/>
+											</backup-path>
+										</property>
+										<property factory="StackDockPropertyFactory">
+											<index>1</index>
+											<placeholder>dock.single.Element\ Docs</placeholder>
 										</property>
 									</location>
 								</property>

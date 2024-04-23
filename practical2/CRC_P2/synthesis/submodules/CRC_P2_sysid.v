@@ -36,7 +36,7 @@ module CRC_P2_sysid (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1713344567 : 0;
+  assign readdata = address ? 1713864293 : 0;
 
 endmodule
 

@@ -3,18 +3,18 @@
  <debug showDebugMenu="0" />
  <systemtable>
   <columns>
-   <connections preferredWidth="191" />
+   <connections preferredWidth="47" />
    <irq preferredWidth="34" />
    <name preferredWidth="215" />
   </columns>
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="170" />
-   <clocksource preferredWidth="170" />
-   <frequency preferredWidth="151" />
+   <clockname preferredWidth="347" />
+   <clocksource preferredWidth="347" />
+   <frequency preferredWidth="329" />
   </columns>
  </clocktable>
- <window width="1884" height="1038" x="0" y="0" />
+ <window width="1884" height="1030" x="0" y="0" />
  <library expandedCategories="Library,Project" />
 </preferences>
