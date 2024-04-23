@@ -2750,3 +2750,46 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY com.altera.sbtgui.launch 4 0 2024-04-18 23:20:52.683
 !MESSAGE Downloading ELF Process failed
+!SESSION 2024-04-23 15:11:46.748 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-23 15:13:43.570
+!MESSAGE Indexed 'CRC_CI_bsp' (82 sources, 111 headers) in 4.55 sec: 2,328 declarations; 4,182 references; 59 unresolved inclusions; 512 syntax errors; 276 unresolved names (4.07%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-23 15:13:45.380
+!MESSAGE Indexed 'CRC_CI' (0 sources, 13 headers) in 0.02 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-23 15:17:26.017
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10000040]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-23 15:17:31.513
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10000040 /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/CRC_CI/CRC_CI.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2024-04-23 15:17:40.193
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x10000040, /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/CRC_CI/CRC_CI.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2024-04-23 15:17:40.198
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-23 15:28:07.001
+!MESSAGE Indexed 'NEW_CRC_bsp' (82 sources, 111 headers) in 2.98 sec: 2,379 declarations; 3,805 references; 83 unresolved inclusions; 59 syntax errors; 177 unresolved names (2.78%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-23 15:28:08.874
+!MESSAGE Indexed 'NEW_CRC' (0 sources, 13 headers) in 0.03 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-23 15:31:41.025
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10000040]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-04-23 15:31:46.059
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10000040 /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/NEW_CRC/NEW_CRC.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2024-04-23 15:31:54.437
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x10000040, /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab02/software/NEW_CRC/NEW_CRC.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2024-04-23 15:31:54.440
+!MESSAGE Downloading ELF Process failed

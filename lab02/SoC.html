@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2024.04.18.23:10:38</td>
+    <td class="l">2024.04.23.15:26:38</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -1609,7 +1609,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">timestamp</td>
-        <td class="parametervalue">1713462038</td>
+        <td class="parametervalue">1713866198</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_CLK_CLOCK_RATE</td>
@@ -1642,7 +1642,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">TIMESTAMP</td>
-        <td class="parametervalue">1713462038</td>
+        <td class="parametervalue">1713866198</td>
        </tr>
       </table>
      </td>
@@ -2031,7 +2031,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_pll">pll</a>
       </td>
       <td class="from">c0&#160;&#160;</td>
-      <td class="main" rowspan="47">cpu</td>
+      <td class="main" rowspan="49">cpu</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk</td>
@@ -2244,7 +2244,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="from">d_irq&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
+      <td class="neighbor" rowspan="4">
        <a href="#module_high_resolution_timer">high_resolution_timer</a>
       </td>
      </tr>
@@ -2252,6 +2252,16 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="to">&#160;&#160;irq</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;reset</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -3218,7 +3228,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_clock_crossing_bridge">clock_crossing_bridge</a>
       </td>
       <td class="from">m0&#160;&#160;</td>
-      <td class="main" rowspan="11">high_resolution_timer</td>
+      <td class="main" rowspan="13">high_resolution_timer</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;s1</td>
@@ -3227,13 +3237,19 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
      </tr>
      <tr>
-      <td class="neighbor" rowspan="2">
+      <td class="neighbor" rowspan="4">
        <a href="#module_cpu">cpu</a>
       </td>
       <td class="from">d_irq&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;irq</td>
+     </tr>
+     <tr>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;reset</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -3473,8 +3489,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </div>
   <table class="blueBar">
    <tr>
-    <td class="l">generation took 0.01 seconds</td>
-    <td class="r">rendering took 0.14 seconds</td>
+    <td class="l">generation took 0.00 seconds</td>
+    <td class="r">rendering took 0.18 seconds</td>
    </tr>
   </table>
  </body>

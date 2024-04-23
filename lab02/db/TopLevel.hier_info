@@ -73,7 +73,6 @@ reset_reset_n => _.IN1
 reset_reset_n => _.IN1
 reset_reset_n => _.IN1
 reset_reset_n => _.IN1
-reset_reset_n => _.IN1
 led_out_external_connection_export[0] <= SoC_led_out:led_out.out_port
 led_out_external_connection_export[1] <= SoC_led_out:led_out.out_port
 led_out_external_connection_export[2] <= SoC_led_out:led_out.out_port
@@ -1486,12 +1485,14 @@ address => readdata[29].DATAIN
 address => readdata[26].DATAIN
 address => readdata[25].DATAIN
 address => readdata[21].DATAIN
+address => readdata[18].DATAIN
+address => readdata[17].DATAIN
 address => readdata[16].DATAIN
-address => readdata[14].DATAIN
-address => readdata[12].DATAIN
-address => readdata[11].DATAIN
-address => readdata[9].DATAIN
+address => readdata[15].DATAIN
+address => readdata[10].DATAIN
 address => readdata[8].DATAIN
+address => readdata[7].DATAIN
+address => readdata[6].DATAIN
 address => readdata[4].DATAIN
 address => readdata[2].DATAIN
 address => readdata[1].DATAIN
@@ -1503,19 +1504,19 @@ readdata[2] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[3] <= <GND>
 readdata[4] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[5] <= <GND>
-readdata[6] <= <GND>
-readdata[7] <= <GND>
+readdata[6] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[7] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[8] <= address.DB_MAX_OUTPUT_PORT_TYPE
-readdata[9] <= address.DB_MAX_OUTPUT_PORT_TYPE
-readdata[10] <= <GND>
-readdata[11] <= address.DB_MAX_OUTPUT_PORT_TYPE
-readdata[12] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[9] <= <GND>
+readdata[10] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[11] <= <GND>
+readdata[12] <= <GND>
 readdata[13] <= <GND>
-readdata[14] <= address.DB_MAX_OUTPUT_PORT_TYPE
-readdata[15] <= <GND>
+readdata[14] <= <GND>
+readdata[15] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[16] <= address.DB_MAX_OUTPUT_PORT_TYPE
-readdata[17] <= <GND>
-readdata[18] <= <GND>
+readdata[17] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[18] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[19] <= <GND>
 readdata[20] <= <GND>
 readdata[21] <= address.DB_MAX_OUTPUT_PORT_TYPE
@@ -15250,8 +15251,7 @@ ci_master_done => ci_slave_done.DATAIN
 
 |TopLevel|SoC:inst|SoC_mm_interconnect_0:mm_interconnect_0
 pll_c1_clk => pll_c1_clk.IN24
-clock_crossing_bridge_m0_reset_reset_bridge_in_reset_reset => clock_crossing_bridge_m0_reset_reset_bridge_in_reset_reset.IN18
-high_resolution_timer_reset_reset_bridge_in_reset_reset => high_resolution_timer_reset_reset_bridge_in_reset_reset.IN6
+clock_crossing_bridge_m0_reset_reset_bridge_in_reset_reset => clock_crossing_bridge_m0_reset_reset_bridge_in_reset_reset.IN24
 clock_crossing_bridge_m0_address[0] => clock_crossing_bridge_m0_address[0].IN1
 clock_crossing_bridge_m0_address[1] => clock_crossing_bridge_m0_address[1].IN1
 clock_crossing_bridge_m0_address[2] => clock_crossing_bridge_m0_address[2].IN1
@@ -54053,62 +54053,6 @@ reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|SoC:inst|altera_reset_controller:rst_controller_003|altera_reset_synchronizer:alt_rst_req_sync_uq1
-reset_in => altera_reset_synchronizer_int_chain[1].DATAIN
-clk => altera_reset_synchronizer_int_chain_out.CLK
-clk => altera_reset_synchronizer_int_chain[0].CLK
-clk => altera_reset_synchronizer_int_chain[1].CLK
-reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|TopLevel|SoC:inst|altera_reset_controller:rst_controller_004
-reset_in0 => merged_reset.IN0
-reset_in1 => merged_reset.IN1
-reset_in2 => merged_reset.IN1
-reset_in3 => merged_reset.IN1
-reset_in4 => merged_reset.IN1
-reset_in5 => merged_reset.IN1
-reset_in6 => merged_reset.IN1
-reset_in7 => merged_reset.IN1
-reset_in8 => merged_reset.IN1
-reset_in9 => merged_reset.IN1
-reset_in10 => merged_reset.IN1
-reset_in11 => merged_reset.IN1
-reset_in12 => merged_reset.IN1
-reset_in13 => merged_reset.IN1
-reset_in14 => merged_reset.IN1
-reset_in15 => merged_reset.IN1
-reset_req_in0 => ~NO_FANOUT~
-reset_req_in1 => ~NO_FANOUT~
-reset_req_in2 => ~NO_FANOUT~
-reset_req_in3 => ~NO_FANOUT~
-reset_req_in4 => ~NO_FANOUT~
-reset_req_in5 => ~NO_FANOUT~
-reset_req_in6 => ~NO_FANOUT~
-reset_req_in7 => ~NO_FANOUT~
-reset_req_in8 => ~NO_FANOUT~
-reset_req_in9 => ~NO_FANOUT~
-reset_req_in10 => ~NO_FANOUT~
-reset_req_in11 => ~NO_FANOUT~
-reset_req_in12 => ~NO_FANOUT~
-reset_req_in13 => ~NO_FANOUT~
-reset_req_in14 => ~NO_FANOUT~
-reset_req_in15 => ~NO_FANOUT~
-clk => clk.IN2
-reset_out <= altera_reset_synchronizer:alt_rst_sync_uq1.reset_out
-reset_req <= altera_reset_synchronizer:alt_rst_req_sync_uq1.reset_out
-
-
-|TopLevel|SoC:inst|altera_reset_controller:rst_controller_004|altera_reset_synchronizer:alt_rst_sync_uq1
-reset_in => altera_reset_synchronizer_int_chain_out.PRESET
-reset_in => altera_reset_synchronizer_int_chain[0].PRESET
-reset_in => altera_reset_synchronizer_int_chain[1].PRESET
-clk => altera_reset_synchronizer_int_chain_out.CLK
-clk => altera_reset_synchronizer_int_chain[0].CLK
-clk => altera_reset_synchronizer_int_chain[1].CLK
-reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|TopLevel|SoC:inst|altera_reset_controller:rst_controller_004|altera_reset_synchronizer:alt_rst_req_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain[1].DATAIN
 clk => altera_reset_synchronizer_int_chain_out.CLK
 clk => altera_reset_synchronizer_int_chain[0].CLK

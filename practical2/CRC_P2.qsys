@@ -76,11 +76,11 @@
          type = "int";
       }
    }
-   element timer_0.s1
+   element onchip_mem.s1
    {
-      datum _tags
+      datum baseAddress
       {
-         value = "";
+         value = "262144";
          type = "String";
       }
    }
@@ -92,11 +92,11 @@
          type = "String";
       }
    }
-   element onchip_mem.s1
+   element timer_0.s1
    {
-      datum baseAddress
+      datum _tags
       {
-         value = "262144";
+         value = "";
          type = "String";
       }
    }
@@ -287,7 +287,7 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='timer_0.s1' start='0x0' end='0x20' /><slave name='onchip_mem.s1' start='0x40000' end='0x80000' /><slave name='cpu.jtag_debug_module' start='0x80800' end='0x81000' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x40000' end='0x80000' /><slave name='cpu.jtag_debug_module' start='0x80800' end='0x81000' /></address-map>]]></parameter>
   <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='timer_0.s1' start='0x0' end='0x20' /><slave name='onchip_mem.s1' start='0x40000' end='0x80000' /><slave name='cpu.jtag_debug_module' start='0x80800' end='0x81000' /><slave name='timer.s1' start='0x81000' end='0x81020' /><slave name='sysid.control_slave' start='0x81030' end='0x81038' /><slave name='jtag_uart.avalon_jtag_slave' start='0x81038' end='0x81040' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone IV E" />
@@ -470,15 +470,6 @@
    start="cpu.jtag_debug_module_reset"
    end="timer_0.reset" />
  <connection kind="clock" version="13.1" start="clock.clk" end="timer_0.clk" />
- <connection
-   kind="avalon"
-   version="13.1"
-   start="cpu.instruction_master"
-   end="timer_0.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
  <connection kind="avalon" version="13.1" start="cpu.data_master" end="timer_0.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />

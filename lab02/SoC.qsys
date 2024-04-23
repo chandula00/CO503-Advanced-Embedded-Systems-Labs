@@ -124,14 +124,6 @@
          type = "String";
       }
    }
-   element high_resolution_timer.s1
-   {
-      datum baseAddress
-      {
-         value = "0";
-         type = "String";
-      }
-   }
    element timer.s1
    {
       datum baseAddress
@@ -153,6 +145,14 @@
       datum baseAddress
       {
          value = "134217728";
+         type = "String";
+      }
+   }
+   element high_resolution_timer.s1
+   {
+      datum baseAddress
+      {
+         value = "0";
          type = "String";
       }
    }
@@ -188,7 +188,7 @@
  <parameter name="deviceSpeedGrade" value="7" />
  <parameter name="fabricMode" value="QSYS" />
  <parameter name="generateLegacySim" value="false" />
- <parameter name="generationId" value="0" />
+ <parameter name="generationId" value="1" />
  <parameter name="globalResetBus" value="false" />
  <parameter name="hdlLanguage" value="VERILOG" />
  <parameter name="maxAdditionalLatency" value="1" />
@@ -415,7 +415,7 @@
    enabled="1"
    name="sysid">
   <parameter name="id" value="0" />
-  <parameter name="timestamp" value="0" />
+  <parameter name="timestamp" value="1" />
   <parameter name="AUTO_CLK_CLOCK_RATE" value="10000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
  </module>
@@ -837,6 +837,11 @@
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0" />
  </connection>
+ <connection
+   kind="reset"
+   version="13.1"
+   start="cpu.jtag_debug_module_reset"
+   end="high_resolution_timer.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="false" />
