@@ -1,5 +1,5 @@
 Flow report for TopLevel
-Tue Apr 23 15:29:12 2024
+Tue Apr 23 15:50:52 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 23 15:29:02 2024      ;
+; Flow Status                        ; Successful - Tue Apr 23 15:50:41 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; TopLevel                                   ;
 ; Top-level Entity Name              ; TopLevel                                   ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 3,065 / 114,480 ( 3 % )                    ;
-;     Total combinational functions  ; 2,768 / 114,480 ( 2 % )                    ;
-;     Dedicated logic registers      ; 1,750 / 114,480 ( 2 % )                    ;
-; Total registers                    ; 1869                                       ;
+; Total logic elements               ; 3,202 / 114,480 ( 3 % )                    ;
+;     Total combinational functions  ; 2,830 / 114,480 ( 2 % )                    ;
+;     Dedicated logic registers      ; 1,879 / 114,480 ( 2 % )                    ;
+; Total registers                    ; 1998                                       ;
 ; Total pins                         ; 66 / 529 ( 12 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 11,452 / 3,981,312 ( < 1 % )               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/23/2024 15:27:19 ;
+; Start date & time ; 04/23/2024 15:48:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TopLevel            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------------------------------+---------------+--------------------------------------------------+------------+
 ; Assignment Name                     ; Value                                                 ; Default Value ; Entity Name                                      ; Section Id ;
 +-------------------------------------+-------------------------------------------------------+---------------+--------------------------------------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 198642175177194.171386623910204                       ; --            ; --                                               ; --         ;
+; COMPILER_SIGNATURE_ID               ; 198642175177194.171386753801728                       ; --            ; --                                               ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC                                              ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_cpu                                          ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_cpu_custom_instruction_master_multi_xconnect ; --         ;
@@ -87,8 +87,11 @@ applicable agreement for further details.
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_0_addr_router                ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_0_cmd_xbar_demux             ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_0_cmd_xbar_mux               ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_0_cmd_xbar_mux_002           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_0_id_router                  ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_0_id_router_002              ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_0_rsp_xbar_demux             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_0_rsp_xbar_demux_002         ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_0_rsp_xbar_mux               ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_1                            ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                  ; --            ; SoC_mm_interconnect_1_addr_router                ; --         ;
@@ -132,8 +135,11 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; altera_merlin_router                                  ; --            ; SoC_mm_interconnect_0_addr_router                ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                           ; --            ; SoC_mm_interconnect_0_cmd_xbar_demux             ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_multiplexer                             ; --            ; SoC_mm_interconnect_0_cmd_xbar_mux               ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                             ; --            ; SoC_mm_interconnect_0_cmd_xbar_mux_002           ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_router                                  ; --            ; SoC_mm_interconnect_0_id_router                  ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                  ; --            ; SoC_mm_interconnect_0_id_router_002              ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                           ; --            ; SoC_mm_interconnect_0_rsp_xbar_demux             ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                           ; --            ; SoC_mm_interconnect_0_rsp_xbar_demux_002         ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_multiplexer                             ; --            ; SoC_mm_interconnect_0_rsp_xbar_mux               ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_interconnect_wrapper                    ; --            ; SoC_mm_interconnect_1                            ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_router                                  ; --            ; SoC_mm_interconnect_1_addr_router                ; --         ;
@@ -177,8 +183,11 @@ applicable agreement for further details.
 ; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_0_addr_router                ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_0_cmd_xbar_demux             ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_0_cmd_xbar_mux               ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_0_cmd_xbar_mux_002           ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_0_id_router                  ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_0_id_router_002              ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_0_rsp_xbar_demux             ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_0_rsp_xbar_demux_002         ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_0_rsp_xbar_mux               ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_1                            ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; SoC_mm_interconnect_1_addr_router                ; --         ;
@@ -223,7 +232,7 @@ applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                          ; --            ; --                                               ; --         ;
 ; SLD_FILE                            ; SoC/synthesis/SoC.regmap                              ; --            ; --                                               ; --         ;
 ; SLD_FILE                            ; SoC/synthesis/SoC.debuginfo                           ; --            ; --                                               ; --         ;
-; SLD_INFO                            ; QSYS_NAME SoC HAS_SOPCINFO 1 GENERATION_ID 1713866198 ; --            ; SoC                                              ; --         ;
+; SLD_INFO                            ; QSYS_NAME SoC HAS_SOPCINFO 1 GENERATION_ID 1713867489 ; --            ; SoC                                              ; --         ;
 ; SOPCINFO_FILE                       ; SoC/synthesis/../../SoC.sopcinfo                      ; --            ; --                                               ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                    ; --            ; --                                               ; --         ;
 +-------------------------------------+-------------------------------------------------------+---------------+--------------------------------------------------+------------+
@@ -234,11 +243,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:34     ; 1.0                     ; 4801 MB             ; 00:00:27                           ;
-; Fitter                    ; 00:00:48     ; 1.4                     ; 5634 MB             ; 00:00:57                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 4637 MB             ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 4776 MB             ; 00:00:07                           ;
-; Total                     ; 00:01:38     ; --                      ; --                  ; 00:01:39                           ;
+; Analysis & Synthesis      ; 00:00:39     ; 1.0                     ; 4802 MB             ; 00:00:36                           ;
+; Fitter                    ; 00:00:48     ; 1.4                     ; 5639 MB             ; 00:00:55                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4625 MB             ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 4787 MB             ; 00:00:06                           ;
+; Total                     ; 00:01:41     ; --                      ; --                  ; 00:01:44                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

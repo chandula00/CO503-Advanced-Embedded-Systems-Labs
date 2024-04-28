@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2024.04.23.15:26:38</td>
+    <td class="l">2024.04.23.15:48:09</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -435,9 +435,9 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <tr>
       <td></td>
       <td></td>
-      <td class="from">c1&#160;&#160;</td>
+      <td class="from">c0&#160;&#160;</td>
       <td class="neighbor" rowspan="2">
-       <a href="#module_high_resolution_timer">high_resolution_timer</a>
+       <a href="#module_sdram">sdram</a>
       </td>
      </tr>
      <tr>
@@ -453,7 +453,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td class="from">c0&#160;&#160;</td>
       <td class="neighbor" rowspan="2">
-       <a href="#module_sdram">sdram</a>
+       <a href="#module_high_resolution_timer">high_resolution_timer</a>
       </td>
      </tr>
      <tr>
@@ -1609,7 +1609,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">timestamp</td>
-        <td class="parametervalue">1713866198</td>
+        <td class="parametervalue">1713867489</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_CLK_CLOCK_RATE</td>
@@ -1642,7 +1642,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">TIMESTAMP</td>
-        <td class="parametervalue">1713866198</td>
+        <td class="parametervalue">1713867489</td>
        </tr>
       </table>
      </td>
@@ -3256,24 +3256,24 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
-       <a href="#module_pll">pll</a>
-      </td>
-      <td class="from">c1&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clk</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
        <a href="#module_clock">clock</a>
       </td>
       <td class="from">clk_reset&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_pll">pll</a>
+      </td>
+      <td class="from">c0&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clk</td>
      </tr>
     </table>
    </div>
@@ -3318,7 +3318,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">systemFrequency</td>
-        <td class="parametervalue">10000000</td>
+        <td class="parametervalue">100000000</td>
        </tr>
        <tr>
         <td class="parametername">timerPreset</td>
@@ -3334,7 +3334,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">loadValue</td>
-        <td class="parametervalue">9</td>
+        <td class="parametervalue">99</td>
        </tr>
        <tr>
         <td class="parametername">mult</td>
@@ -3379,11 +3379,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">FREQ</td>
-        <td class="parametervalue">10000000</td>
+        <td class="parametervalue">100000000</td>
        </tr>
        <tr>
         <td class="parametername">LOAD_VALUE</td>
-        <td class="parametervalue">9</td>
+        <td class="parametervalue">99</td>
        </tr>
        <tr>
         <td class="parametername">MULT</td>
@@ -3489,8 +3489,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </div>
   <table class="blueBar">
    <tr>
-    <td class="l">generation took 0.00 seconds</td>
-    <td class="r">rendering took 0.18 seconds</td>
+    <td class="l">generation took 0.01 seconds</td>
+    <td class="r">rendering took 0.33 seconds</td>
    </tr>
   </table>
  </body>

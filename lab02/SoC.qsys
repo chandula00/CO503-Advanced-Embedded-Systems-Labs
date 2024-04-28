@@ -124,11 +124,11 @@
          type = "String";
       }
    }
-   element timer.s1
+   element high_resolution_timer.s1
    {
       datum baseAddress
       {
-         value = "32";
+         value = "0";
          type = "String";
       }
    }
@@ -140,19 +140,19 @@
          type = "String";
       }
    }
+   element timer.s1
+   {
+      datum baseAddress
+      {
+         value = "32";
+         type = "String";
+      }
+   }
    element sdram.s1
    {
       datum baseAddress
       {
          value = "134217728";
-         type = "String";
-      }
-   }
-   element high_resolution_timer.s1
-   {
-      datum baseAddress
-      {
-         value = "0";
          type = "String";
       }
    }
@@ -619,7 +619,7 @@
   <parameter name="resetOutput" value="false" />
   <parameter name="snapshot" value="true" />
   <parameter name="timeoutPulseOutput" value="false" />
-  <parameter name="systemFrequency" value="10000000" />
+  <parameter name="systemFrequency" value="100000000" />
  </module>
  <module kind="CRC_Custom_Instruction" version="1.0" enabled="1" name="crc_0">
   <parameter name="crc_width" value="32" />
@@ -818,11 +818,6 @@
   <parameter name="irqNumber" value="1" />
  </connection>
  <connection
-   kind="clock"
-   version="13.1"
-   start="pll.c1"
-   end="high_resolution_timer.clk" />
- <connection
    kind="reset"
    version="13.1"
    start="clock.clk_reset"
@@ -842,6 +837,11 @@
    version="13.1"
    start="cpu.jtag_debug_module_reset"
    end="high_resolution_timer.reset" />
+ <connection
+   kind="clock"
+   version="13.1"
+   start="pll.c0"
+   end="high_resolution_timer.clk" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="false" />
