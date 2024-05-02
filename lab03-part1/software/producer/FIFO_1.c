@@ -3,17 +3,15 @@
  *
  *  	DATE		: 18-08-2016
  *      AUTHOR	: Isuru Nawinne
-*
-*	Structure of the FIFO:
-*	___________________________________________________________________________
-*	| 	full	| 	empty	| 	count		|	|	|	|	|	|	|	|	|
-*	| 	?	| 	?		| 	?		|	|	|	|	|	|	|	|	|
-*	___________________________________________________________________________
-*/
-
+ *
+ *	Structure of the FIFO:
+ *	___________________________________________________________________________
+ *	| 	full	| 	empty	| 	count		|	|	|	|	|	|	|	|	|
+ *	| 	?	| 	?		| 	?		|	|	|	|	|	|	|	|	|
+ *	___________________________________________________________________________
+ */
 
 #include "FIFO_1.h"
-
 
 void WRITE_FIFO_1(int *buffer)
 {
@@ -30,7 +28,6 @@ void WRITE_FIFO_1(int *buffer)
 	// Reset the empty flag if FIFO now has 1 enrty
 }
 
-
 void READ_FIFO_1(int *buffer)
 {
 	// Wait if the fifo is empty
@@ -46,16 +43,14 @@ void READ_FIFO_1(int *buffer)
 	// Reset the full flag if FIFO now has 1 enrty less than capacity
 }
 
-
-
-//Initialization
+// Initialization
 void FIFO_1_INIT()
 {
-	writep = ???; // Initially the FIFO is empty, so start writing at the first slot
-	readp  = ???;
-	fullp   = ?????; // SET THIS OFFSET (If there are previous FIFOs in shared memory, use Prev Fifo's STARTP + Prev Fifo's size)
-	emptyp   = fullp + ?????;
-	countp  = emptyp + ?????;
+	writep = ? ? ? ; // Initially the FIFO is empty, so start writing at the first slot
+	readp = ? ? ? ;
+	fullp = ? ? ? ?	 ? ; // SET THIS OFFSET (If there are previous FIFOs in shared memory, use Prev Fifo's STARTP + Prev Fifo's size)
+	emptyp = fullp + ? ? ? ? ? ;
+	countp = emptyp + ? ? ? ? ? ;
 
 	// Assigning values for the flags.
 	IOWR_32DIRECT(MEM_BASE, fullp, ?);

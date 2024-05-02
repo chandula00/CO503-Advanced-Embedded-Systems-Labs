@@ -2,11 +2,11 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Apr 28, 2024 1:18:38 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1714290518696</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab03\software\consumer_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>May 2, 2024 4:35:33 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1714647933555</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab03-part1\software\consumer_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
-        <SopcDesignFile>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab03\SoC.sopcinfo</SopcDesignFile>
+        <SopcDesignFile>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab03-part1\SoC.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu1</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -863,20 +863,20 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <LinkerRegion>
-                <regionName>onchip_data_memory_cpu1</regionName>
-                <memoryName>onchip_data_memory</memoryName>
-                <offset>0</offset>
-                <size>114688</size>
-                <baseAddress>0x0</baseAddress>
-                <addressRange>0x00000000 - 0x0001BFFF</addressRange>
-        </LinkerRegion>
-        <LinkerRegion>
                 <regionName>onchip_data_memory_shared</regionName>
                 <memoryName>onchip_data_memory</memoryName>
-                <offset>229376</offset>
-                <size>32768</size>
-                <baseAddress>0x38000</baseAddress>
-                <addressRange>0x00038000 - 0x0003FFFF</addressRange>
+                <offset>0</offset>
+                <size>65536</size>
+                <baseAddress>0x0</baseAddress>
+                <addressRange>0x00000000 - 0x0000FFFF</addressRange>
+        </LinkerRegion>
+        <LinkerRegion>
+                <regionName>onchip_data_memory_cpu1</regionName>
+                <memoryName>onchip_data_memory</memoryName>
+                <offset>163840</offset>
+                <size>98304</size>
+                <baseAddress>0x28000</baseAddress>
+                <addressRange>0x00028000 - 0x0003FFFF</addressRange>
         </LinkerRegion>
         <LinkerRegion>
                 <regionName>reset</regionName>

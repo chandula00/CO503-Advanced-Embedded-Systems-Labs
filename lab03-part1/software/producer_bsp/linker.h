@@ -2,9 +2,9 @@
  * linker.h - Linker script mapping information
  *
  * Machine generated for CPU 'cpu0' in SOPC Builder design 'SoC'
- * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03/SoC.sopcinfo
+ * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/SoC.sopcinfo
  *
- * Generated: Sun Apr 28 13:20:57 IST 2024
+ * Generated: Thu May 02 16:30:10 IST 2024
  */
 
 /*
@@ -65,10 +65,10 @@
  *
  */
 
-#define ONCHIP_DATA_MEMORY_CPU0_REGION_BASE 0x1c000
-#define ONCHIP_DATA_MEMORY_CPU0_REGION_SPAN 114688
-#define ONCHIP_DATA_MEMORY_SHARED_REGION_BASE 0x38000
-#define ONCHIP_DATA_MEMORY_SHARED_REGION_SPAN 32768
+#define ONCHIP_DATA-MEMORY_SHARED_REGION_BASE 0x0
+#define ONCHIP_DATA-MEMORY_SHARED_REGION_SPAN 65536
+#define ONCHIP_DATA_MEMORY_CPU0_REGION_BASE 0x10000
+#define ONCHIP_DATA_MEMORY_CPU0_REGION_SPAN 98304
 #define ONCHIP_INSTRUCTION_MEMORY0_REGION_BASE 0x80020
 #define ONCHIP_INSTRUCTION_MEMORY0_REGION_SPAN 65504
 #define RESET_REGION_BASE 0x80000

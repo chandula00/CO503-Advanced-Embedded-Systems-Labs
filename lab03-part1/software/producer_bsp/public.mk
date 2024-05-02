@@ -87,7 +87,7 @@ ACDS_VERSION := 13.1
 
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
-SOPCINFO_FILE := E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03/SoC.sopcinfo
+SOPCINFO_FILE := E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/SoC.sopcinfo
 
 # Big-Endian operation. 
 # setting BIG_ENDIAN is false

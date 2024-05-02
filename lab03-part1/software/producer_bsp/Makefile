@@ -103,7 +103,7 @@ ACDS_VERSION := 13.1
 # BUILD_NUMBER: 162
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03/SoC.sopcinfo
+SOPC_FILE := E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/SoC.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

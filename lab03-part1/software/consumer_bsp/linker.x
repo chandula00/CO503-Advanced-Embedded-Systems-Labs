@@ -2,9 +2,9 @@
  * linker.x - Linker script
  *
  * Machine generated for CPU 'cpu1' in SOPC Builder design 'SoC'
- * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03/SoC.sopcinfo
+ * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/SoC.sopcinfo
  *
- * Generated: Sun Apr 28 13:18:28 IST 2024
+ * Generated: Thu May 02 16:33:05 IST 2024
  */
 
 /*
@@ -50,8 +50,8 @@
 
 MEMORY
 {
-    onchip_data_memory_cpu1 : ORIGIN = 0x0, LENGTH = 114688
-    onchip_data_memory_shared : ORIGIN = 0x38000, LENGTH = 32768
+    onchip_data_memory_shared : ORIGIN = 0x0, LENGTH = 65536
+    onchip_data_memory_cpu1 : ORIGIN = 0x28000, LENGTH = 98304
     reset : ORIGIN = 0x80000, LENGTH = 32
     onchip_instruction_memory1 : ORIGIN = 0x80020, LENGTH = 65504
 }
@@ -381,7 +381,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x1c000;
+__alt_data_end = 0x40000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -397,4 +397,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x40000 );
+PROVIDE( __alt_heap_limit    = 0x10000 );
