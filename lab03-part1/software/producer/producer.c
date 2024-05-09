@@ -5,51 +5,58 @@
  *      AUTHOR	: Isuru Nawinne
  */
 
+// #include "FIFO_1.h"
 
-#include "FIFO_1.h"
+// void delay(int n);
 
-
-void delay(int n);
-int producer();
-
+// int producer();
 
 int main()
 {
-	producer();
+	// producer();
 
-	while(1) { }
+	printf("Hiii I'm Producer\n");
+	printf("Hiii I'm Producer\n");
+	printf("Hiii I'm Producer\n");
+	printf("Hiii I'm Producer\n");
+	printf("Hiii I'm Producer\n");
+	printf("Hiii I'm Producer\n");
+	printf("Hiii I'm Producer\n");
+	printf("Hiii I'm Producer\n");
+
+	while (1)
+	{
+	}
 
 	return 0;
 }
 
+// int producer()
+// {
+// 	printf("Producer starting..\n");
 
-int producer()
-{
-	printf("Producer starting..\n");
+// 	FIFO_1_INIT(); // Initialize the FIFO
 
-	FIFO_1_INIT(); // Initialize the FIFO
+// 	int j = 5;
+// 	while (j <= 500)
+// 	{
+// 		delay(100000);
+// 		WRITE_FIFO_1(&j); // Write to the producer-consumer fifo
+// 		delay(100000);
 
-	int j = 5;
-	while(j<=500)
-	{
-		delay(100000);
-		WRITE_FIFO_1(&j); // Write to the producer-consumer fifo
-		delay(100000);
+// 		printf("Producer sent [%i]\n", j);
+// 		j += 10;
+// 	}
 
-		printf("Producer sent [%i]\n",j);
-		j+=10;
-	}
+// 	printf("Producer finished..\n");
+// 	return 0;
+// }
 
-	printf("Producer finished..\n");
-	return 0;
-}
-
-
-void delay(int n)
-{
-	int i;
-	for(i=n; i>0; i--)
-	{
-		continue;
-	}
-}
+// void delay(int n)
+// {
+// 	int i;
+// 	for (i = n; i > 0; i--)
+// 	{
+// 		continue;
+// 	}
+// }

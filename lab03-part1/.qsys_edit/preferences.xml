@@ -17,5 +17,5 @@
  </clocktable>
  <window width="1920" height="1030" x="0" y="0" />
  <library
-   expandedCategories="Library,Project,Library/Memories and Memory Controllers,Library/Memories and Memory Controllers/On-Chip" />
+   expandedCategories="Project,Library/Peripherals,Library/Peripherals/Debug and Performance,Library/Verification/Debug &amp; Performance,Library,Library/Verification,Library/Embedded Processors" />
 </preferences>

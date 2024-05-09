@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 360 240 536 256)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "INPUT_CLOCK" (rect 5 0 82 12)(font "Arial" ))
+	(text "INPUT_CLOCK" (rect 5 0 81 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -34,9 +34,10 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 304 256 360 272))
 )
 (symbol
-	(rect 408 272 440 288)
+	(rect 416 368 448 384)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 5 20 17)(font "Arial" )(invisible))
 	(port
@@ -93,6 +94,14 @@ applicable agreement for further details.
 	(pt 696 248)
 )
 (connector
+	(pt 440 288)
+	(pt 440 384)
+)
+(connector
 	(pt 696 288)
-	(pt 424 288)
+	(pt 440 288)
+)
+(connector
+	(pt 440 384)
+	(pt 432 384)
 )

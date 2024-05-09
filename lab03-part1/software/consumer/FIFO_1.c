@@ -46,14 +46,14 @@ void READ_FIFO_1(int *buffer)
 // Initialization
 void FIFO_1_INIT()
 {
-	writep = ? ? ? ; // Initially the FIFO is empty, so start writing at the first slot
-	readp = ? ? ? ;
-	fullp = ? ? ? ?	 ? ; // SET THIS OFFSET (If there are previous FIFOs in shared memory, use Prev Fifo's STARTP + Prev Fifo's size)
-	emptyp = fullp + ? ? ? ? ? ;
-	countp = emptyp + ? ? ? ? ? ;
+	writep = 0; // Initially the FIFO is empty, so start writing at the first slot
+	readp = 0;
+	fullp = 0; // SET THIS OFFSET (If there are previous FIFOs in shared memory, use Prev Fifo's STARTP + Prev Fifo's size)
+	emptyp = fullp + 1;
+	countp = emptyp + 1;
 
 	// Assigning values for the flags.
-	IOWR_32DIRECT(MEM_BASE, fullp, ?);
-	IOWR_32DIRECT(MEM_BASE, emptyp, ?); // The fifo is empty at the start
-	IOWR_32DIRECT(MEM_BASE, countp, ?); // The fifo is empty at the start
+	IOWR_32DIRECT(MEM_BASE, fullp, 0);
+	IOWR_32DIRECT(MEM_BASE, emptyp, 0); // The fifo is empty at the start
+	IOWR_32DIRECT(MEM_BASE, countp, 0); // The fifo is empty at the start
 }
