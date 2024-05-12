@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="175" />
+   <irq preferredWidth="47" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="170" />
+   <clocksource preferredWidth="170" />
+   <frequency preferredWidth="151" />
+  </columns>
+ </clocktable>
+ <window width="1938" height="1048" x="-9" y="-9" />
+ <library
+   expandedCategories="Library/Interface Protocols/Ethernet/Example,Library,Library/Memories and Memory Controllers/On-Chip,Library/Qsys Interconnect,Project,Library/Qsys Interconnect/Memory-Mapped,Library/Interface Protocols,Library/Memories and Memory Controllers,Library/Interface Protocols/Ethernet" />
+</preferences>
