@@ -512,12 +512,12 @@ defparam SoC_cpu0_ociram_sp_ram.lpm_file = "SoC_cpu0_ociram_default_contents.hex
 //synthesis read_comments_as_HDL on
 //defparam SoC_cpu0_ociram_sp_ram.lpm_file = "SoC_cpu0_ociram_default_contents.mif";
 //synthesis read_comments_as_HDL off
-  assign cfgrom_readdata = (MonAReg[4 : 2] == 3'd0)? 32'h00050020 :
+  assign cfgrom_readdata = (MonAReg[4 : 2] == 3'd0)? 32'h00030020 :
     (MonAReg[4 : 2] == 3'd1)? 32'h00001313 :
     (MonAReg[4 : 2] == 3'd2)? 32'h00040000 :
     (MonAReg[4 : 2] == 3'd3)? 32'h00000100 :
     (MonAReg[4 : 2] == 3'd4)? 32'h20000000 :
-    (MonAReg[4 : 2] == 3'd5)? 32'h00050000 :
+    (MonAReg[4 : 2] == 3'd5)? 32'h00030000 :
     (MonAReg[4 : 2] == 3'd6)? 32'h00000000 :
     32'h00000000;
 
@@ -1491,7 +1491,7 @@ module SoC_cpu0_nios2_oci_itrace (
                   else if (is_fast_tlb_miss_exception)
                       pending_exc_handler <= 32'h0;
                   else 
-                    pending_exc_handler <= 32'h50020;
+                    pending_exc_handler <= 32'h30020;
                   pending_frametype <= 4'b0000;
                 end
               else if (is_idct)
@@ -4156,8 +4156,8 @@ module SoC_cpu0 (
     (W_br_taken | R_ctrl_uncond_cti_non_br)   ? 2'b10 :
     2'b11;
 
-  assign F_pc_no_crst_nxt = (F_pc_sel_nxt == 2'b00)? 81928 :
-    (F_pc_sel_nxt == 2'b01)? 98824 :
+  assign F_pc_no_crst_nxt = (F_pc_sel_nxt == 2'b00)? 49160 :
+    (F_pc_sel_nxt == 2'b01)? 66056 :
     (F_pc_sel_nxt == 2'b10)? E_arith_result[18 : 2] :
     F_pc_plus_one;
 
@@ -4168,7 +4168,7 @@ module SoC_cpu0 (
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
-          F_pc <= 81920;
+          F_pc <= 49152;
       else if (F_pc_en)
           F_pc <= F_pc_nxt;
     end

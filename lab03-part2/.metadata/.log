@@ -1,0 +1,64 @@
+!SESSION 2024-05-12 08:10:05.915 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:15:15.166
+!MESSAGE Indexed 'producer_bsp' (83 sources, 63 headers) in 2.30 sec: 1,064 declarations; 2,613 references; 117 unresolved inclusions; 5 syntax errors; 220 unresolved names (5.65%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:15:21.963
+!MESSAGE Indexed 'producer' (0 sources, 13 headers) in 0.01 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:16:27.543
+!MESSAGE Indexed 'consumer_bsp' (83 sources, 94 headers) in 2.39 sec: 1,760 declarations; 3,120 references; 94 unresolved inclusions; 7 syntax errors; 175 unresolved names (3.46%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:16:29.036
+!MESSAGE Indexed 'consumer' (0 sources, 13 headers) in 0.01 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.core 4 0 2024-05-12 08:36:19.933
+!MESSAGE Error executing 'nios2-bsp-generate-files --bsp-dir . --settings settings.bsp', unexpected return code 1.
+
+Error message:
+
+SEVERE: BSP not valid.
+SEVERE: BSP not valid.
+SEVERE: nios2-bsp-generate-files failed.
+
+
+!ENTRY com.altera.sbtgui.core 4 0 2024-05-12 08:37:46.037
+!MESSAGE Error executing 'nios2-bsp-generate-files --bsp-dir . --settings settings.bsp', unexpected return code 1.
+
+Error message:
+
+SEVERE: BSP not valid.
+SEVERE: BSP not valid.
+SEVERE: nios2-bsp-generate-files failed.
+
+!SESSION 2024-05-12 08:40:08.071 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:44:03.507
+!MESSAGE Indexed 'producer_bsp' (83 sources, 63 headers) in 2.02 sec: 1,064 declarations; 2,613 references; 117 unresolved inclusions; 5 syntax errors; 220 unresolved names (5.65%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:44:08.463
+!MESSAGE Indexed 'producer' (0 sources, 13 headers) in 0.01 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:57:02.092
+!MESSAGE Indexed 'producer_bsp' (83 sources, 105 headers) in 3.39 sec: 3,161 declarations; 4,234 references; 66 unresolved inclusions; 7 syntax errors; 201 unresolved names (2.65%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:57:03.177
+!MESSAGE Indexed 'producer' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:58:16.032
+!MESSAGE Indexed 'consumer_bsp' (83 sources, 110 headers) in 2.08 sec: 2,298 declarations; 3,685 references; 94 unresolved inclusions; 5 syntax errors; 179 unresolved names (2.90%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 08:58:18.066
+!MESSAGE Indexed 'consumer' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
