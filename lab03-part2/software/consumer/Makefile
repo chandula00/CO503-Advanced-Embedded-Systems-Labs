@@ -142,7 +142,8 @@ ACDS_VERSION := 13.1
 ELF := consumer.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := hello_world.c
+C_SRCS += FIFO_1.c
+C_SRCS += consumer.c
 CXX_SRCS :=
 ASM_SRCS :=
 

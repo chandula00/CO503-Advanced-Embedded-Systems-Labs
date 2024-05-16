@@ -2,7 +2,7 @@ set_global_assignment -entity "SoC" -library "SoC" -name IP_TOOL_NAME "Qsys"
 set_global_assignment -entity "SoC" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "SoC" -library "SoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "SoC" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../SoC.sopcinfo"]
-set_global_assignment -entity "SoC" -library "SoC" -name SLD_INFO "QSYS_NAME SoC HAS_SOPCINFO 1 GENERATION_ID 1715484173"
+set_global_assignment -entity "SoC" -library "SoC" -name SLD_INFO "QSYS_NAME SoC HAS_SOPCINFO 1 GENERATION_ID 1715865134"
 set_global_assignment -library "SoC" -name MISC_FILE [file join $::quartus(qip_path) "../../SoC.cmp"]
 set_global_assignment -library "SoC" -name SLD_FILE [file join $::quartus(qip_path) "SoC.regmap"]
 set_global_assignment -library "SoC" -name SLD_FILE [file join $::quartus(qip_path) "SoC.debuginfo"]
@@ -13,17 +13,14 @@ set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qi
 set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
 set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
 set_global_assignment -library "SoC" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
-set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_irq_mapper_001.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_irq_mapper.sv"]
 set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0.v"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
-set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_rsp_xbar_mux_002.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_rsp_xbar_mux_001.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_rsp_xbar_mux.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_rsp_xbar_demux_002.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_cmd_xbar_mux_002.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_cmd_xbar_mux.sv"]
-set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_cmd_xbar_demux_002.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_cmd_xbar_demux_001.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_cmd_xbar_demux.sv"]
 set_global_assignment -library "SoC" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/SoC_mm_interconnect_0_id_router_009.sv"]
@@ -77,18 +74,12 @@ set_global_assignment -library "SoC" -name VERILOG_FILE [file join $::quartus(qi
 set_global_assignment -entity "altera_reset_controller" -library "SoC" -name IP_TOOL_NAME "altera_reset_controller"
 set_global_assignment -entity "altera_reset_controller" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "altera_reset_controller" -library "SoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "SoC_irq_mapper_001" -library "SoC" -name IP_TOOL_NAME "altera_irq_mapper"
-set_global_assignment -entity "SoC_irq_mapper_001" -library "SoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "SoC_irq_mapper_001" -library "SoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "SoC_irq_mapper" -library "SoC" -name IP_TOOL_NAME "altera_irq_mapper"
 set_global_assignment -entity "SoC_irq_mapper" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "SoC_irq_mapper" -library "SoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "SoC_mm_interconnect_0" -library "SoC" -name IP_TOOL_NAME "altera_merlin_interconnect_wrapper"
 set_global_assignment -entity "SoC_mm_interconnect_0" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "SoC_mm_interconnect_0" -library "SoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "SoC_mm_interconnect_0_rsp_xbar_mux_002" -library "SoC" -name IP_TOOL_NAME "altera_merlin_multiplexer"
-set_global_assignment -entity "SoC_mm_interconnect_0_rsp_xbar_mux_002" -library "SoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "SoC_mm_interconnect_0_rsp_xbar_mux_002" -library "SoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "SoC_mm_interconnect_0_rsp_xbar_mux_001" -library "SoC" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "SoC_mm_interconnect_0_rsp_xbar_mux_001" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "SoC_mm_interconnect_0_rsp_xbar_mux_001" -library "SoC" -name IP_TOOL_ENV "Qsys"
@@ -104,9 +95,6 @@ set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_mux_002" -library 
 set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_mux" -library "SoC" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_mux" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_mux" -library "SoC" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_demux_002" -library "SoC" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
-set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_demux_002" -library "SoC" -name IP_TOOL_VERSION "13.1"
-set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_demux_002" -library "SoC" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_demux_001" -library "SoC" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
 set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_demux_001" -library "SoC" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "SoC_mm_interconnect_0_cmd_xbar_demux_001" -library "SoC" -name IP_TOOL_ENV "Qsys"

@@ -15,7 +15,7 @@
    <frequency preferredWidth="151" />
   </columns>
  </clocktable>
- <window width="1898" height="987" x="0" y="43" />
+ <window width="1938" height="1048" x="-9" y="-9" />
  <library
-   expandedCategories="Library/Bridges/Memory-Mapped,Project,Library/Verification/Simulation,Library/Verification,Library/Memories and Memory Controllers,Library/Bridges,Library,Library/Qsys Interconnect/Memory-Mapped,Library/Memories and Memory Controllers/External Memory Interfaces/Memory Models,Library/Memories and Memory Controllers/External Memory Interfaces,Library/Memories and Memory Controllers/On-Chip,Library/Qsys Interconnect" />
+   expandedCategories="Library/Qsys Interconnect,Library/Qsys Interconnect/Memory-Mapped,Library/Interface Protocols/Ethernet,Library/Interface Protocols/Ethernet/Example,Library/Memories and Memory Controllers/On-Chip,Library,Project,Library/Memories and Memory Controllers,Library/Interface Protocols" />
 </preferences>
