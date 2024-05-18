@@ -102,8 +102,8 @@ ACDS_VERSION := 13.1
 # used to generate this makefile. 
 # BUILD_NUMBER: 162
 
-SETTINGS_FILE := settings.bsp
-SOPC_FILE := D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/SoC.sopcinfo
+SETTINGS_FILE := ../final_consumer_bsp/settings.bsp
+SOPC_FILE := E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/SoC.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

@@ -2,9 +2,9 @@
  * system.h - SOPC Builder system and BSP software package information
  *
  * Machine generated for CPU 'cpu1' in SOPC Builder design 'SoC'
- * SOPC Builder design path: D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/SoC.sopcinfo
+ * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/SoC.sopcinfo
  *
- * Generated: Sun May 12 19:53:01 IST 2024
+ * Generated: Thu May 16 20:56:03 IST 2024
  */
 
 /*

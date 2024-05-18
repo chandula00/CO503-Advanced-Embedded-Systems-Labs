@@ -4,6 +4,13 @@
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.894314369;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.894314369.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.1328448556;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.855926176">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++"/>
+<includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\i686-pc-cygwin"/>
+<includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\backward"/>
+<includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include"/>
+<includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include-fixed"/>
+<includePath path="F:\altera\quartus\bin\cygwin\usr\include"/>
+<includePath path="F:\altera\quartus\bin\cygwin\usr\include\w32api"/>
 <includePath path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_2_bsp/HAL/inc"/>
 <includePath path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_2_bsp/"/>
 <includePath path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_2_bsp/drivers/inc"/>
@@ -232,6 +239,10 @@
 </instance>
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.894314369;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.894314369.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.531335321;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.774121540">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include"/>
+<includePath path="F:\altera\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include-fixed"/>
+<includePath path="F:\altera\quartus\bin\cygwin\usr\include"/>
+<includePath path="F:\altera\quartus\bin\cygwin\usr\include\w32api"/>
 <includePath path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_2_bsp/HAL/inc"/>
 <includePath path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_2_bsp/"/>
 <includePath path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_2_bsp/drivers/inc"/>
