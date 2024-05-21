@@ -105,7 +105,7 @@ void convert_picture(const char *jtag_input)
 
 		end = clock();
 
-		cpu_time = ((double)(end-start))/ CLOCKS_PER_SEC;
+		cpu_time = ((double)(end - start)) / CLOCKS_PER_SEC;
 
 		printf("Time - %f", cpu_time);
 	}

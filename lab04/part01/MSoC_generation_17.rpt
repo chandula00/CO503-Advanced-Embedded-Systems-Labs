@@ -1,0 +1,84 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/ --output-directory=E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC/ --report-file=bsf:E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.qsys
+Progress: Loading part01/MSoC.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.1]
+Progress: Parameterizing module clk
+Progress: Adding cpu1 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu1
+Progress: Adding mem1 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module mem1
+Progress: Adding timer1 [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer1
+Progress: Adding jtag_uart1 [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart1
+Progress: Adding fifo1to2A [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo1to2A
+Progress: Adding fifo1to2B [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo1to2B
+Progress: Adding fifo1to2C [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo1to2C
+Progress: Adding cpu2 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu2
+Progress: Adding mem2 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module mem2
+Progress: Adding timer2 [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer2
+Progress: Adding jtag_uart2 [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart2
+Progress: Adding cpu3 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu3
+Progress: Adding mem3 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module mem3
+Progress: Adding timer3 [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer3
+Progress: Adding jtag_uart3 [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart3
+Progress: Adding fifo2to3 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo2to3
+Progress: Adding fifo3to4 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo3to4
+Progress: Adding cpu4 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu4
+Progress: Adding mem4 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module mem4
+Progress: Adding timer4 [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer4
+Progress: Adding jtag_uart4 [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart4
+Progress: Adding fifo4to5 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo4to5
+Progress: Adding cpu5 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu5
+Progress: Adding mem5 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module mem5
+Progress: Adding timer5 [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer5
+Progress: Adding jtag_uart5 [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart5
+Progress: Adding fifo5to6 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo5to6
+Progress: Adding cpu6 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu6
+Progress: Adding mem6 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module mem6
+Progress: Adding timer6 [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer6
+Progress: Adding jtag_uart6 [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart6
+Progress: Adding fifo1to4 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo1to4
+Progress: Adding fifo1to5 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo1to5
+Progress: Adding fifo1to6 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo1to6
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: MSoC.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: MSoC.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Stopping: Create block symbol file (.bsf)

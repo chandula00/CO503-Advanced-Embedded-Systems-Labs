@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "altera_avalon_fifo.h": "c",
+    "fifo.h": "c",
+    "altera_avalon_fifo_util.h": "c"
+  }
+}

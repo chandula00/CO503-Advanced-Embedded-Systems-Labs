@@ -1,0 +1,239 @@
+!SESSION 2024-05-19 23:25:30.917 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab04\part01\test -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-19 23:28:23.423
+!MESSAGE Indexed 'cpu1_test_bsp' (82 sources, 61 headers) in 0.94 sec: 1,059 declarations; 2,586 references; 117 unresolved inclusions; 5 syntax errors; 218 unresolved names (5.64%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-19 23:28:29.057
+!MESSAGE Indexed 'cpu1_test' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-19 23:30:09.877
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-19 23:30:11.860
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu1_test/cpu1_test.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-19 23:30:43.393
+!MESSAGE Indexed 'cpu2_test_bsp' (82 sources, 112 headers) in 2.45 sec: 2,477 declarations; 3,963 references; 83 unresolved inclusions; 59 syntax errors; 177 unresolved names (2.67%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-19 23:30:43.891
+!MESSAGE Indexed 'cpu2_test' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-19 23:32:03.336
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-19 23:32:05.052
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu2_test/cpu2_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-19 23:43:40.396
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-19 23:43:40.856
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-19 23:43:42.857
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu1_test/cpu1_test.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-19 23:59:55.015
+!MESSAGE Indexed 'cpu1_test_128_mem_bsp' (82 sources, 61 headers) in 1.74 sec: 1,059 declarations; 2,586 references; 117 unresolved inclusions; 5 syntax errors; 218 unresolved names (5.64%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 00:00:02.345
+!MESSAGE Indexed 'cpu1_test_128_mem' (0 sources, 13 headers) in 0.18 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 00:03:40.649
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 00:03:42.759
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu1_test_128_mem/cpu1_test_128_mem.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 00:10:05.095
+!MESSAGE Indexed 'cpu1_test_70_mem_bsp' (82 sources, 61 headers) in 1.96 sec: 1,059 declarations; 2,586 references; 117 unresolved inclusions; 5 syntax errors; 218 unresolved names (5.64%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 00:10:10.320
+!MESSAGE Indexed 'cpu1_test_70_mem' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 00:13:24.698
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 00:13:26.571
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu1_test_70_mem/cpu1_test_70_mem.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 00:14:03.155
+!MESSAGE Indexed 'cpu2_test_70_mem_bsp' (82 sources, 61 headers) in 1.45 sec: 1,059 declarations; 2,586 references; 117 unresolved inclusions; 5 syntax errors; 218 unresolved names (5.64%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 00:14:05.887
+!MESSAGE Indexed 'cpu2_test_70_mem' (0 sources, 13 headers) in 0.02 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 00:16:18.921
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 00:16:20.705
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu2_test_70_mem/cpu2_test_70_mem.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 01:30:22.138
+!MESSAGE Indexed 'full_cpu1_test_bsp' (82 sources, 61 headers) in 1.70 sec: 1,062 declarations; 2,592 references; 117 unresolved inclusions; 5 syntax errors; 218 unresolved names (5.63%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 01:30:25.141
+!MESSAGE Indexed 'full_cpu1_test' (1 sources, 13 headers) in 0.11 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:33:57.469
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:33:59.714
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu1_test/full_cpu1_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:45:53.778
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:45:54.445
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:45:56.473
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu1_test/full_cpu1_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:46:30.964
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:46:31.279
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:46:33.217
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu1_test/full_cpu1_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:47:33.610
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:47:33.964
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:47:35.837
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu1_test/full_cpu1_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:49:05.549
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:49:05.906
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:49:07.711
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu1_test/full_cpu1_test.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 01:50:19.859
+!MESSAGE Indexed 'full_cpu5_test_bsp' (82 sources, 94 headers) in 2.32 sec: 1,940 declarations; 3,227 references; 88 unresolved inclusions; 7 syntax errors; 176 unresolved names (3.29%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 01:50:21.895
+!MESSAGE Indexed 'full_cpu5_test' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:51:44.905
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=4 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:51:46.674
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=4 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu5_test/full_cpu5_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:54:33.942
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:54:34.252
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:54:36.122
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu1_test/full_cpu1_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:55:36.123
+!MESSAGE Terminated Launch with connection: 14USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:55:36.407
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=4 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 01:55:38.323
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=4 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu5_test/full_cpu5_test.elf]
+!SESSION 2024-05-20 18:13:21.704 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:23:19.195
+!MESSAGE Indexed 'full_cpu2_test_bsp' (82 sources, 61 headers) in 0.98 sec: 1,060 declarations; 2,588 references; 117 unresolved inclusions; 5 syntax errors; 218 unresolved names (5.64%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:23:27.115
+!MESSAGE Indexed 'full_cpu2_test' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:27:49.908
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:27:52.018
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu2_test/full_cpu2_test.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:28:22.871
+!MESSAGE Indexed 'full_cpu3_test_bsp' (82 sources, 92 headers) in 2.35 sec: 1,754 declarations; 3,157 references; 94 unresolved inclusions; 7 syntax errors; 195 unresolved names (3.82%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:28:24.046
+!MESSAGE Indexed 'full_cpu3_test' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:30:49.029
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=2 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:30:50.748
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=2 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu3_test/full_cpu3_test.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:32:08.972
+!MESSAGE Indexed 'full_cpu4_test_bsp' (82 sources, 105 headers) in 3.74 sec: 2,060 declarations; 3,610 references; 88 unresolved inclusions; 123 syntax errors; 204 unresolved names (3.47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:32:11.344
+!MESSAGE Indexed 'full_cpu4_test' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:33:38.927
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=3 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:33:40.679
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=3 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu4_test/full_cpu4_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:34:04.538
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:34:06.253
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu1_test/full_cpu1_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:34:25.195
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=4 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:34:26.910
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=4 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu5_test/full_cpu5_test.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:35:15.193
+!MESSAGE Indexed 'full_cpu6_test_bsp' (82 sources, 105 headers) in 1.90 sec: 2,056 declarations; 3,608 references; 88 unresolved inclusions; 123 syntax errors; 203 unresolved names (3.46%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:35:16.966
+!MESSAGE Indexed 'full_cpu6_test' (1 sources, 13 headers) in 0.06 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:36:29.271
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=5 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:36:31.420
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=5 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu6_test/full_cpu6_test.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:38:31.569
+!MESSAGE Indexed 'full_cpu3_test_bsp' (82 sources, 61 headers) in 1.93 sec: 1,058 declarations; 2,584 references; 117 unresolved inclusions; 5 syntax errors; 218 unresolved names (5.65%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-20 18:38:35.224
+!MESSAGE Indexed 'full_cpu3_test' (1 sources, 13 headers) in 0.10 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:44:50.900
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=2 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:44:52.754
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=2 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu3_test/full_cpu3_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:45:16.595
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=5 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-05-20 18:45:18.336
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=5 --go /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/full_cpu6_test/full_cpu6_test.elf]

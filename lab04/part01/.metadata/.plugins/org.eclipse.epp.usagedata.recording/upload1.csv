@@ -1,0 +1,326 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212121584
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212127277
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212154477
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716212310921
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212313811
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212321836
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212324984
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212327257
+started,bundle,org.eclipse.cdt.codan.ui,2.0.1.201202111925,"org.eclipse.cdt.codan.ui",1716212332200
+executed,command,org.eclipse.cdt.codan.ui,2.0.1.201202111925,"org.eclipse.cdt.codan.commands.runCodanCommand",1716212332204
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212332527
+error,log,,,"Internal Error",1716212332711
+error,log,,,"Internal Error",1716212332713
+error,log,,,"Internal Error",1716212332714
+error,log,,,"Internal Error",1716212332716
+error,log,,,"Internal Error",1716212332717
+error,log,,,"Internal Error",1716212332718
+error,log,,,"Internal Error",1716212332719
+error,log,,,"Internal Error",1716212332720
+error,log,,,"Internal Error",1716212332721
+error,log,,,"Internal Error",1716212332722
+error,log,,,"Internal Error",1716212332741
+error,log,,,"Internal Error",1716212332746
+error,log,,,"Internal Error",1716212332747
+error,log,,,"Internal Error",1716212332748
+error,log,,,"Internal Error",1716212332749
+error,log,,,"Internal Error",1716212332751
+error,log,,,"Internal Error",1716212332752
+error,log,,,"Internal Error",1716212332753
+error,log,,,"Internal Error",1716212332755
+error,log,,,"Internal Error",1716212332756
+error,log,,,"Internal Error",1716212332757
+error,log,,,"Internal Error",1716212332758
+error,log,,,"Internal Error",1716212332762
+error,log,,,"Internal Error",1716212332764
+error,log,,,"Internal Error",1716212332765
+error,log,,,"Internal Error",1716212332766
+error,log,,,"Internal Error",1716212332767
+error,log,,,"Internal Error",1716212332768
+error,log,,,"Internal Error",1716212332768
+error,log,,,"Internal Error",1716212332769
+error,log,,,"Internal Error",1716212332771
+error,log,,,"Internal Error",1716212332772
+error,log,,,"Internal Error",1716212332772
+error,log,,,"Internal Error",1716212332773
+error,log,,,"Internal Error",1716212332774
+error,log,,,"Internal Error",1716212332777
+error,log,,,"Internal Error",1716212332780
+error,log,,,"Internal Error",1716212332781
+error,log,,,"Internal Error",1716212332781
+error,log,,,"Internal Error",1716212332783
+error,log,,,"Internal Error",1716212332986
+error,log,,,"Internal Error",1716212332987
+error,log,,,"Internal Error",1716212332988
+error,log,,,"Internal Error",1716212332989
+error,log,,,"Internal Error",1716212332989
+error,log,,,"Internal Error",1716212332991
+error,log,,,"Internal Error",1716212332993
+error,log,,,"Internal Error",1716212332993
+error,log,,,"Internal Error",1716212332994
+error,log,,,"Internal Error",1716212332995
+error,log,,,"Internal Error",1716212333215
+error,log,,,"Internal Error",1716212333216
+error,log,,,"Internal Error",1716212333216
+error,log,,,"Internal Error",1716212333217
+error,log,,,"Internal Error",1716212333218
+error,log,,,"Internal Error",1716212333219
+error,log,,,"Internal Error",1716212333220
+error,log,,,"Internal Error",1716212333220
+error,log,,,"Internal Error",1716212333221
+error,log,,,"Internal Error",1716212333222
+error,log,,,"Internal Error",1716212333250
+error,log,,,"Internal Error",1716212333251
+error,log,,,"Internal Error",1716212333252
+error,log,,,"Internal Error",1716212333252
+error,log,,,"Internal Error",1716212333252
+error,log,,,"Internal Error",1716212333253
+error,log,,,"Internal Error",1716212333254
+error,log,,,"Internal Error",1716212333255
+error,log,,,"Internal Error",1716212333256
+error,log,,,"Internal Error",1716212333258
+error,log,,,"Internal Error",1716212333495
+error,log,,,"Internal Error",1716212333496
+error,log,,,"Internal Error",1716212333496
+error,log,,,"Internal Error",1716212333497
+error,log,,,"Internal Error",1716212333497
+error,log,,,"Internal Error",1716212333498
+error,log,,,"Internal Error",1716212333498
+error,log,,,"Internal Error",1716212333500
+error,log,,,"Internal Error",1716212333500
+error,log,,,"Internal Error",1716212333501
+error,log,,,"Internal Error",1716212333539
+error,log,,,"Internal Error",1716212333540
+error,log,,,"Internal Error",1716212333540
+error,log,,,"Internal Error",1716212333543
+error,log,,,"Internal Error",1716212333543
+error,log,,,"Internal Error",1716212333544
+error,log,,,"Internal Error",1716212333545
+error,log,,,"Internal Error",1716212333545
+error,log,,,"Internal Error",1716212333546
+error,log,,,"Internal Error",1716212333547
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212333668
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212337798
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212339916
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212342454
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212356196
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212356276
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212359856
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212392285
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212393844
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212400271
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212400365
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212401690
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212406179
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1716212406203
+opened,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716212407791
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212414264
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212555110
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212558512
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212562658
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716212567621
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212575914
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212600230
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716212601598
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212603386
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212605976
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212622059
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212642759
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212646223
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212648010
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212648043
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212651700
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212653814
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212685052
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212687746
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212689092
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212690710
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212695181
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212698021
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212701415
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212701482
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212705108
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212705547
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212710094
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212712644
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212714123
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212714963
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212764831
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212767502
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212768805
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212770005
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212891384
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212895128
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212896989
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212897012
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212900684
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212902022
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212930808
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212934049
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212937341
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716212937417
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213277887
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213281743
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213285195
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213285539
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213299844
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213303129
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213304783
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213306119
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213310373
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213313828
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213315176
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213315768
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213388986
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716213391047
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1716213394666
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213395466
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213538509
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716213539548
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213541446
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213544839
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213545805
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213666361
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213669409
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213671279
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213672968
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213690591
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213693673
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213698132
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213698505
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213736548
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213741840
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213744712
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1716213745155
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213746969
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716213747233
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213752087
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716213755024
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213756842
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213760401
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213760458
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213764039
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213769108
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213770525
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1716213770845
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213772418
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716213772740
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213777193
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213778870
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213780449
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213781970
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213785045
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213846275
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213847710
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716213849190
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213853772
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213856089
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213860119
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213861596
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1716213861907
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213863618
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716213863904
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213868425
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213869878
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213871051
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213872337
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213873574
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213890001
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716213891130
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213893762
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213896401
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213901737
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213903185
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1716213903536
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213905262
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716213905781
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213910022
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213911369
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213912461
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213913137
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213913717
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213914767
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716213916751
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716213919160
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216422537
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716216424476
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216428076
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216696033
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216699160
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216706008
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216709338
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216711517
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216716335
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216717904
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716216718031
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216725561
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216729397
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216729817
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216734497
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716216736074
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216737622
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216740271
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216745961
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216835136
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216837928
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216840436
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216840803
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216844476
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216875244
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216943874
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716216964252
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716216991327
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716217092986
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716217111537
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716217210096
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716217222633
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716217251183
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716217259343
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218805058
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218806221
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218813445
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716218815014
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716218818126
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218824097
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218831139
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716218832042
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716218832971
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716218837473
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716218838062
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218839068
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218859205
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716218859959
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218872752
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218912285
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218916207
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218918624
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218926525
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218942236
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716218942883
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716218948448
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218950989
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218952152
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218954780
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218983465
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218987435
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218991378
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218996780
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716218997838
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219002556
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219004075
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1716219004518
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716219006250
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716219006733
+activated,view,com.altera.sbtgui.launch,13.1.0.162,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1716219012511
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219021990
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219053085
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219054471
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219099362
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716219100669
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219102506
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219105309
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1716219109163
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1716219110876
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219113803
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1716219115329
