@@ -30,7 +30,6 @@ typedef struct JPEG_ENCODER_STRUCTURE
 	UINT16 length_minus_width;
 	UINT16 incr;
 	UINT16 mcu_width_size;
-	UINT16 offset;
 
 } JPEG_ENCODER_STRUCTURE;
 
@@ -47,12 +46,16 @@ void read_444_format(JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure, UINT8 *inpu
 
 	for (i = rows; i > 0; i--)
 	{
-		// printf("\nRow ");
+		// Print a new line for each row
+		// printf("\nRow %d: ", rows - i + 1);
 		for (j = cols; j > 0; j--)
 		{
 			R = *input_ptr++;
 			G = *input_ptr++;
 			B = *input_ptr++;
+
+			// Print the RGB values
+			// printf("(%3d, %3d, %3d) ", R, G, B);
 
 			Y = ((77 * R + 150 * G + 29 * B) >> 8);
 			Cb = ((-43 * R - 85 * G + 128 * B) >> 8) + 128;
@@ -73,12 +76,10 @@ void read_444_format(JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure, UINT8 *inpu
 			else if (Cr > 255)
 				Cr = 255;
 
-			// send into fifo
+			// Send into fifo
 			WRITE_FIFO(&Y, IN_BASE_1to2A, CONTROL_BASE_1to2A);
 			WRITE_FIFO(&Cb, IN_BASE_1to2B, CONTROL_BASE_1to2B);
 			WRITE_FIFO(&Cr, IN_BASE_1to2C, CONTROL_BASE_1to2C);
-
-			// delay(1000);
 		}
 
 		if ((j = (8 - cols)) > 0)
@@ -86,6 +87,9 @@ void read_444_format(JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure, UINT8 *inpu
 			R = *(input_ptr - 3);
 			G = *(input_ptr - 2);
 			B = *(input_ptr - 1);
+
+			// Print the RGB values
+			// printf("(%3d, %3d, %3d) ", R, G, B);
 
 			Y = ((77 * R + 150 * G + 29 * B) >> 8);
 			Cb = ((-43 * R - 85 * G + 128 * B) >> 8) + 128;
@@ -108,12 +112,12 @@ void read_444_format(JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure, UINT8 *inpu
 
 			for (; j > 0; j--)
 			{
+				// Print the RGB values
+				// printf("(%3d, %3d, %3d) ", R, G, B);
 
 				WRITE_FIFO(&Y, IN_BASE_1to2A, CONTROL_BASE_1to2A);
 				WRITE_FIFO(&Cb, IN_BASE_1to2B, CONTROL_BASE_1to2B);
 				WRITE_FIFO(&Cr, IN_BASE_1to2C, CONTROL_BASE_1to2C);
-
-				// delay(1000);
 			}
 		}
 
@@ -124,12 +128,16 @@ void read_444_format(JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure, UINT8 *inpu
 
 	for (i = 8 - rows; i > 0; i--)
 	{
-		// printf("\nColumn ");
+		// Print a new line for each row
+		// printf("\nRow %d: ", rows + (8 - rows) - i + 1);
 		for (j = cols * 3; j > 0;)
 		{
 			R = *(input_ptr - (j--));
 			G = *(input_ptr - (j--));
 			B = *(input_ptr - (j--));
+
+			// Print the RGB values
+			// printf("(%3d, %3d, %3d) ", R, G, B);
 
 			Y = ((77 * R + 150 * G + 29 * B) >> 8);
 			Cb = ((-43 * R - 85 * G + 128 * B) >> 8) + 128;
@@ -153,8 +161,6 @@ void read_444_format(JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure, UINT8 *inpu
 			WRITE_FIFO(&Y, IN_BASE_1to2A, CONTROL_BASE_1to2A);
 			WRITE_FIFO(&Cb, IN_BASE_1to2B, CONTROL_BASE_1to2B);
 			WRITE_FIFO(&Cr, IN_BASE_1to2C, CONTROL_BASE_1to2C);
-
-			// delay(1000);
 		}
 
 		if ((j = (8 - cols)) > 0)
@@ -162,6 +168,9 @@ void read_444_format(JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure, UINT8 *inpu
 			R = *(input_ptr - 3);
 			G = *(input_ptr - 2);
 			B = *(input_ptr - 1);
+
+			// Print the RGB values
+			// printf("(%3d, %3d, %3d) ", R, G, B);
 
 			Y = ((77 * R + 150 * G + 29 * B) >> 8);
 			Cb = ((-43 * R - 85 * G + 128 * B) >> 8) + 128;
@@ -184,14 +193,17 @@ void read_444_format(JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure, UINT8 *inpu
 
 			for (; j > 0; j--)
 			{
+				// Print the RGB values
+				// printf("(%3d, %3d, %3d) ", R, G, B);
+
 				WRITE_FIFO(&Y, IN_BASE_1to2A, CONTROL_BASE_1to2A);
 				WRITE_FIFO(&Cb, IN_BASE_1to2B, CONTROL_BASE_1to2B);
 				WRITE_FIFO(&Cr, IN_BASE_1to2C, CONTROL_BASE_1to2C);
-
-				// delay(1000);
 			}
 		}
 	}
+
+	// printf("\n");
 }
 
 #endif
