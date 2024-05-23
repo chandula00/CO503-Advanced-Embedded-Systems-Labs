@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu2' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
  *
- * Generated: Mon May 20 19:05:42 IST 2024
+ * Generated: Thu May 23 11:23:27 IST 2024
  */
 
 /*
@@ -61,6 +61,7 @@
 #include "altera_nios2_qsys_irq.h"
 #include "altera_avalon_fifo.h"
 #include "altera_avalon_jtag_uart.h"
+#include "altera_avalon_sysid_qsys.h"
 #include "altera_avalon_timer.h"
 
 /*
@@ -73,6 +74,7 @@ ALTERA_AVALON_FIFO_INSTANCE ( FIFO1TO2B, fifo1to2B);
 ALTERA_AVALON_FIFO_INSTANCE ( FIFO1TO2C, fifo1to2C);
 ALTERA_AVALON_FIFO_INSTANCE ( FIFO2TO3, fifo2to3);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART2, jtag_uart2);
+ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID, sysid);
 ALTERA_AVALON_TIMER_INSTANCE ( TIMER2, timer2);
 
 /*
@@ -102,4 +104,5 @@ void alt_sys_init( void )
     ALTERA_AVALON_FIFO_INIT ( FIFO1TO2C, fifo1to2C);
     ALTERA_AVALON_FIFO_INIT ( FIFO2TO3, fifo2to3);
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART2, jtag_uart2);
+    ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID, sysid);
 }

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/output_files/") File("TopLevel.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab03-part2/output_files/") File("TopLevel.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

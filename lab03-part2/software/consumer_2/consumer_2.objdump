@@ -1002,7 +1002,7 @@ int consumer()
    30310:	e0bfff04 	addi	r2,fp,-4
    30314:	1009883a 	mov	r4,r2
    30318:	00302540 	call	30254 <READ_FIFO_1>
-		printf("Received [%i]\n", j);
+		printf("Received: [%i]\n", j);
    3031c:	e0bfff17 	ldw	r2,-4(fp)
    30320:	01000034 	movhi	r4,0
    30324:	21000504 	addi	r4,r4,20

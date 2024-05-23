@@ -2,61 +2,84 @@
 #include "datatype.h"
 #include "FIFO.h"
 
-/* Level shifting to get 8 bit SIGNED values for the data  */
+void delay(int n)
+{
+	int i;
+	for (i = n; i > 0; i--)
+	{
+		continue;
+	}
+}
+
+/* Level shifting to get 8-bit SIGNED values for the data */
 void levelshift(void)
 {
+	printf("Level shifting\n");
+
 	int i, j;
-	// asm("dummy");
+	INT8 temp1[8][8], temp2[8][8]; // Temporary storage array
+	int row, col, count = 0;
+
 	while (1)
 	{
+		printf("Running...\n");
+		count++;
+
 		for (j = 0; j < 64; j++)
 		{
-			// xt_iss_profile_disable();
-			// i = (INT16)RECV1();
+			row = j / 8;
+			col = j % 8;
+
+			// Read from the first FIFO
 			READ_FIFO(&i, OUT_BASE_1to2A, CONTROL_BASE_1to2A);
+			// delay(100000);
 
-			// xt_iss_profile_enable();
-			// printf(stderr,"Received from FIFO1 %d\n",j);
 			i -= 128;
-			// SEND(i);
-		}
+			WRITE_FIFO(&i, IN_BASE_2to3, CONTROL_BASE_2to3);
 
-		for (j = 0; j < 64; j++)
-		{
-			// xt_iss_profile_disable();
-			// i = (INT16)RECV2();
+			// Read from the second FIFO
 			READ_FIFO(&i, OUT_BASE_1to2B, CONTROL_BASE_1to2B);
+			// delay(100000);
 
-			// xt_iss_profile_enable();
-			// fprintf(stderr,"Received from FIFO2 %d\n",j);
 			i -= 128;
-			// SEND(i);
-		}
+			temp1[row][col] = i; // Store into temp array
 
-		for (j = 0; j < 64; j++)
-		{
-			// xt_iss_profile_disable();
-			// i = (INT16)RECV3();
+			// Read from the third FIFO
 			READ_FIFO(&i, OUT_BASE_1to2C, CONTROL_BASE_1to2C);
 
-			// xt_iss_profile_enable();
-			// fprintf(stderr,"Received from FIFO3 %d\n",j);
 			i -= 128;
-			// SEND(i);
+			temp2[row][col] = i; // Store into temp array
+
+			// delay(1000);
 		}
 
-		// #pragma flush // changed by haris - moved it up the dummy instruction
-		// 			  // resulted in correct number of iterations for this pipeline stage
-		// 		asm("dummy");
-		// break;
+		// loop over the temp arrays for (i = 0; i < 8; i++)
+		{
+			for (j = 0; j < 8; j++)
+			{
+				WRITE_FIFO(&temp1[i][j], IN_BASE_2to3, CONTROL_BASE_2to3);
+			}
+		}
+
+		for (i = 0; i < 8; i++)
+		{
+			for (j = 0; j < 8; j++)
+			{
+				WRITE_FIFO(&temp2[i][j], IN_BASE_2to3, CONTROL_BASE_2to3);
+			}
+		}
 	}
 }
 
 int main(void)
 {
-	// levelshift();
+	printf("CPU2 Started!!!\n");
 
-	// printf("Hello from cpu2\n");
+	delay(100000);
+	FIFO_INIT(CONTROL_BASE_2to3);
+	delay(100000);
+
+	levelshift();
 
 	return 0;
 }

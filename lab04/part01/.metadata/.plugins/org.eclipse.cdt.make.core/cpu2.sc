@@ -2,7 +2,7 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1868823135;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1868823135.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.144864949;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.590289456">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.491485845;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.491485845.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.2141616433;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1665956750">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu2_bsp/HAL/inc"/>
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu2_bsp/"/>
@@ -230,7 +230,7 @@
 <definedSymbol symbol="ALT_SINGLE_THREADED=1"/>
 </collector>
 </instance>
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1868823135;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1868823135.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.905791054;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1754786797">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.491485845;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.491485845.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.796152338;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.987012768">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu2_bsp/HAL/inc"/>
 <includePath path="E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu2_bsp/"/>

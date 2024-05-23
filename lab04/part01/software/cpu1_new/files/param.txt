@@ -1,4 +1,0 @@
-/mnt/host/files/image0.bmp
-1
-256
-171

@@ -70,7 +70,7 @@ module MSoC_cpu2_test_bench (
   input   [ 31: 0] W_wr_data;
   input   [ 31: 0] av_ld_data_aligned_unfiltered;
   input            clk;
-  input   [ 18: 0] d_address;
+  input   [ 28: 0] d_address;
   input   [  3: 0] d_byteenable;
   input            d_read;
   input            d_write;

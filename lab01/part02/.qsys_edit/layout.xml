@@ -553,14 +553,13 @@
 									</child>
 								</children>
 							</root>
-							<root name="ccontrol south">
+							<root name="external">
 								<layout factory="predefined">
-									<replacement id="rootccontrol south"/>
+									<replacement id="rootexternal"/>
 									<delegate id="delegate_CommonDockStationFactory">
-										<id>ccontrol south</id>
+										<id>external</id>
 										<root>true</root>
-										<content delegate="flap dock">
-											<window auto="true" direction="SOUTH"/>
+										<content delegate="screen dock">
 											<placeholders>
 												<version>0</version>
 												<format>dock.PlaceholderList</format>
@@ -570,7 +569,7 @@
 								</layout>
 								<adjacent>
 									<layout factory="dock.RootStationAdjacentFactory">
-										<type>dock.CContentArea.minimize</type>
+										<type>dock.CExternalizeArea</type>
 									</layout>
 								</adjacent>
 								<children ignore="false"/>
@@ -597,13 +596,14 @@
 								</adjacent>
 								<children ignore="false"/>
 							</root>
-							<root name="external">
+							<root name="ccontrol south">
 								<layout factory="predefined">
-									<replacement id="rootexternal"/>
+									<replacement id="rootccontrol south"/>
 									<delegate id="delegate_CommonDockStationFactory">
-										<id>external</id>
+										<id>ccontrol south</id>
 										<root>true</root>
-										<content delegate="screen dock">
+										<content delegate="flap dock">
+											<window auto="true" direction="SOUTH"/>
 											<placeholders>
 												<version>0</version>
 												<format>dock.PlaceholderList</format>
@@ -613,7 +613,7 @@
 								</layout>
 								<adjacent>
 									<layout factory="dock.RootStationAdjacentFactory">
-										<type>dock.CExternalizeArea</type>
+										<type>dock.CContentArea.minimize</type>
 									</layout>
 								</adjacent>
 								<children ignore="false"/>
@@ -759,10 +759,9 @@
 									<root>true</root>
 									<content delegate="SplitDockStationFactory">
 										<fullscreen-action>false</fullscreen-action>
-										<node nodeId="1372710005721" orientation="HORIZONTAL" divider="0.22181146025878004">
-											<node nodeId="1375985011088" orientation="VERTICAL" divider="0.504054054054054">
-
-												<leaf id="0" nodeId="1375985003630">
+										<node nodeId="1716404385994" orientation="HORIZONTAL" divider="0.2">
+											<node nodeId="1716404385996" orientation="VERTICAL" divider="0.4">
+												<leaf id="-1" nodeId="1716404385998">
 													<placeholders>
 														<placeholder>dock.single.Library</placeholder>
 													</placeholders>
@@ -771,62 +770,70 @@
 														<format>dock.PlaceholderList</format>
 													</placeholder-map>
 												</leaf>
-												<leaf id="2" nodeId="1375985011087">
+												<leaf id="-1" nodeId="1716404386000">
 													<placeholders>
 														<placeholder>dock.single.Hierarchy</placeholder>
 													</placeholders>
+													<placeholder-map>
+														<version>0</version>
+														<format>dock.PlaceholderList</format>
+													</placeholder-map>
 												</leaf>
 											</node>
-											<node nodeId="1372710005725" orientation="VERTICAL" divider="0.75">
-												<node nodeId="1372710005727" orientation="HORIZONTAL" divider="0.75">
-													<node nodeId="1372710005733" orientation="VERTICAL" divider="0.75">
-														<leaf id="1" nodeId="1372710005735">
+											<node nodeId="1716404386002" orientation="VERTICAL" divider="0.75">
+												<node nodeId="1716404386004" orientation="HORIZONTAL" divider="0.75">
+													<node nodeId="1716404386006" orientation="VERTICAL" divider="0.75">
+														<leaf id="-1" nodeId="1716404386008">
 															<placeholders>
-																<placeholder>dock.single.Clocks</placeholder>
 																<placeholder>dock.single.Project\ Settings</placeholder>
-																<placeholder>dock.single.Generation</placeholder>
+																<placeholder>dock.single.Clocks</placeholder>
+																<placeholder>dock.single.Data\ Path\ \-\ Beta</placeholder>
 																<placeholder>dock.single.Instrumentation\ \-\ Beta</placeholder>
-																<placeholder>dock.single.Connections</placeholder>
-																<placeholder>dock.single.Parameters</placeholder>
 																<placeholder>dock.single.Connections\ \-\ Beta</placeholder>
-																<placeholder>dock.single.Clock\ Settings</placeholder>
 																<placeholder>dock.single.Address\ Map</placeholder>
 																<placeholder>dock.single.System\ Contents</placeholder>
 																<placeholder>dock.single.Interconnect\ Requirements</placeholder>
 																<placeholder>dock.single.Instance\ Parameters</placeholder>
 																<placeholder>dock.single.Clock\ Domains\ \-\ Beta</placeholder>
-																<placeholder>dock.single.Data\ Path</placeholder>
-																<placeholder>dock.single.Data\ Path\ \-\ Beta</placeholder>
-																<placeholder>dock.single.Instrumentation</placeholder>
-																<placeholder>dock.single.Domains</placeholder>
-																<placeholder>dock.single.HDL\ Example</placeholder>
 															</placeholders>
 															<placeholder-map>
 																<version>0</version>
 																<format>dock.PlaceholderList</format>
 															</placeholder-map>
 														</leaf>
-														<leaf id="-1" nodeId="1372710005737">
+														<leaf id="-1" nodeId="1716404386010">
 															<placeholders>
-																<placeholder>dock.single.Parameter\ Editor</placeholder>
+																<placeholder>dock.single.Parameters</placeholder>
 															</placeholders>
+															<placeholder-map>
+																<version>0</version>
+																<format>dock.PlaceholderList</format>
+															</placeholder-map>
 														</leaf>
 													</node>
-													<node nodeId="1372710005739" orientation="VERTICAL" divider="0.5">
-														<leaf id="-1" nodeId="1372710005741">
+													<node nodeId="1716404386012" orientation="VERTICAL" divider="0.5">
+														<leaf id="-1" nodeId="1716404386014">
 															<placeholders>
 																<placeholder>dock.single.Element\ Docs</placeholder>
 																<placeholder>dock.single.Block\ Symbol</placeholder>
 															</placeholders>
+															<placeholder-map>
+																<version>0</version>
+																<format>dock.PlaceholderList</format>
+															</placeholder-map>
 														</leaf>
-														<leaf id="-1" nodeId="1372710005743">
+														<leaf id="-1" nodeId="1716404386016">
 															<placeholders>
 																<placeholder>dock.single.Presets</placeholder>
 															</placeholders>
+															<placeholder-map>
+																<version>0</version>
+																<format>dock.PlaceholderList</format>
+															</placeholder-map>
 														</leaf>
 													</node>
 												</node>
-												<leaf id="0" nodeId="1372710005745">
+												<leaf id="-1" nodeId="1716404386018">
 													<placeholders>
 														<placeholder>dock.single.Messages</placeholder>
 													</placeholders>
@@ -845,162 +852,7 @@
 									<type>dock.CContentArea.center</type>
 								</layout>
 							</adjacent>
-							<children ignore="false">
-								<child>
-
-									<layout factory="predefined" placeholder="dock.single.Library">
-										<replacement id="dockablesingle Library"/>
-										<delegate id="delegate_ccontrol backup factory id">
-											<id>Library</id>
-											<area/>
-										</delegate>
-									</layout>
-									<children ignore="false"/>
-								</child>
-								<child>
-									<layout factory="delegate_StackDockStationFactory">
-										<selected>0</selected>
-										<placeholders>
-											<version>0</version>
-											<format>dock.PlaceholderList</format>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.System\ Contents</placeholder>
-												</key>
-												<item key="convert" type="b">true</item>
-												<item key="convert-keys" type="a">
-													<item type="s">id</item>
-													<item type="s">index</item>
-													<item type="s">placeholder</item>
-												</item>
-												<item key="dock.id" type="i">0</item>
-												<item key="dock.index" type="i">0</item>
-												<item key="dock.placeholder" type="s">dock.single.System\ Contents</item>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Address\ Map</placeholder>
-												</key>
-												<item key="convert" type="b">true</item>
-												<item key="convert-keys" type="a">
-													<item type="s">id</item>
-													<item type="s">index</item>
-													<item type="s">placeholder</item>
-												</item>
-												<item key="dock.id" type="i">1</item>
-												<item key="dock.index" type="i">1</item>
-												<item key="dock.placeholder" type="s">dock.single.Address\ Map</item>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Instrumentation\ \-\ Beta</placeholder>
-												</key>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Instance\ Parameters</placeholder>
-												</key>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Project\ Settings</placeholder>
-												</key>
-												<item key="convert" type="b">true</item>
-												<item key="convert-keys" type="a">
-													<item type="s">id</item>
-													<item type="s">index</item>
-													<item type="s">placeholder</item>
-												</item>
-												<item key="dock.id" type="i">2</item>
-												<item key="dock.index" type="i">2</item>
-												<item key="dock.placeholder" type="s">dock.single.Project\ Settings</item>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Clocks</placeholder>
-												</key>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Clock\ Domains\ \-\ Beta</placeholder>
-												</key>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Connections\ \-\ Beta</placeholder>
-												</key>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Interconnect\ Requirements</placeholder>
-												</key>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Data\ Path\ \-\ Beta</placeholder>
-												</key>
-											</entry>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Parameters</placeholder>
-												</key>
-											</entry>
-										</placeholders>
-									</layout>
-									<children ignore="false">
-										<child>
-											<layout factory="predefined" placeholder="dock.single.System\ Contents">
-												<replacement id="dockablesingle System Contents"/>
-												<delegate id="delegate_ccontrol backup factory id">
-													<id>System Contents</id>
-													<area/>
-												</delegate>
-											</layout>
-											<children ignore="false"/>
-										</child>
-										<child>
-											<layout factory="predefined" placeholder="dock.single.Address\ Map">
-												<replacement id="dockablesingle Address Map"/>
-												<delegate id="delegate_ccontrol backup factory id">
-													<id>Address Map</id>
-													<area/>
-												</delegate>
-											</layout>
-											<children ignore="false"/>
-										</child>
-										<child>
-											<layout factory="predefined" placeholder="dock.single.Project\ Settings">
-												<replacement id="dockablesingle Project Settings"/>
-												<delegate id="delegate_ccontrol backup factory id">
-													<id>Project Settings</id>
-													<area/>
-												</delegate>
-											</layout>
-											<children ignore="false"/>
-										</child>
-									</children>
-								</child>
-								<child>
-									<layout factory="predefined" placeholder="dock.single.Hierarchy">
-										<replacement id="dockablesingle Hierarchy"/>
-										<delegate id="delegate_ccontrol backup factory id">
-											<id>Hierarchy</id>
-											<area/>
-										</delegate>
-									</layout>
-									<children ignore="false"/>
-								</child>
-								<child>
-									<layout factory="predefined" placeholder="dock.single.Messages">
-										<replacement id="dockablesingle Messages"/>
-										<delegate id="delegate_ccontrol backup factory id">
-											<id>Messages</id>
-											<area/>
-										</delegate>
-									</layout>
-									<children ignore="false"/>
-								</child>
-							</children>
+							<children ignore="false"/>
 						</root>
 						<root name="external">
 							<layout factory="predefined">
@@ -1032,11 +884,6 @@
 										<placeholders>
 											<version>0</version>
 											<format>dock.PlaceholderList</format>
-											<entry>
-												<key shared="false">
-													<placeholder>dock.single.Hierarchy</placeholder>
-												</key>
-											</entry>
 										</placeholders>
 									</content>
 								</delegate>
@@ -1113,20 +960,102 @@
 						</root>
 					</roots>
 					<children>
+						<child key="single Project Settings" root="ccontrol center" location="true">
+							<location>
+								<property factory="SplitDockPlaceholderProperty">
+									<placeholder>dock.single.Project\ Settings</placeholder>
+									<backup-path>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
+									</backup-path>
+								</property>
+								<property factory="StackDockPropertyFactory">
+									<index>5</index>
+									<placeholder>dock.single.Project\ Settings</placeholder>
+								</property>
+							</location>
+							<layout>
+								<layout factory="predefined" placeholder="dock.single.Project\ Settings">
+									<replacement id="dockablesingle Project Settings"/>
+									<delegate id="delegate_ccontrol backup factory id">
+										<id>Project Settings</id>
+										<area/>
+									</delegate>
+								</layout>
+								<children ignore="false"/>
+							</layout>
+						</child>
+						<child key="single Library" root="ccontrol center" location="true">
+							<location>
+								<property factory="SplitDockPlaceholderProperty">
+									<placeholder>dock.single.Library</placeholder>
+									<backup-path>
+										<node location="LEFT" size="0.2"/>
+										<node location="TOP" size="0.4"/>
+										<leaf id="-1"/>
+									</backup-path>
+								</property>
+								<property factory="StackDockPropertyFactory">
+									<index>0</index>
+									<placeholder>dock.single.Library</placeholder>
+								</property>
+							</location>
+							<layout>
+								<layout factory="predefined" placeholder="dock.single.Library">
+									<replacement id="dockablesingle Library"/>
+									<delegate id="delegate_ccontrol backup factory id">
+										<id>Library</id>
+										<area/>
+									</delegate>
+								</layout>
+								<children ignore="false"/>
+							</layout>
+						</child>
+						<child key="single System Contents" root="ccontrol center" location="true">
+							<location>
+								<property factory="SplitDockPlaceholderProperty">
+									<placeholder>dock.single.System\ Contents</placeholder>
+									<backup-path>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
+									</backup-path>
+								</property>
+								<property factory="StackDockPropertyFactory">
+									<index>0</index>
+									<placeholder>dock.single.System\ Contents</placeholder>
+								</property>
+							</location>
+							<layout>
+								<layout factory="predefined" placeholder="dock.single.System\ Contents">
+									<replacement id="dockablesingle System Contents"/>
+									<delegate id="delegate_ccontrol backup factory id">
+										<id>System Contents</id>
+										<area/>
+									</delegate>
+								</layout>
+								<children ignore="false"/>
+							</layout>
+						</child>
 						<child key="single Clock Domains - Beta" root="ccontrol center" location="true">
 							<location>
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Clock\ Domains\ \-\ Beta</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="LEFT" size="0.75" id="1372710005727"/>
-										<node location="TOP" size="0.75" id="1372710005733"/>
-										<leaf id="1372710005735"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
 									</backup-path>
 								</property>
 								<property factory="StackDockPropertyFactory">
-									<index>6</index>
+									<index>9</index>
 									<placeholder>dock.single.Clock\ Domains\ \-\ Beta</placeholder>
 								</property>
 							</location>
@@ -1146,15 +1075,15 @@
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Instance\ Parameters</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="LEFT" size="0.75" id="1372710005727"/>
-										<node location="TOP" size="0.75" id="1372710005733"/>
-										<leaf id="1372710005735"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
 									</backup-path>
 								</property>
 								<property factory="StackDockPropertyFactory">
-									<index>3</index>
+									<index>4</index>
 									<placeholder>dock.single.Instance\ Parameters</placeholder>
 								</property>
 							</location>
@@ -1169,20 +1098,48 @@
 								<children ignore="false"/>
 							</layout>
 						</child>
+						<child key="single Address Map" root="ccontrol center" location="true">
+							<location>
+								<property factory="SplitDockPlaceholderProperty">
+									<placeholder>dock.single.Address\ Map</placeholder>
+									<backup-path>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
+									</backup-path>
+								</property>
+								<property factory="StackDockPropertyFactory">
+									<index>1</index>
+									<placeholder>dock.single.Address\ Map</placeholder>
+								</property>
+							</location>
+							<layout>
+								<layout factory="predefined" placeholder="dock.single.Address\ Map">
+									<replacement id="dockablesingle Address Map"/>
+									<delegate id="delegate_ccontrol backup factory id">
+										<id>Address Map</id>
+										<area/>
+									</delegate>
+								</layout>
+								<children ignore="false"/>
+							</layout>
+						</child>
 						<child key="single Clocks" root="ccontrol center" location="true">
 							<location>
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Clocks</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="LEFT" size="0.75" id="1372710005727"/>
-										<node location="TOP" size="0.75" id="1372710005733"/>
-										<leaf id="1372710005735"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
 									</backup-path>
 								</property>
 								<property factory="StackDockPropertyFactory">
-									<index>5</index>
+									<index>3</index>
 									<placeholder>dock.single.Clocks</placeholder>
 								</property>
 							</location>
@@ -1202,11 +1159,11 @@
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Connections\ \-\ Beta</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="LEFT" size="0.75" id="1372710005727"/>
-										<node location="TOP" size="0.75" id="1372710005733"/>
-										<leaf id="1372710005735"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
 									</backup-path>
 								</property>
 								<property factory="StackDockPropertyFactory">
@@ -1230,15 +1187,15 @@
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Parameters</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="LEFT" size="0.75" id="1372710005727"/>
-										<node location="TOP" size="0.75" id="1372710005733"/>
-										<leaf id="1372710005735"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="BOTTOM" size="0.25"/>
+										<leaf id="-1"/>
 									</backup-path>
 								</property>
 								<property factory="StackDockPropertyFactory">
-									<index>10</index>
+									<index>0</index>
 									<placeholder>dock.single.Parameters</placeholder>
 								</property>
 							</location>
@@ -1286,12 +1243,16 @@
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Presets</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="RIGHT" size="0.25" id="1372710005727"/>
-										<node location="BOTTOM" size="0.5" id="1372710005739"/>
-										<leaf id="1372710005743"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="RIGHT" size="0.25"/>
+										<node location="BOTTOM" size="0.5"/>
+										<leaf id="-1"/>
 									</backup-path>
+								</property>
+								<property factory="StackDockPropertyFactory">
+									<index>0</index>
+									<placeholder>dock.single.Presets</placeholder>
 								</property>
 							</location>
 							<layout>
@@ -1305,16 +1266,42 @@
 								<children ignore="false"/>
 							</layout>
 						</child>
+						<child key="single Messages" root="ccontrol center" location="true">
+							<location>
+								<property factory="SplitDockPlaceholderProperty">
+									<placeholder>dock.single.Messages</placeholder>
+									<backup-path>
+										<node location="RIGHT" size="0.8"/>
+										<node location="BOTTOM" size="0.25"/>
+										<leaf id="-1"/>
+									</backup-path>
+								</property>
+								<property factory="StackDockPropertyFactory">
+									<index>0</index>
+									<placeholder>dock.single.Messages</placeholder>
+								</property>
+							</location>
+							<layout>
+								<layout factory="predefined" placeholder="dock.single.Messages">
+									<replacement id="dockablesingle Messages"/>
+									<delegate id="delegate_ccontrol backup factory id">
+										<id>Messages</id>
+										<area/>
+									</delegate>
+								</layout>
+								<children ignore="false"/>
+							</layout>
+						</child>
 						<child key="single Instrumentation - Beta" root="ccontrol center" location="true">
 							<location>
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Instrumentation\ \-\ Beta</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="LEFT" size="0.75" id="1372710005727"/>
-										<node location="TOP" size="0.75" id="1372710005733"/>
-										<leaf id="1372710005735"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
 									</backup-path>
 								</property>
 								<property factory="StackDockPropertyFactory">
@@ -1338,15 +1325,15 @@
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Interconnect\ Requirements</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="LEFT" size="0.75" id="1372710005727"/>
-										<node location="TOP" size="0.75" id="1372710005733"/>
-										<leaf id="1372710005735"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
 									</backup-path>
 								</property>
 								<property factory="StackDockPropertyFactory">
-									<index>8</index>
+									<index>6</index>
 									<placeholder>dock.single.Interconnect\ Requirements</placeholder>
 								</property>
 							</location>
@@ -1366,12 +1353,16 @@
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Block\ Symbol</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="RIGHT" size="0.25" id="1372710005727"/>
-										<node location="TOP" size="0.5" id="1372710005739"/>
-										<leaf id="1372710005741"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="RIGHT" size="0.25"/>
+										<node location="TOP" size="0.5"/>
+										<leaf id="-1"/>
 									</backup-path>
+								</property>
+								<property factory="StackDockPropertyFactory">
+									<index>0</index>
+									<placeholder>dock.single.Block\ Symbol</placeholder>
 								</property>
 							</location>
 							<layout>
@@ -1390,15 +1381,15 @@
 								<property factory="SplitDockPlaceholderProperty">
 									<placeholder>dock.single.Data\ Path\ \-\ Beta</placeholder>
 									<backup-path>
-										<node location="RIGHT" size="0.8" id="1372710005721"/>
-										<node location="TOP" size="0.75" id="1372710005725"/>
-										<node location="LEFT" size="0.75" id="1372710005727"/>
-										<node location="TOP" size="0.75" id="1372710005733"/>
-										<leaf id="1372710005735"/>
+										<node location="RIGHT" size="0.8"/>
+										<node location="TOP" size="0.75"/>
+										<node location="LEFT" size="0.75"/>
+										<node location="TOP" size="0.75"/>
+										<leaf id="-1"/>
 									</backup-path>
 								</property>
 								<property factory="StackDockPropertyFactory">
-									<index>9</index>
+									<index>8</index>
 									<placeholder>dock.single.Data\ Path\ \-\ Beta</placeholder>
 								</property>
 							</location>
@@ -1413,11 +1404,37 @@
 								<children ignore="false"/>
 							</layout>
 						</child>
+						<child key="single Hierarchy" root="ccontrol center" location="true">
+							<location>
+								<property factory="SplitDockPlaceholderProperty">
+									<placeholder>dock.single.Hierarchy</placeholder>
+									<backup-path>
+										<node location="LEFT" size="0.2"/>
+										<node location="BOTTOM" size="0.6"/>
+										<leaf id="-1"/>
+									</backup-path>
+								</property>
+								<property factory="StackDockPropertyFactory">
+									<index>0</index>
+									<placeholder>dock.single.Hierarchy</placeholder>
+								</property>
+							</location>
+							<layout>
+								<layout factory="predefined" placeholder="dock.single.Hierarchy">
+									<replacement id="dockablesingle Hierarchy"/>
+									<delegate id="delegate_ccontrol backup factory id">
+										<id>Hierarchy</id>
+										<area/>
+									</delegate>
+								</layout>
+								<children ignore="false"/>
+							</layout>
+						</child>
 					</children>
 				</base>
 				<modes>
 					<dockables>
-						<entry id="single Project Settings" current="dock.mode.normal">
+						<entry id="single Project Settings">
 							<history>
 								<mode>dock.mode.normal</mode>
 							</history>
@@ -1445,7 +1462,7 @@
 								</property>
 							</properties>
 						</entry>
-						<entry id="single Library" current="dock.mode.normal">
+						<entry id="single Library">
 							<history>
 								<mode>dock.mode.normal</mode>
 							</history>
@@ -1466,7 +1483,7 @@
 								</property>
 							</properties>
 						</entry>
-						<entry id="single System Contents" current="dock.mode.normal">
+						<entry id="single System Contents">
 							<history>
 								<mode>dock.mode.normal</mode>
 							</history>
@@ -1550,7 +1567,7 @@
 								</property>
 							</properties>
 						</entry>
-						<entry id="single Address Map" current="dock.mode.normal">
+						<entry id="single Address Map">
 							<history>
 								<mode>dock.mode.normal</mode>
 							</history>
@@ -1724,7 +1741,7 @@
 								</property>
 							</properties>
 						</entry>
-						<entry id="single Messages" current="dock.mode.normal">
+						<entry id="single Messages">
 							<history>
 								<mode>dock.mode.normal</mode>
 							</history>
@@ -1856,7 +1873,7 @@
 								</property>
 							</properties>
 						</entry>
-						<entry id="single Hierarchy" current="dock.mode.normal">
+						<entry id="single Hierarchy">
 							<history>
 								<mode>dock.mode.minimized</mode>
 								<mode>dock.mode.normal</mode>

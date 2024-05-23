@@ -15,7 +15,6 @@
 #ifndef FIFO_H_
 #define FIFO_H_
 
-#include <io.h>
 #include <stdio.h>
 #include "altera_avalon_fifo_util.h"
 
@@ -23,17 +22,21 @@
 #define ALMOST_EMTY 0
 #define ALMOST_FULL FIFO_DEPTH - ALMOST_EMTY
 
-#define IN_BASE_1to2A 0x410ff
-#define OUT_BASE_1to2A 0x11057
-#define CONTROL_BASE_1to2A 0x401a0
+#define IN_BASE_1to2A 0x10001114
+#define OUT_BASE_1to2A 0x21054
+#define CONTROL_BASE_1to2A 0x100010A0
 
-#define IN_BASE_1to2B 0x410f8
-#define OUT_BASE_1to2B 0x11050
-#define CONTROL_BASE_1to2B 0x41080
+#define IN_BASE_1to2B 0x10001110
+#define OUT_BASE_1to2B 0x21050
+#define CONTROL_BASE_1to2B 0x10001080
 
-#define IN_BASE_1to2C 0x410f4
-#define OUT_BASE_1to2C 0x1104c
-#define CONTROL_BASE_1to2C 0x41060
+#define IN_BASE_1to2C 0x1000110C
+#define OUT_BASE_1to2C 0x2104C
+#define CONTROL_BASE_1to2C 0x10001060
+
+#define IN_BASE_2to3 0x21048
+#define OUT_BASE_2to3 0x2106C
+#define CONTROL_BASE_2to3 0x21000
 
 // CALL THIS FUNCTION AT THE BEGINING OF BOTH PROGRAMS USING THIS FIFO. CHANGE THE NAME FOR DIFFERENT FIFOS
 void FIFO_INIT(int controllBase);

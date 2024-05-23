@@ -3,7 +3,7 @@
  <debug showDebugMenu="0" />
  <systemtable>
   <columns>
-   <connections preferredWidth="431" />
+   <connections preferredWidth="463" />
    <irq preferredWidth="111" />
    <name preferredWidth="237" />
   </columns>
@@ -16,6 +16,5 @@
   </columns>
  </clocktable>
  <window width="1920" height="1030" x="0" y="0" />
- <library
-   expandedCategories="Library/Embedded Processors,Library/Peripherals/Debug and Performance,Library,Library/Verification/Debug &amp; Performance,Library/Peripherals,Project,Library/Verification" />
+ <library expandedCategories="Project,Library,Library/PLL" />
 </preferences>
