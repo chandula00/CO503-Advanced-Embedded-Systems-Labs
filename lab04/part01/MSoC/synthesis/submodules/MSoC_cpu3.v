@@ -512,12 +512,12 @@ defparam MSoC_cpu3_ociram_sp_ram.lpm_file = "MSoC_cpu3_ociram_default_contents.h
 //synthesis read_comments_as_HDL on
 //defparam MSoC_cpu3_ociram_sp_ram.lpm_file = "MSoC_cpu3_ociram_default_contents.mif";
 //synthesis read_comments_as_HDL off
-  assign cfgrom_readdata = (MonAReg[4 : 2] == 3'd0)? 32'h00010020 :
-    (MonAReg[4 : 2] == 3'd1)? 32'h00001d12 :
+  assign cfgrom_readdata = (MonAReg[4 : 2] == 3'd0)? 32'h00020020 :
+    (MonAReg[4 : 2] == 3'd1)? 32'h00001d13 :
     (MonAReg[4 : 2] == 3'd2)? 32'h00040000 :
     (MonAReg[4 : 2] == 3'd3)? 32'h00000100 :
     (MonAReg[4 : 2] == 3'd4)? 32'h20000000 :
-    (MonAReg[4 : 2] == 3'd5)? 32'h00010000 :
+    (MonAReg[4 : 2] == 3'd5)? 32'h00020000 :
     (MonAReg[4 : 2] == 3'd6)? 32'h00000000 :
     32'h00000000;
 
@@ -951,7 +951,7 @@ module MSoC_cpu3_nios2_oci_xbrk (
   output           xbrk_trigout;
   input            D_valid;
   input            E_valid;
-  input   [ 15: 0] F_pc;
+  input   [ 16: 0] F_pc;
   input            clk;
   input            reset_n;
   input            trigger_state_0;
@@ -968,7 +968,7 @@ module MSoC_cpu3_nios2_oci_xbrk (
   reg              E_xbrk_traceoff;
   reg              E_xbrk_traceon;
   reg              E_xbrk_trigout;
-  wire    [ 17: 0] cpu_i_address;
+  wire    [ 18: 0] cpu_i_address;
   wire             xbrk0_armed;
   wire             xbrk0_break_hit;
   wire             xbrk0_goto0_hit;
@@ -1491,7 +1491,7 @@ module MSoC_cpu3_nios2_oci_itrace (
                   else if (is_fast_tlb_miss_exception)
                       pending_exc_handler <= 32'h0;
                   else 
-                    pending_exc_handler <= 32'h10020;
+                    pending_exc_handler <= 32'h20020;
                   pending_frametype <= 4'b0000;
                 end
               else if (is_idct)
@@ -2701,7 +2701,7 @@ module MSoC_cpu3_nios2_oci (
   input            D_valid;
   input   [ 31: 0] E_st_data;
   input            E_valid;
-  input   [ 15: 0] F_pc;
+  input   [ 16: 0] F_pc;
   input   [  8: 0] address_nxt;
   input   [ 31: 0] av_ld_data_aligned_filtered;
   input   [  3: 0] byteenable_nxt;
@@ -3201,7 +3201,7 @@ module MSoC_cpu3 (
   output           d_read;
   output           d_write;
   output  [ 31: 0] d_writedata;
-  output  [ 17: 0] i_address;
+  output  [ 18: 0] i_address;
   output           i_read;
   output           jtag_debug_module_debugaccess_to_roms;
   output  [ 31: 0] jtag_debug_module_readdata;
@@ -3279,7 +3279,7 @@ module MSoC_cpu3 (
   wire    [  5: 0] D_iw_opx;
   wire    [  4: 0] D_iw_shift_imm5;
   wire    [  4: 0] D_iw_trap_break_imm5;
-  wire    [ 15: 0] D_jmp_direct_target_waddr;
+  wire    [ 16: 0] D_jmp_direct_target_waddr;
   wire    [  1: 0] D_logic_op;
   wire    [  1: 0] D_logic_op_raw;
   wire             D_mem16;
@@ -3621,15 +3621,15 @@ module MSoC_cpu3 (
   wire             F_op_xor;
   wire             F_op_xorhi;
   wire             F_op_xori;
-  reg     [ 15: 0] F_pc /* synthesis ALTERA_IP_DEBUG_VISIBLE = 1 */;
+  reg     [ 16: 0] F_pc /* synthesis ALTERA_IP_DEBUG_VISIBLE = 1 */;
   wire             F_pc_en;
-  wire    [ 15: 0] F_pc_no_crst_nxt;
-  wire    [ 15: 0] F_pc_nxt;
-  wire    [ 15: 0] F_pc_plus_one;
+  wire    [ 16: 0] F_pc_no_crst_nxt;
+  wire    [ 16: 0] F_pc_nxt;
+  wire    [ 16: 0] F_pc_plus_one;
   wire    [  1: 0] F_pc_sel_nxt;
-  wire    [ 17: 0] F_pcb;
-  wire    [ 17: 0] F_pcb_nxt;
-  wire    [ 17: 0] F_pcb_plus_four;
+  wire    [ 18: 0] F_pcb;
+  wire    [ 18: 0] F_pcb_nxt;
+  wire    [ 18: 0] F_pcb_plus_four;
   wire             F_valid;
   wire    [ 55: 0] F_vinst;
   reg     [  1: 0] R_compare_op;
@@ -3781,7 +3781,7 @@ module MSoC_cpu3 (
   reg              hbreak_pending;
   wire             hbreak_pending_nxt;
   wire             hbreak_req;
-  wire    [ 17: 0] i_address;
+  wire    [ 18: 0] i_address;
   reg              i_read;
   wire             i_read_nxt;
   wire    [ 31: 0] iactive;
@@ -4156,9 +4156,9 @@ module MSoC_cpu3 (
     (W_br_taken | R_ctrl_uncond_cti_non_br)   ? 2'b10 :
     2'b11;
 
-  assign F_pc_no_crst_nxt = (F_pc_sel_nxt == 2'b00)? 16392 :
-    (F_pc_sel_nxt == 2'b01)? 33288 :
-    (F_pc_sel_nxt == 2'b10)? E_arith_result[17 : 2] :
+  assign F_pc_no_crst_nxt = (F_pc_sel_nxt == 2'b00)? 32776 :
+    (F_pc_sel_nxt == 2'b01)? 66056 :
+    (F_pc_sel_nxt == 2'b10)? E_arith_result[18 : 2] :
     F_pc_plus_one;
 
   assign F_pc_nxt = F_pc_no_crst_nxt;
@@ -4168,7 +4168,7 @@ module MSoC_cpu3 (
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
-          F_pc <= 16384;
+          F_pc <= 32768;
       else if (F_pc_en)
           F_pc <= F_pc_nxt;
     end

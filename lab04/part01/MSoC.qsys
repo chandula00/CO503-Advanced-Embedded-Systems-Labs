@@ -21,11 +21,19 @@
       }
       datum baseAddress
       {
-         value = "135264";
+         value = "135232";
          type = "String";
       }
    }
    element jtag_uart3.avalon_jtag_slave
+   {
+      datum baseAddress
+      {
+         value = "266336";
+         type = "String";
+      }
+   }
+   element jtag_uart5.avalon_jtag_slave
    {
       datum baseAddress
       {
@@ -41,23 +49,15 @@
          type = "String";
       }
    }
-   element jtag_uart5.avalon_jtag_slave
+   element jtag_uart2.avalon_jtag_slave
    {
       datum baseAddress
       {
-         value = "135264";
+         value = "266304";
          type = "String";
       }
    }
    element jtag_uart6.avalon_jtag_slave
-   {
-      datum baseAddress
-      {
-         value = "135232";
-         type = "String";
-      }
-   }
-   element jtag_uart2.avalon_jtag_slave
    {
       datum baseAddress
       {
@@ -209,27 +209,27 @@
          type = "int";
       }
    }
-   element fifo1to4.in
+   element fifo1to5.in
    {
       datum baseAddress
       {
-         value = "268439816";
+         value = "268439812";
          type = "String";
       }
    }
-   element fifo3to4.in
+   element fifo5to6.in
    {
       datum baseAddress
       {
-         value = "135272";
+         value = "135276";
          type = "String";
       }
    }
-   element fifo1to6.in
+   element fifo4to5.in
    {
       datum baseAddress
       {
-         value = "268439808";
+         value = "135244";
          type = "String";
       }
    }
@@ -241,11 +241,11 @@
          type = "String";
       }
    }
-   element fifo5to6.in
+   element fifo1to6.in
    {
       datum baseAddress
       {
-         value = "135276";
+         value = "268439808";
          type = "String";
       }
    }
@@ -269,39 +269,47 @@
    {
       datum baseAddress
       {
-         value = "135240";
+         value = "266312";
          type = "String";
       }
    }
-   element fifo1to5.in
+   element fifo3to4.in
    {
       datum baseAddress
       {
-         value = "268439812";
+         value = "266344";
          type = "String";
       }
    }
-   element fifo4to5.in
+   element fifo1to4.in
    {
       datum baseAddress
       {
-         value = "135276";
+         value = "268439816";
          type = "String";
       }
    }
-   element fifo3to4.in_csr
+   element fifo1to4.in_csr
    {
       datum baseAddress
       {
-         value = "135200";
+         value = "268439616";
          type = "String";
       }
    }
-   element fifo5to6.in_csr
+   element fifo1to5.in_csr
    {
       datum baseAddress
       {
-         value = "135200";
+         value = "268439584";
+         type = "String";
+      }
+   }
+   element fifo1to2B.in_csr
+   {
+      datum baseAddress
+      {
+         value = "268439680";
          type = "String";
       }
    }
@@ -318,43 +326,11 @@
          type = "String";
       }
    }
-   element fifo1to2A.in_csr
+   element fifo5to6.in_csr
    {
       datum baseAddress
       {
-         value = "268439712";
-         type = "String";
-      }
-   }
-   element fifo1to2B.in_csr
-   {
-      datum baseAddress
-      {
-         value = "268439680";
-         type = "String";
-      }
-   }
-   element fifo1to6.in_csr
-   {
-      datum baseAddress
-      {
-         value = "268439552";
-         type = "String";
-      }
-   }
-   element fifo1to4.in_csr
-   {
-      datum baseAddress
-      {
-         value = "268439616";
-         type = "String";
-      }
-   }
-   element fifo2to3.in_csr
-   {
-      datum baseAddress
-      {
-         value = "135168";
+         value = "135200";
          type = "String";
       }
    }
@@ -366,15 +342,39 @@
          type = "String";
       }
    }
-   element fifo1to5.in_csr
+   element fifo2to3.in_csr
    {
       datum baseAddress
       {
-         value = "268439584";
+         value = "266240";
          type = "String";
       }
    }
-   element cpu3.jtag_debug_module
+   element fifo3to4.in_csr
+   {
+      datum baseAddress
+      {
+         value = "266272";
+         type = "String";
+      }
+   }
+   element fifo1to2A.in_csr
+   {
+      datum baseAddress
+      {
+         value = "268439712";
+         type = "String";
+      }
+   }
+   element fifo1to6.in_csr
+   {
+      datum baseAddress
+      {
+         value = "268439552";
+         type = "String";
+      }
+   }
+   element cpu4.jtag_debug_module
    {
       datum baseAddress
       {
@@ -382,15 +382,23 @@
          type = "String";
       }
    }
-   element cpu1.jtag_debug_module
+   element cpu2.jtag_debug_module
    {
       datum baseAddress
       {
-         value = "268437504";
+         value = "264192";
          type = "String";
       }
    }
-   element cpu2.jtag_debug_module
+   element cpu3.jtag_debug_module
+   {
+      datum baseAddress
+      {
+         value = "264192";
+         type = "String";
+      }
+   }
+   element cpu6.jtag_debug_module
    {
       datum baseAddress
       {
@@ -406,19 +414,11 @@
          type = "String";
       }
    }
-   element cpu6.jtag_debug_module
+   element cpu1.jtag_debug_module
    {
       datum baseAddress
       {
-         value = "133120";
-         type = "String";
-      }
-   }
-   element cpu4.jtag_debug_module
-   {
-      datum baseAddress
-      {
-         value = "133120";
+         value = "268437504";
          type = "String";
       }
    }
@@ -518,19 +518,35 @@
          type = "int";
       }
    }
+   element fifo1to6.out
+   {
+      datum baseAddress
+      {
+         value = "135240";
+         type = "String";
+      }
+   }
+   element fifo1to2C.out
+   {
+      datum baseAddress
+      {
+         value = "266316";
+         type = "String";
+      }
+   }
+   element fifo1to2B.out
+   {
+      datum baseAddress
+      {
+         value = "266320";
+         type = "String";
+      }
+   }
    element fifo1to2A.out
    {
       datum baseAddress
       {
-         value = "135252";
-         type = "String";
-      }
-   }
-   element fifo2to3.out
-   {
-      datum baseAddress
-      {
-         value = "135276";
+         value = "266324";
          type = "String";
       }
    }
@@ -542,11 +558,27 @@
          type = "String";
       }
    }
+   element fifo5to6.out
+   {
+      datum baseAddress
+      {
+         value = "135244";
+         type = "String";
+      }
+   }
    element fifo3to4.out
    {
       datum baseAddress
       {
-         value = "135280";
+         value = "135248";
+         type = "String";
+      }
+   }
+   element fifo1to4.out
+   {
+      datum baseAddress
+      {
+         value = "135240";
          type = "String";
       }
    }
@@ -558,43 +590,11 @@
          type = "String";
       }
    }
-   element fifo1to6.out
+   element fifo2to3.out
    {
       datum baseAddress
       {
-         value = "135240";
-         type = "String";
-      }
-   }
-   element fifo5to6.out
-   {
-      datum baseAddress
-      {
-         value = "135244";
-         type = "String";
-      }
-   }
-   element fifo1to2B.out
-   {
-      datum baseAddress
-      {
-         value = "135248";
-         type = "String";
-      }
-   }
-   element fifo1to2C.out
-   {
-      datum baseAddress
-      {
-         value = "135244";
-         type = "String";
-      }
-   }
-   element fifo1to4.out
-   {
-      datum baseAddress
-      {
-         value = "135272";
+         value = "266348";
          type = "String";
       }
    }
@@ -622,35 +622,19 @@
          type = "String";
       }
    }
-   element timer1.s1
-   {
-      datum baseAddress
-      {
-         value = "268439744";
-         type = "String";
-      }
-   }
-   element mem1.s1
-   {
-      datum baseAddress
-      {
-         value = "268566528";
-         type = "String";
-      }
-   }
-   element mem2.s1
-   {
-      datum baseAddress
-      {
-         value = "65536";
-         type = "String";
-      }
-   }
-   element timer2.s1
+   element timer4.s1
    {
       datum baseAddress
       {
          value = "135200";
+         type = "String";
+      }
+   }
+   element timer6.s1
+   {
+      datum baseAddress
+      {
+         value = "135168";
          type = "String";
       }
    }
@@ -666,19 +650,27 @@
    {
       datum baseAddress
       {
-         value = "65536";
+         value = "131072";
          type = "String";
       }
    }
-   element timer4.s1
+   element mem1.s1
    {
       datum baseAddress
       {
-         value = "135232";
+         value = "268566528";
          type = "String";
       }
    }
-   element mem4.s1
+   element timer1.s1
+   {
+      datum baseAddress
+      {
+         value = "268439744";
+         type = "String";
+      }
+   }
+   element mem6.s1
    {
       datum baseAddress
       {
@@ -694,27 +686,27 @@
          type = "String";
       }
    }
-   element mem6.s1
-   {
-      datum baseAddress
-      {
-         value = "65536";
-         type = "String";
-      }
-   }
-   element timer6.s1
-   {
-      datum baseAddress
-      {
-         value = "135168";
-         type = "String";
-      }
-   }
    element timer3.s1
    {
       datum baseAddress
       {
-         value = "135232";
+         value = "266304";
+         type = "String";
+      }
+   }
+   element mem2.s1
+   {
+      datum baseAddress
+      {
+         value = "131072";
+         type = "String";
+      }
+   }
+   element mem4.s1
+   {
+      datum baseAddress
+      {
+         value = "65536";
          type = "String";
       }
    }
@@ -723,6 +715,14 @@
       datum baseAddress
       {
          value = "135232";
+         type = "String";
+      }
+   }
+   element timer2.s1
+   {
+      datum baseAddress
+      {
+         value = "266272";
          type = "String";
       }
    }
@@ -1167,7 +1167,7 @@
   <parameter name="ocimem_ramBlockType" value="Automatic" />
   <parameter name="mmu_ramBlockType" value="Automatic" />
   <parameter name="bht_ramBlockType" value="Automatic" />
-  <parameter name="instAddrWidth" value="18" />
+  <parameter name="instAddrWidth" value="19" />
   <parameter name="dataAddrWidth" value="29" />
   <parameter name="tightlyCoupledDataMaster0AddrWidth" value="1" />
   <parameter name="tightlyCoupledDataMaster1AddrWidth" value="1" />
@@ -1177,8 +1177,8 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='mem2.s1' start='0x10000' end='0x20000' /><slave name='cpu2.jtag_debug_module' start='0x20800' end='0x21000' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='mem2.s1' start='0x10000' end='0x20000' /><slave name='cpu2.jtag_debug_module' start='0x20800' end='0x21000' /><slave name='fifo2to3.in_csr' start='0x21000' end='0x21020' /><slave name='timer2.s1' start='0x21020' end='0x21040' /><slave name='jtag_uart2.avalon_jtag_slave' start='0x21040' end='0x21048' /><slave name='fifo2to3.in' start='0x21048' end='0x2104C' /><slave name='fifo1to2C.out' start='0x2104C' end='0x21050' /><slave name='fifo1to2B.out' start='0x21050' end='0x21054' /><slave name='fifo1to2A.out' start='0x21054' end='0x21058' /><slave name='fifo1to2C.in_csr' start='0x10001060' end='0x10001080' /><slave name='fifo1to2B.in_csr' start='0x10001080' end='0x100010A0' /><slave name='fifo1to2A.in_csr' start='0x100010A0' end='0x100010C0' /><slave name='sysid.control_slave' start='0x100010F0' end='0x100010F8' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='mem2.s1' start='0x20000' end='0x37000' /><slave name='cpu2.jtag_debug_module' start='0x40800' end='0x41000' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='mem2.s1' start='0x20000' end='0x37000' /><slave name='cpu2.jtag_debug_module' start='0x40800' end='0x41000' /><slave name='fifo2to3.in_csr' start='0x41000' end='0x41020' /><slave name='timer2.s1' start='0x41020' end='0x41040' /><slave name='jtag_uart2.avalon_jtag_slave' start='0x41040' end='0x41048' /><slave name='fifo2to3.in' start='0x41048' end='0x4104C' /><slave name='fifo1to2C.out' start='0x4104C' end='0x41050' /><slave name='fifo1to2B.out' start='0x41050' end='0x41054' /><slave name='fifo1to2A.out' start='0x41054' end='0x41058' /><slave name='fifo1to2C.in_csr' start='0x10001060' end='0x10001080' /><slave name='fifo1to2B.in_csr' start='0x10001080' end='0x100010A0' /><slave name='fifo1to2A.in_csr' start='0x100010A0' end='0x100010C0' /><slave name='sysid.control_slave' start='0x100010F0' end='0x100010F8' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone IV E" />
   <parameter name="internalIrqMaskSystemInfo" value="65598" />
@@ -1205,7 +1205,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="65536" />
+  <parameter name="memorySize" value="94208" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
   <parameter name="simMemInitOnlyFilename" value="0" />
@@ -1349,7 +1349,7 @@
   <parameter name="ocimem_ramBlockType" value="Automatic" />
   <parameter name="mmu_ramBlockType" value="Automatic" />
   <parameter name="bht_ramBlockType" value="Automatic" />
-  <parameter name="instAddrWidth" value="18" />
+  <parameter name="instAddrWidth" value="19" />
   <parameter name="dataAddrWidth" value="29" />
   <parameter name="tightlyCoupledDataMaster0AddrWidth" value="1" />
   <parameter name="tightlyCoupledDataMaster1AddrWidth" value="1" />
@@ -1359,8 +1359,8 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='mem3.s1' start='0x10000' end='0x20000' /><slave name='cpu3.jtag_debug_module' start='0x20800' end='0x21000' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='mem3.s1' start='0x10000' end='0x20000' /><slave name='cpu3.jtag_debug_module' start='0x20800' end='0x21000' /><slave name='fifo2to3.in_csr' start='0x21000' end='0x21020' /><slave name='fifo3to4.in_csr' start='0x21020' end='0x21040' /><slave name='timer3.s1' start='0x21040' end='0x21060' /><slave name='jtag_uart3.avalon_jtag_slave' start='0x21060' end='0x21068' /><slave name='fifo3to4.in' start='0x21068' end='0x2106C' /><slave name='fifo2to3.out' start='0x2106C' end='0x21070' /><slave name='sysid.control_slave' start='0x100010F0' end='0x100010F8' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='mem3.s1' start='0x20000' end='0x37000' /><slave name='cpu3.jtag_debug_module' start='0x40800' end='0x41000' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='mem3.s1' start='0x20000' end='0x37000' /><slave name='cpu3.jtag_debug_module' start='0x40800' end='0x41000' /><slave name='fifo2to3.in_csr' start='0x41000' end='0x41020' /><slave name='fifo3to4.in_csr' start='0x41020' end='0x41040' /><slave name='timer3.s1' start='0x41040' end='0x41060' /><slave name='jtag_uart3.avalon_jtag_slave' start='0x41060' end='0x41068' /><slave name='fifo3to4.in' start='0x41068' end='0x4106C' /><slave name='fifo2to3.out' start='0x4106C' end='0x41070' /><slave name='sysid.control_slave' start='0x100010F0' end='0x100010F8' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone IV E" />
   <parameter name="internalIrqMaskSystemInfo" value="65550" />
@@ -1387,7 +1387,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="65536" />
+  <parameter name="memorySize" value="94208" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
   <parameter name="simMemInitOnlyFilename" value="0" />
@@ -1584,7 +1584,7 @@
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
   <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='mem4.s1' start='0x10000' end='0x20000' /><slave name='cpu4.jtag_debug_module' start='0x20800' end='0x21000' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='mem4.s1' start='0x10000' end='0x20000' /><slave name='cpu4.jtag_debug_module' start='0x20800' end='0x21000' /><slave name='fifo4to5.in_csr' start='0x21000' end='0x21020' /><slave name='fifo3to4.in_csr' start='0x21020' end='0x21040' /><slave name='timer4.s1' start='0x21040' end='0x21060' /><slave name='jtag_uart4.avalon_jtag_slave' start='0x21060' end='0x21068' /><slave name='fifo1to4.out' start='0x21068' end='0x2106C' /><slave name='fifo4to5.in' start='0x2106C' end='0x21070' /><slave name='fifo3to4.out' start='0x21070' end='0x21074' /><slave name='fifo1to4.in_csr' start='0x10001040' end='0x10001060' /><slave name='sysid.control_slave' start='0x100010F0' end='0x100010F8' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='mem4.s1' start='0x10000' end='0x20000' /><slave name='cpu4.jtag_debug_module' start='0x20800' end='0x21000' /><slave name='fifo4to5.in_csr' start='0x21000' end='0x21020' /><slave name='timer4.s1' start='0x21020' end='0x21040' /><slave name='jtag_uart4.avalon_jtag_slave' start='0x21040' end='0x21048' /><slave name='fifo1to4.out' start='0x21048' end='0x2104C' /><slave name='fifo4to5.in' start='0x2104C' end='0x21050' /><slave name='fifo3to4.out' start='0x21050' end='0x21054' /><slave name='fifo3to4.in_csr' start='0x41020' end='0x41040' /><slave name='fifo1to4.in_csr' start='0x10001040' end='0x10001060' /><slave name='sysid.control_slave' start='0x100010F0' end='0x100010F8' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone IV E" />
   <parameter name="internalIrqMaskSystemInfo" value="65566" />
@@ -2511,7 +2511,7 @@
    start="cpu2.instruction_master"
    end="cpu2.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00020800" />
+  <parameter name="baseAddress" value="0x00040800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2520,7 +2520,7 @@
    start="cpu2.data_master"
    end="cpu2.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00020800" />
+  <parameter name="baseAddress" value="0x00040800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="13.1" start="clk.clk" end="cpu2.clk" />
@@ -2533,7 +2533,7 @@
  <connection kind="clock" version="13.1" start="clk.clk" end="mem2.clk1" />
  <connection kind="avalon" version="13.1" start="cpu2.data_master" end="mem2.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00010000" />
+  <parameter name="baseAddress" value="0x00020000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2542,7 +2542,7 @@
    start="cpu2.instruction_master"
    end="mem2.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00010000" />
+  <parameter name="baseAddress" value="0x00020000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="reset" version="13.1" start="clk.clk_reset" end="mem2.reset1" />
@@ -2560,7 +2560,7 @@
    end="timer2.reset" />
  <connection kind="avalon" version="13.1" start="cpu2.data_master" end="timer2.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021020" />
+  <parameter name="baseAddress" value="0x00041020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="13.1" start="clk.clk" end="jtag_uart2.clk" />
@@ -2580,7 +2580,7 @@
    start="cpu2.data_master"
    end="jtag_uart2.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021040" />
+  <parameter name="baseAddress" value="0x00041040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2594,7 +2594,7 @@
    start="cpu2.data_master"
    end="fifo1to2A.out">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021054" />
+  <parameter name="baseAddress" value="0x00041054" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2617,7 +2617,7 @@
    start="cpu2.data_master"
    end="fifo1to2B.out">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021050" />
+  <parameter name="baseAddress" value="0x00041050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2640,7 +2640,7 @@
    start="cpu2.data_master"
    end="fifo1to2C.out">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0002104c" />
+  <parameter name="baseAddress" value="0x0004104c" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2710,7 +2710,7 @@
    start="cpu3.instruction_master"
    end="cpu3.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00020800" />
+  <parameter name="baseAddress" value="0x00040800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2719,7 +2719,7 @@
    start="cpu3.data_master"
    end="cpu3.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00020800" />
+  <parameter name="baseAddress" value="0x00040800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="13.1" start="clk.clk" end="cpu3.clk" />
@@ -2732,7 +2732,7 @@
  <connection kind="clock" version="13.1" start="clk.clk" end="mem3.clk1" />
  <connection kind="avalon" version="13.1" start="cpu3.data_master" end="mem3.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00010000" />
+  <parameter name="baseAddress" value="0x00020000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2741,7 +2741,7 @@
    start="cpu3.instruction_master"
    end="mem3.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00010000" />
+  <parameter name="baseAddress" value="0x00020000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2759,7 +2759,7 @@
  <connection kind="reset" version="13.1" start="clk.clk_reset" end="timer3.reset" />
  <connection kind="avalon" version="13.1" start="cpu3.data_master" end="timer3.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021040" />
+  <parameter name="baseAddress" value="0x00041040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="13.1" start="clk.clk" end="jtag_uart3.clk" />
@@ -2779,7 +2779,7 @@
    start="cpu3.data_master"
    end="jtag_uart3.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021060" />
+  <parameter name="baseAddress" value="0x00041060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="interrupt" version="13.1" start="cpu3.d_irq" end="timer3.irq">
@@ -2814,7 +2814,7 @@
    start="cpu2.data_master"
    end="fifo2to3.in">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021048" />
+  <parameter name="baseAddress" value="0x00041048" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2823,7 +2823,7 @@
    start="cpu3.data_master"
    end="fifo2to3.out">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0002106c" />
+  <parameter name="baseAddress" value="0x0004106c" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2832,7 +2832,7 @@
    start="cpu3.data_master"
    end="fifo2to3.in_csr">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021000" />
+  <parameter name="baseAddress" value="0x00041000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2841,7 +2841,7 @@
    start="cpu2.data_master"
    end="fifo2to3.in_csr">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021000" />
+  <parameter name="baseAddress" value="0x00041000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2875,7 +2875,7 @@
    start="cpu3.data_master"
    end="fifo3to4.in">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021068" />
+  <parameter name="baseAddress" value="0x00041068" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2884,7 +2884,7 @@
    start="cpu3.data_master"
    end="fifo3to4.in_csr">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021020" />
+  <parameter name="baseAddress" value="0x00041020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2951,7 +2951,7 @@
    start="cpu4.data_master"
    end="fifo3to4.out">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021070" />
+  <parameter name="baseAddress" value="0x00021050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2960,7 +2960,7 @@
    start="cpu4.data_master"
    end="fifo3to4.in_csr">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021020" />
+  <parameter name="baseAddress" value="0x00041020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="13.1" start="clk.clk" end="timer4.clk" />
@@ -2972,7 +2972,7 @@
  <connection kind="reset" version="13.1" start="clk.clk_reset" end="timer4.reset" />
  <connection kind="avalon" version="13.1" start="cpu4.data_master" end="timer4.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021040" />
+  <parameter name="baseAddress" value="0x00021020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="13.1" start="clk.clk" end="jtag_uart4.clk" />
@@ -2992,7 +2992,7 @@
    start="cpu4.data_master"
    end="jtag_uart4.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021060" />
+  <parameter name="baseAddress" value="0x00021040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="interrupt" version="13.1" start="cpu4.d_irq" end="timer4.irq">
@@ -3029,7 +3029,7 @@
    start="cpu4.data_master"
    end="fifo4to5.in">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0002106c" />
+  <parameter name="baseAddress" value="0x0002104c" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -3367,7 +3367,7 @@
    start="cpu4.data_master"
    end="fifo1to4.out">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021068" />
+  <parameter name="baseAddress" value="0x00021048" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection

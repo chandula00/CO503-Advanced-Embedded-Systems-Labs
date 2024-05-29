@@ -19,6 +19,7 @@ void DCT(void)
 {
 	UINT16 i;
 	INT32 x0, x1, x2, x3, x4, x5, x6, x7, x8;
+	int temp;
 
 	/* All values are shifted left by 10 and rounded off to nearest integer */
 
@@ -36,7 +37,16 @@ void DCT(void)
 	/* read back from queue */
 	for (i = 0; i < 64; i++)
 	{
-		data[i] = (INT16)READ_FIFO((int *)&data[i], OUT_BASE_2to3, CONTROL_BASE_2to3); // Casting data
+		READ_FIFO(&temp, OUT_BASE_2to3, CONTROL_BASE_2to3);
+		data[i] = temp; // Casting data
+	}
+
+	printf("Incoming Data:\n");
+	for (i = 0; i < 64; i++)
+	{
+		printf("%4d ", data[i]);
+		if ((i + 1) % 8 == 0)
+			printf("\n");
 	}
 
 	for (i = 8; i > 0; i--)
@@ -111,10 +121,19 @@ void DCT(void)
 
 	data -= 8;
 
+	// printf("Transformed Data:\n");
+	// for (i = 0; i < 64; i++)
+	// {
+	// 	printf("%4d ", data[i]);
+	// 	if ((i + 1) % 8 == 0)
+	// 		printf("\n");
+	// }
+
 	/* write out to queue */
 	for (i = 0; i < 64; i++)
 	{
-		// WRITE_FIFO((int *)&data[i], IN_BASE_3to4, CONTROL_BASE_3to4); // Casting data
+		temp = data[i];
+		// WRITE_FIFO(&temp, IN_BASE_3to4, CONTROL_BASE_3to4); // Casting data
 	}
 }
 
@@ -135,4 +154,8 @@ int main(void)
 		DCT();
 		DCT();
 	}
+
+	free(data);
+
+	return 0;
 }

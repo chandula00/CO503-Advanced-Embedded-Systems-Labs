@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>May 23, 2024 4:40:39 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1716462639875</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>May 29, 2024 11:57:59 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1717007279272</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab04\part01\software\cpu3_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab04\part01\MSoC.sopcinfo</SopcDesignFile>
@@ -864,43 +864,43 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>mem3</slaveDescriptor>
-                <addressRange>0x00010000 - 0x0001FFFF</addressRange>
-                <addressSpan>65536</addressSpan>
+                <addressRange>0x00020000 - 0x00036FFF</addressRange>
+                <addressSpan>94208</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>fifo2to3_in_csr</slaveDescriptor>
-                <addressRange>0x00021000 - 0x0002101F</addressRange>
+                <addressRange>0x00041000 - 0x0004101F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>fifo3to4_in_csr</slaveDescriptor>
-                <addressRange>0x00021020 - 0x0002103F</addressRange>
+                <addressRange>0x00041020 - 0x0004103F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>timer3</slaveDescriptor>
-                <addressRange>0x00021040 - 0x0002105F</addressRange>
+                <addressRange>0x00041040 - 0x0004105F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart3</slaveDescriptor>
-                <addressRange>0x00021060 - 0x00021067</addressRange>
+                <addressRange>0x00041060 - 0x00041067</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>fifo3to4_in</slaveDescriptor>
-                <addressRange>0x00021068 - 0x0002106B</addressRange>
+                <addressRange>0x00041068 - 0x0004106B</addressRange>
                 <addressSpan>4</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>fifo2to3_out</slaveDescriptor>
-                <addressRange>0x0002106C - 0x0002106F</addressRange>
+                <addressRange>0x0004106C - 0x0004106F</addressRange>
                 <addressSpan>4</addressSpan>
                 <attributes/>
         </MemoryMap>
