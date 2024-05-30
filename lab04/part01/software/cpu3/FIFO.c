@@ -15,6 +15,7 @@
 
 void WRITE_FIFO(int *buffer, int inBase, int controllBase)
 {
+	// printf("Writing to FIFO : %d\n", altera_avalon_fifo_read_level(controllBase));
 
 	// Check if FIFO is full before writing
 	while (altera_avalon_fifo_read_level(controllBase) == ALMOST_FULL)

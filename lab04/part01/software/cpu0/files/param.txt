@@ -1,6 +1,6 @@
-/mnt/host/files/image0.bmp
+image0.bmp
 1
-/mnt/host/files/image1.bmp
+image1.bmp
 1
-/mnt/host/files/image2.bmp
+image2.bmp
 1

@@ -17,8 +17,14 @@ int main(int argc, char *argv[])
 	delay(100000);
 	FIFO_INIT(CONTROL_BASE_1to2C);
 	delay(100000);
+	FIFO_INIT(CONTROL_BASE_1to4);
+	delay(100000);
+	FIFO_INIT(CONTROL_BASE_1to5);
+	delay(100000);
+	FIFO_INIT(CONTROL_BASE_1to6);
+	delay(100000);
 
-	printf("Starting the program\n");
+	printf("Starting CPU1\n");
 
 	fp = fopen("/mnt/host/files/param.txt", "r");
 
@@ -34,6 +40,20 @@ int main(int argc, char *argv[])
 		printf("\nReading from file: %s\n", input_file_name);
 
 		fscanf(fp, "%d", &quality_factor);
+
+		// send the name to cpu6
+		INT8 out;
+		INT8 *filename = input_file_name;
+		while (*filename != '\0')
+		{
+			out = *filename;
+			WRITE_FIFO(&out, IN_BASE_1to6, CONTROL_BASE_1to6);
+			filename++;
+		}
+		out = '\0';
+		WRITE_FIFO(&out, IN_BASE_1to6, CONTROL_BASE_1to6);
+
+		printf("Name Send\n");
 
 		encode_image(input_file_name, quality_factor);
 

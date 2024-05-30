@@ -9,33 +9,38 @@ int main(void)
 	FILE *fptr;
 	UINT8 out;
 	INT8 filename[50];
+	int temp;
 
-	printf("Start\n");
+	printf("Starting CPU6 ....\n");
 
 	while (1)
 	{
+		printf("\nFinal...\n");
 
 		out = 0;
-		// READ_FIFO(&filename[out], OUT_BASE_5to6, CONTROL_BASE_1to6);
+		READ_FIFO(&temp, OUT_BASE_1to6, CONTROL_BASE_1to6);
+		filename[out] = temp;
 
-		// if (filename[out] == '\0')
-		// 	exit(0);
+		if (filename[out] == '\0')
+			exit(0);
 
-		// while (filename[out] != '\0')
-		// {
-		// 	out++;
-		// 	READ_FIFO(&filename[out], OUT_BASE_5to6, CONTROL_BASE_1to6);
-		// }
+		while (filename[out] != '\0')
+		{
+			out++;
+			READ_FIFO(&temp, OUT_BASE_1to6, CONTROL_BASE_1to6);
+			filename[out] = temp;
+		}
 
-		filename[out++] = 't';
-		filename[out++] = 'e';
-		filename[out++] = 's';
-		filename[out++] = 't';
+		printf("Name Received\n");
 
-		filename[out++] = '.';
-		filename[out++] = 'j';
-		filename[out++] = 'p';
-		filename[out++] = 'g';
+		// filename[out++] = 't';
+		// filename[out++] = 'e';
+		// filename[out++] = 's';
+		// filename[out++] = 't';
+
+		filename[out - 3] = 'j';
+		filename[out - 2] = 'p';
+		filename[out - 1] = 'g';
 		filename[out] = '\0';
 
 		char path[50] = "/mnt/host/files/";
@@ -43,34 +48,28 @@ int main(void)
 
 		fptr = fopen(path, "wb");
 
-		int n = 0;
-		while (n < 100)
+		while (1)
 		{
 			// out = (UINT8)RECV2();
-			// READ_FIFO(&out, OUT_BASE_5to6, CONTROL_BASE_5to6);
-			out = 'a';
+			READ_FIFO(&out, OUT_BASE_5to6, CONTROL_BASE_5to6);
 
 			fputc(out, fptr);
 
-			// if (out == 0xFF)
-			// {
-			// 	// out = (UINT8)RECV2();
-			// 	READ_FIFO(&out, OUT_BASE_5to6, CONTROL_BASE_5to6);
+			if (out == 0xFF)
+			{
+				// out = (UINT8)RECV2();
+				READ_FIFO(&out, OUT_BASE_5to6, CONTROL_BASE_5to6);
 
-			// 	fputc(out, fptr);
+				fputc(out, fptr);
 
-			// 	if (out == 0xD9)
-			// 		break;
-			// }
-
-			n++;
+				if (out == 0xD9)
+					break;
+			}
 		}
 
 		fclose(fptr);
 
 		printf("Image Done!\n");
-
-		break;
 	}
 
 	return 0;

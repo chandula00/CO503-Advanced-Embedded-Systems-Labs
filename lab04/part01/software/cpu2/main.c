@@ -22,10 +22,8 @@ void levelshift(void)
 
 	while (1)
 	{
-		printf("Running...\n");
-
 		// Read and level shift data
-		printf("First 8x8 Grid:\n");
+		// printf("First 8x8 Grid:\n");
 		for (j = 0; j < 64; j++)
 		{
 			row = j / 8;
@@ -33,13 +31,14 @@ void levelshift(void)
 
 			// Read from the first FIFO
 			READ_FIFO(&value, OUT_BASE_1to2A, CONTROL_BASE_1to2A);
+
 			value -= 128;
 			WRITE_FIFO(&value, IN_BASE_2to3, CONTROL_BASE_2to3);
 
-			printf("%4d ", value);
+			// printf("%4d ", value);
 
-			if (col == 7)
-				printf("\n");
+			// if (col == 7)
+			// 	printf("\n");
 
 			// Read from the second FIFO
 			READ_FIFO(&value, OUT_BASE_1to2B, CONTROL_BASE_1to2B);
@@ -52,27 +51,27 @@ void levelshift(void)
 			temp2[row][col] = value; // Store into temp array
 		}
 
-		// Print the first 8x8 grid
-		printf("Second 8x8 Grid:\n");
-		for (i = 0; i < 8; i++)
-		{
-			for (j = 0; j < 8; j++)
-			{
-				printf("%4d ", temp1[i][j]);
-			}
-			printf("\n");
-		}
+		// // Print the first 8x8 grid
+		// printf("Second 8x8 Grid:\n");
+		// for (i = 0; i < 8; i++)
+		// {
+		// 	for (j = 0; j < 8; j++)
+		// 	{
+		// 		printf("%4d ", temp1[i][j]);
+		// 	}
+		// 	printf("\n");
+		// }
 
-		// Print the second 8x8 grid
-		printf("Third 8x8 Grid:\n");
-		for (i = 0; i < 8; i++)
-		{
-			for (j = 0; j < 8; j++)
-			{
-				printf("%4d ", temp2[i][j]);
-			}
-			printf("\n");
-		}
+		// // Print the second 8x8 grid
+		// printf("Third 8x8 Grid:\n");
+		// for (i = 0; i < 8; i++)
+		// {
+		// 	for (j = 0; j < 8; j++)
+		// 	{
+		// 		printf("%4d ", temp2[i][j]);
+		// 	}
+		// 	printf("\n");
+		// }
 
 		int temp;
 		// Write the values from temp arrays to the FIFO
@@ -93,12 +92,14 @@ void levelshift(void)
 				WRITE_FIFO(&temp, IN_BASE_2to3, CONTROL_BASE_2to3);
 			}
 		}
+
+		printf("Level Shifting Done\n");
 	}
 }
 
 int main(void)
 {
-	printf("CPU2 Started!!!\n");
+	printf("Starting CPU2\n");
 
 	delay(100000);
 	FIFO_INIT(CONTROL_BASE_2to3);

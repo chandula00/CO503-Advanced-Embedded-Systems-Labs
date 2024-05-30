@@ -41,13 +41,13 @@ void DCT(void)
 		data[i] = temp; // Casting data
 	}
 
-	printf("Incoming Data:\n");
-	for (i = 0; i < 64; i++)
-	{
-		printf("%4d ", data[i]);
-		if ((i + 1) % 8 == 0)
-			printf("\n");
-	}
+	// printf("Incoming Data:\n");
+	// for (i = 0; i < 64; i++)
+	// {
+	// 	printf("%4d ", data[i]);
+	// 	if ((i + 1) % 8 == 0)
+	// 		printf("\n");
+	// }
 
 	for (i = 8; i > 0; i--)
 	{
@@ -133,26 +133,29 @@ void DCT(void)
 	for (i = 0; i < 64; i++)
 	{
 		temp = data[i];
-		// WRITE_FIFO(&temp, IN_BASE_3to4, CONTROL_BASE_3to4); // Casting data
+		WRITE_FIFO(&temp, IN_BASE_3to4, CONTROL_BASE_3to4); // Casting data
 	}
 }
 
 int main(void)
 {
-	printf("CPU3 Starting\n");
+	printf("Starting CPU3\n");
 
 	/* Initialize FIFO */
 	delay(100000);
-	// FIFO_INIT(CONTROL_BASE_3to4);
+	FIFO_INIT(CONTROL_BASE_3to4);
 	delay(100000);
 
 	data = (INT16 *)malloc(sizeof(INT16) * 64);
 
 	while (1)
 	{
+
 		DCT();
 		DCT();
 		DCT();
+
+		printf("DCT Done\n");
 	}
 
 	free(data);

@@ -72,6 +72,7 @@ UINT8 encode_image(char *input_file_name, UINT32 quality_factor)
 {
 	UINT16 i, j;
 	UINT32 image_width, image_height;
+	int temp;
 
 	JPEG_ENCODER_STRUCTURE JpegStruct;
 	JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure = &JpegStruct;
@@ -81,10 +82,13 @@ UINT8 encode_image(char *input_file_name, UINT32 quality_factor)
 
 	FILE *fpt;
 
-	fpt = fopen(input_file_name, "rb");
+	char path[50] = "/mnt/host/files/";
+	strcat(path, input_file_name);
+
+	fpt = fopen(path, "rb");
 	if (fpt == NULL)
 	{
-		fprintf(stderr, "Error opening input file: %s\n", input_file_name);
+		fprintf(stderr, "Error opening input file: %s\n", path);
 		return 1;
 	}
 
@@ -124,15 +128,15 @@ UINT8 encode_image(char *input_file_name, UINT32 quality_factor)
 	/* Initialization of JPEG control structure */
 	initialization(jpeg_encoder_structure, image_width, image_height);
 
-	/* Quantization Table Initialization */
-	// initialize_quantization_tables(quality_factor);
-	// SEND4((jpeg_encoder_structure->vertical_mcus) * (jpeg_encoder_structure->horizontal_mcus));
-	// SEND4(quality_factor);
+	// send data to stage 4
+	temp = (jpeg_encoder_structure->vertical_mcus) * (jpeg_encoder_structure->horizontal_mcus);
+	WRITE_FIFO(&temp, IN_BASE_1to4, CONTROL_BASE_1to4);
+	WRITE_FIFO(&quality_factor, IN_BASE_1to4, CONTROL_BASE_1to4);
 
 	/* Writing Marker Data */
-	// SEND5(image_width);
-	// SEND5(image_height);
-	// SEND5((jpeg_encoder_structure->vertical_mcus) * (jpeg_encoder_structure->horizontal_mcus));
+	WRITE_FIFO(&image_width, IN_BASE_1to5, CONTROL_BASE_1to5);
+	WRITE_FIFO(&image_height, IN_BASE_1to5, CONTROL_BASE_1to5);
+	WRITE_FIFO(&temp, IN_BASE_1to5, CONTROL_BASE_1to5);
 
 	// Print the entire image data as a grid
 	// printf("Entire image data as a grid:\n");
@@ -141,7 +145,7 @@ UINT8 encode_image(char *input_file_name, UINT32 quality_factor)
 	UINT8 *data_ptr = data;
 	for (i = 0; i < jpeg_encoder_structure->vertical_mcus; i++)
 	{
-		printf("\nBlock Number - %d\n", i + 1);
+		printf("Block Number - %d\n", i + 1);
 
 		jpeg_encoder_structure->rows = (i < jpeg_encoder_structure->vertical_mcus - 1) ? jpeg_encoder_structure->mcu_height : jpeg_encoder_structure->rows_in_bottom_mcus;
 
