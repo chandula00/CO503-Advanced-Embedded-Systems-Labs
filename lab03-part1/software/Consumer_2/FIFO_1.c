@@ -26,6 +26,12 @@ void WRITE_FIFO_1(int *buffer)
 	// Update the write pointer
 	writep += UNIT_SIZE;
 
+	printf("Counter : [%i]\t CAPACITY : [%i]\n ", IORD_32DIRECT(MEM_BASE,countp),CAPACITY);
+
+	if(writep==(CAPACITY*UNIT_SIZE)+STARTP){
+		writep = STARTP;
+	}
+
 	// Update "count" in shared mem
 	IOWR_32DIRECT(MEM_BASE, countp, IORD_32DIRECT(MEM_BASE, countp) + 0x1);
 
@@ -52,6 +58,10 @@ void WRITE_FIFO_1(int *buffer)
 
 void READ_FIFO_1(int *buffer)
 {
+	// Wait for 0.5 second
+	int delay = 500000; // 0.5 second in microseconds
+	usleep(delay);
+
 	// Wait if the fifo is empty
 	while (IORD_32DIRECT(MEM_BASE, emptyp) == 0x1)
 	{
@@ -101,7 +111,7 @@ void FIFO_1_INIT()
 	countp = emptyp + UNIT_SIZE;
 
 	// Assigning values for the flags.
-	IOWR_32DIRECT(MEM_BASE, fullp, 0x0);
-	IOWR_32DIRECT(MEM_BASE, emptyp, 0x1); // The fifo is empty at the start
-	IOWR_32DIRECT(MEM_BASE, countp, 0x0); // The fifo is empty at the start
+//	IOWR_32DIRECT(MEM_BASE, fullp, 0x0);
+//	IOWR_32DIRECT(MEM_BASE, emptyp, 0x1); // The fifo is empty at the start
+//	IOWR_32DIRECT(MEM_BASE, countp, 0x0); // The fifo is empty at the start
 }
