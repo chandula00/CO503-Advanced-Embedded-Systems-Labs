@@ -15,7 +15,7 @@
    <frequency preferredWidth="151" />
   </columns>
  </clocktable>
- <window width="1920" height="1030" x="0" y="0" />
+ <window width="1936" height="1096" x="-8" y="-8" />
  <library
    expandedCategories="Project,Library/Peripherals,Library/Peripherals/Debug and Performance,Library/Verification/Debug &amp; Performance,Library,Library/Verification,Library/Embedded Processors" />
 </preferences>

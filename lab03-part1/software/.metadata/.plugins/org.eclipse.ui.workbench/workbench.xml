@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="29" version="2.0">
+<workbench progressCount="36" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -29,10 +29,46 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="consumer.c" partName="consumer.c" path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_2/consumer.c" title="consumer.c" tooltip="Consumer_2/consumer.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consumer_2/consumer.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="384"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FIFO_1.c" partName="FIFO_1.c" path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_2/FIFO_1.c" title="FIFO_1.c" tooltip="Consumer_2/FIFO_1.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consumer_2/FIFO_1.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="546" selectionTopPixel="190"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FIFO_1.h" partName="FIFO_1.h" path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_2/FIFO_1.h" title="FIFO_1.h" tooltip="Consumer_2/FIFO_1.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consumer_2/FIFO_1.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="520" selectionTopPixel="216"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FIFO_1.c" partName="FIFO_1.c" path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_1/FIFO_1.c" title="FIFO_1.c" tooltip="Consumer_1/FIFO_1.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consumer_1/FIFO_1.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="278" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FIFO_1.h" partName="FIFO_1.h" path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Consumer_1/FIFO_1.h" title="FIFO_1.h" tooltip="Consumer_1/FIFO_1.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Consumer_1/FIFO_1.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="218" selectionOffset="567" selectionTopPixel="111"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FIFO_1.c" partName="FIFO_1.c" path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Producer_1/FIFO_1.c" title="FIFO_1.c" tooltip="Producer_1/FIFO_1.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Producer_1/FIFO_1.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1094"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="producer.c" partName="producer.c" path="D:/PE19/CO503-Advanced-Embedded-Systems-Labs/lab03-part1/software/Producer_1/producer.c" title="producer.c" tooltip="Producer_1/producer.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Producer_1/producer.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="300"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -44,10 +80,6 @@
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -246,13 +278,13 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.03200883" ratioLeft="29" ratioRight="877" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.68795055" ratioLeft="668" ratioRight="303" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="Nios II Console"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.1" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:*" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -272,6 +304,14 @@
 </presentation>
 </folder>
 </info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1cce612" ratio="0.5" ratioLeft="706" ratioRight="706" relationship="2" relative="bottom">
+<folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
 <info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
@@ -285,7 +325,173 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Producer_1/FIFO_1.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Producer_1/FIFO_1.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Producer_1/producer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consumer_1/FIFO_1.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consumer_1/FIFO_1.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consumer_1/consumer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consumer_2/consumer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consumer_2/FIFO_1.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consumer_2/FIFO_1.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consumer_2/FIFO_1.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Consumer_2/FIFO_1.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Producer_1/FIFO_1.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Producer_1/producer.c"/>
+</editors>
+<item historyLabel="consumer.c" index="5">
+<position info="not_deleted" x="558" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="3">
+<position info="not_deleted" x="1880" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="0">
+<position info="not_deleted" x="2199" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="7">
+<position info="not_deleted" x="2638" y="0"/>
+</item>
+<item historyLabel="FIFO_1.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="7">
+<position info="not_deleted" x="2638" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="5">
+<position info="not_deleted" x="558" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.h" index="4">
+<position info="not_deleted" x="975" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="3">
+<position info="not_deleted" x="1880" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="producer.c" index="2">
+<position info="not_deleted" x="187" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.h" index="1">
+<position info="not_deleted" x="565" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="0">
+<position info="not_deleted" x="2199" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="7">
+<position info="not_deleted" x="2638" y="0"/>
+</item>
+<item historyLabel="FIFO_1.h" index="8">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="7">
+<position info="not_deleted" x="2638" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="3">
+<position info="not_deleted" x="0" y="2638"/>
+</item>
+<item historyLabel="FIFO_1.c" index="7">
+<position info="not_deleted" x="1974" y="0"/>
+</item>
+<item historyLabel="FIFO_1.h" index="8">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="3">
+<position info="not_deleted" x="0" y="2638"/>
+</item>
+<item historyLabel="FIFO_1.h" index="8">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="3">
+<position info="not_deleted" x="278" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="7">
+<position info="not_deleted" x="1974" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="7">
+<position info="not_deleted" x="1974" y="0"/>
+</item>
+<item historyLabel="FIFO_1.h" index="8">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="FIFO_1.h" index="4">
+<position info="not_deleted" x="567" y="218"/>
+</item>
+<item historyLabel="FIFO_1.h" index="8">
+<position info="not_deleted" x="520" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="9">
+<position info="not_deleted" x="2070" y="0"/>
+</item>
+<item historyLabel="FIFO_1.h" index="10">
+<position info="not_deleted" x="520" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="9">
+<position info="not_deleted" x="2070" y="0"/>
+</item>
+<item historyLabel="FIFO_1.h" index="10">
+<position info="not_deleted" x="520" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="9">
+<position info="not_deleted" x="1919" y="6"/>
+</item>
+<item historyLabel="FIFO_1.c" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="9">
+<position info="not_deleted" x="2542" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="9">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FIFO_1.c" index="9">
+<position info="not_deleted" x="546" y="0"/>
+</item>
+<item historyLabel="consumer.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="producer.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -303,14 +509,11 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_main.c" tooltip="final_consumer_bsp/HAL/src/alt_main.c">
-<persistable path="/final_consumer_bsp/HAL/src/alt_main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="producer.c" tooltip="Producer_1/producer.c">
+<persistable path="/Producer_1/producer.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="settings.bsp" tooltip="final_producer_bsp/settings.bsp">
-<persistable path="/final_producer_bsp/settings.bsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="settings.bsp" tooltip="Producer_1_bsp/settings.bsp">
-<persistable path="/Producer_1_bsp/settings.bsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FIFO_1.c" tooltip="Producer_1/FIFO_1.c">
+<persistable path="/Producer_1/FIFO_1.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FIFO_1.h" tooltip="Consumer_1/FIFO_1.h">
 <persistable path="/Consumer_1/FIFO_1.h"/>
@@ -333,14 +536,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="Producer_1_bsp/system.h">
 <persistable path="/Producer_1_bsp/system.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="producer.c" tooltip="Producer_1/producer.c">
-<persistable path="/Producer_1/producer.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FIFO_1.h" tooltip="Producer_1/FIFO_1.h">
 <persistable path="/Producer_1/FIFO_1.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FIFO_1.c" tooltip="Producer_1/FIFO_1.c">
-<persistable path="/Producer_1/FIFO_1.c"/>
 </file>
 </mruList>
 </workbench>
