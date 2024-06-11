@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu5' in SOPC Builder design 'MSoC'
 # SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
 #
-# Generated: Thu May 30 14:01:18 IST 2024
+# Generated: Mon Jun 10 00:31:54 IST 2024
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,4 +47,4 @@
 # by allowing GDB to cache memory contents on the host.
 
 # mem5
-memory 0x10000 0x20000 cache
+memory 0x40000 0x57000 cache

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu6' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
  *
- * Generated: Thu May 30 16:35:47 IST 2024
+ * Generated: Tue Jun 11 08:53:23 IST 2024
  */
 
 /*
@@ -372,7 +372,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1717006939
+#define SYSID_TIMESTAMP 1718075753
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 

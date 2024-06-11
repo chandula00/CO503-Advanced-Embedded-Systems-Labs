@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>May 30, 2024 2:02:14 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1717057934242</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jun 11, 2024 8:53:06 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1718076186426</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab04\part01\software\cpu5_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab04\part01\MSoC.sopcinfo</SopcDesignFile>
@@ -863,12 +863,6 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>mem5</slaveDescriptor>
-                <addressRange>0x00010000 - 0x0001FFFF</addressRange>
-                <addressSpan>65536</addressSpan>
-                <attributes>memory</attributes>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>fifo4to5_in_csr</slaveDescriptor>
                 <addressRange>0x00021000 - 0x0002101F</addressRange>
                 <addressSpan>32</addressSpan>
@@ -909,6 +903,12 @@
                 <addressRange>0x00021070 - 0x00021073</addressRange>
                 <addressSpan>4</addressSpan>
                 <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>mem5</slaveDescriptor>
+                <addressRange>0x00040000 - 0x00056FFF</addressRange>
+                <addressSpan>94208</addressSpan>
+                <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>fifo1to5_in_csr</slaveDescriptor>

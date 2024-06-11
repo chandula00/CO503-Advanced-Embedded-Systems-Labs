@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu2' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
  *
- * Generated: Wed May 29 23:57:12 IST 2024
+ * Generated: Sun Jun 09 23:26:45 IST 2024
  */
 
 /*
@@ -65,9 +65,9 @@
  *
  */
 
-#define MEM2_REGION_BASE 0x20020
-#define MEM2_REGION_SPAN 94176
-#define RESET_REGION_BASE 0x20000
+#define MEM2_REGION_BASE 0x10020
+#define MEM2_REGION_SPAN 65504
+#define RESET_REGION_BASE 0x10000
 #define RESET_REGION_SPAN 32
 
 

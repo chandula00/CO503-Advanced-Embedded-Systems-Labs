@@ -1,0 +1,40 @@
+Starting CPU6 ....
+
+Final...
+Name Received
+Image Done!
+Time taken for encoding: 52.305000 seconds
+Throughput for writing the image data: 77.16 bytes per second
+
+Final...
+Name Received
+Image Done!
+Time taken for encoding: 309.078000 seconds
+Throughput for writing the image data: 31.86 bytes per second
+
+Final...
+Name Received
+Image Done!
+Time taken for encoding: 74.640000 seconds
+Throughput for writing the image data: 50.58 bytes per second
+
+Final...
+Name Received
+Image Done!
+Time taken for encoding: 73.921000 seconds
+Throughput for writing the image data: 35.81 bytes per second
+
+Final...
+Name Received
+Image Done!
+Time taken for encoding: 18.927000 seconds
+Throughput for writing the image data: 93.89 bytes per second
+
+Final...
+Name Received
+Image Done!
+Time taken for encoding: 18.666000 seconds
+Throughput for writing the image data: 65.31 bytes per second
+
+Final...
+

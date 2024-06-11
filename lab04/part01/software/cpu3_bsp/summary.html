@@ -22,10 +22,10 @@
 <td width="20%" bgcolor="#77BBFF">BSP Version:</td><td>default</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>May 29, 2024 11:57:59 PM</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>Jun 11, 2024 8:54:49 AM</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1717007279272</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1718076289440</td>
 </tr>
 <tr mode="wrap">
 <td width="20%" bgcolor="#77BBFF">BSP Generated Location:</td><td>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab04\part01\software\cpu3_bsp</td>
@@ -41,25 +41,25 @@
 <td>sysid</td><td>0x100010F0 - 0x100010F7</td><td>8</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>fifo2to3_out</td><td>0x0004106C - 0x0004106F</td><td>4</td><td class="listing">&nbsp;</td>
+<td>mem3</td><td>0x00040000 - 0x00056FFF</td><td>94208</td><td class="listing">memory</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>fifo3to4_in</td><td>0x00041068 - 0x0004106B</td><td>4</td><td class="listing">&nbsp;</td>
+<td>fifo2to3_out</td><td>0x0002106C - 0x0002106F</td><td>4</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>jtag_uart3</td><td>0x00041060 - 0x00041067</td><td>8</td><td class="listing">printable</td>
+<td>fifo3to4_in</td><td>0x00021068 - 0x0002106B</td><td>4</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>timer3</td><td>0x00041040 - 0x0004105F</td><td>32</td><td class="listing">timer</td>
+<td>jtag_uart3</td><td>0x00021060 - 0x00021067</td><td>8</td><td class="listing">printable</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>fifo3to4_in_csr</td><td>0x00041020 - 0x0004103F</td><td>32</td><td class="listing">&nbsp;</td>
+<td>timer3</td><td>0x00021040 - 0x0002105F</td><td>32</td><td class="listing">timer</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>fifo2to3_in_csr</td><td>0x00041000 - 0x0004101F</td><td>32</td><td class="listing">&nbsp;</td>
+<td>fifo3to4_in_csr</td><td>0x00021020 - 0x0002103F</td><td>32</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>mem3</td><td>0x00020000 - 0x00036FFF</td><td>94208</td><td class="listing">memory</td>
+<td>fifo2to3_in_csr</td><td>0x00021000 - 0x0002101F</td><td>32</td><td class="listing">&nbsp;</td>
 </tr>
 </table>
 <br>
@@ -96,6 +96,19 @@
 <td>.stack</td><td>mem3</td>
 </tr>
 </table>
+<br>
+<br>
+<h3>Software Packages</h3>
+<table border="1" bgcolor="#FFFFCC" width="50%">
+<tr bgcolor="#77BBFF" mode="wrap">
+<th align="left" width="15%">Software Package</th><th align="left" width="15%">Version</th>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>altera_hostfs</td><td>default</td>
+</tr>
+</table>
+<br>
+<br>
 <h3>Settings</h3>
 <table border="1" bgcolor="#FFFFCC" width="60%">
 <tr bgcolor="#77BBFF">
@@ -145,6 +158,33 @@
 </tr>
 <tr mode="wrap">
 <td width="20%">Description:</td><td>Small-footprint (polled mode) driver</td>
+</tr>
+<tr mode="wrap">
+<td width="20%">Restrictions:</td><td>none</td>
+</tr>
+</table>
+<br>
+<table border="1" bgcolor="#FFFFCC" width="60%">
+<tr bgcolor="#77BBFF">
+<td align="left" width="15%">Setting Name:</td><td align="left">altera_hostfs.hostfs_name</td>
+</tr>
+<tr>
+<td width="20%">Identifier:</td><td>ALTERA_HOSTFS_NAME</td>
+</tr>
+<tr>
+<td width="20%">Default Value:</td><td>/mnt/host</td>
+</tr>
+<tr>
+<td width="20%">Value:</td><td>/mnt/host</td>
+</tr>
+<tr>
+<td width="20%">Type:</td><td>QuotedString</td>
+</tr>
+<tr mode="wrap">
+<td width="20%">Destination:</td><td>system_h_define</td>
+</tr>
+<tr mode="wrap">
+<td width="20%">Description:</td><td>Mount point</td>
 </tr>
 <tr mode="wrap">
 <td width="20%">Restrictions:</td><td>none</td>

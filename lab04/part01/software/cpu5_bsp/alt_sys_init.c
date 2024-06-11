@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu5' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
  *
- * Generated: Thu May 30 14:01:18 IST 2024
+ * Generated: Tue Jun 11 08:25:42 IST 2024
  */
 
 /*

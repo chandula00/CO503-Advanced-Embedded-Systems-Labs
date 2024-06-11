@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu5' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
  *
- * Generated: Thu May 30 14:01:18 IST 2024
+ * Generated: Mon Jun 10 00:31:54 IST 2024
  */
 
 /*
@@ -65,9 +65,9 @@
  *
  */
 
-#define MEM5_REGION_BASE 0x10020
-#define MEM5_REGION_SPAN 65504
-#define RESET_REGION_BASE 0x10000
+#define MEM5_REGION_BASE 0x40020
+#define MEM5_REGION_SPAN 94176
+#define RESET_REGION_BASE 0x40000
 #define RESET_REGION_SPAN 32
 
 

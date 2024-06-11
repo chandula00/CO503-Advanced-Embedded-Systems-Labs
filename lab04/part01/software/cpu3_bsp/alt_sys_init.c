@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu3' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
  *
- * Generated: Thu May 23 16:39:47 IST 2024
+ * Generated: Tue Jun 11 08:54:40 IST 2024
  */
 
 /*
@@ -63,6 +63,7 @@
 #include "altera_avalon_jtag_uart.h"
 #include "altera_avalon_sysid_qsys.h"
 #include "altera_avalon_timer.h"
+#include "altera_hostfs.h"
 
 /*
  * Allocate the device storage
@@ -74,6 +75,7 @@ ALTERA_AVALON_FIFO_INSTANCE ( FIFO3TO4, fifo3to4);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART3, jtag_uart3);
 ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID, sysid);
 ALTERA_AVALON_TIMER_INSTANCE ( TIMER3, timer3);
+ALTERA_HOSTFS_INSTANCE ( ALTERA_HOSTFS, altera_hostfs);
 
 /*
  * Initialize the interrupt controller devices
@@ -101,4 +103,5 @@ void alt_sys_init( void )
     ALTERA_AVALON_FIFO_INIT ( FIFO3TO4, fifo3to4);
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART3, jtag_uart3);
     ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID, sysid);
+    ALTERA_HOSTFS_INIT ( ALTERA_HOSTFS, altera_hostfs);
 }

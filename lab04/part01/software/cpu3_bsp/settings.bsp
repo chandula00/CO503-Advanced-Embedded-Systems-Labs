@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>May 29, 2024 11:57:59 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1717007279272</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jun 11, 2024 8:54:49 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1718076289440</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab04\part01\software\cpu3_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab04\part01\MSoC.sopcinfo</SopcDesignFile>
@@ -839,6 +839,18 @@
                 <Group>none</Group>
         </Setting>
         <Setting>
+                <SettingName>altera_hostfs.hostfs_name</SettingName>
+                <Identifier>ALTERA_HOSTFS_NAME</Identifier>
+                <Type>QuotedString</Type>
+                <Value>/mnt/host</Value>
+                <DefaultValue>/mnt/host</DefaultValue>
+                <DestinationFile>system_h_define</DestinationFile>
+                <Description>Mount point</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
                 <SettingName>altera_avalon_jtag_uart_driver.enable_small_driver</SettingName>
                 <Identifier>ALTERA_AVALON_JTAG_UART_SMALL</Identifier>
                 <Type>BooleanDefineOnly</Type>
@@ -863,46 +875,46 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>mem3</slaveDescriptor>
-                <addressRange>0x00020000 - 0x00036FFF</addressRange>
-                <addressSpan>94208</addressSpan>
-                <attributes>memory</attributes>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>fifo2to3_in_csr</slaveDescriptor>
-                <addressRange>0x00041000 - 0x0004101F</addressRange>
+                <addressRange>0x00021000 - 0x0002101F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>fifo3to4_in_csr</slaveDescriptor>
-                <addressRange>0x00041020 - 0x0004103F</addressRange>
+                <addressRange>0x00021020 - 0x0002103F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>timer3</slaveDescriptor>
-                <addressRange>0x00041040 - 0x0004105F</addressRange>
+                <addressRange>0x00021040 - 0x0002105F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart3</slaveDescriptor>
-                <addressRange>0x00041060 - 0x00041067</addressRange>
+                <addressRange>0x00021060 - 0x00021067</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>fifo3to4_in</slaveDescriptor>
-                <addressRange>0x00041068 - 0x0004106B</addressRange>
+                <addressRange>0x00021068 - 0x0002106B</addressRange>
                 <addressSpan>4</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>fifo2to3_out</slaveDescriptor>
-                <addressRange>0x0004106C - 0x0004106F</addressRange>
+                <addressRange>0x0002106C - 0x0002106F</addressRange>
                 <addressSpan>4</addressSpan>
                 <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>mem3</slaveDescriptor>
+                <addressRange>0x00040000 - 0x00056FFF</addressRange>
+                <addressSpan>94208</addressSpan>
+                <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
@@ -934,4 +946,8 @@
                 <sectionName>.stack</sectionName>
                 <regionName>mem3</regionName>
         </LinkerSection>
+        <SoftwarePackageInfo>
+                <name>altera_hostfs</name>
+                <version>default</version>
+        </SoftwarePackageInfo>
 </sch:Settings>

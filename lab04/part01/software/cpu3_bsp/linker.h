@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu3' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
  *
- * Generated: Wed May 29 23:57:52 IST 2024
+ * Generated: Tue Jun 11 08:52:07 IST 2024
  */
 
 /*
@@ -65,9 +65,9 @@
  *
  */
 
-#define MEM3_REGION_BASE 0x20020
+#define MEM3_REGION_BASE 0x40020
 #define MEM3_REGION_SPAN 94176
-#define RESET_REGION_BASE 0x20000
+#define RESET_REGION_BASE 0x40000
 #define RESET_REGION_SPAN 32
 
 

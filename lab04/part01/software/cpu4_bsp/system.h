@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu4' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
  *
- * Generated: Thu May 30 12:31:25 IST 2024
+ * Generated: Tue Jun 11 08:52:34 IST 2024
  */
 
 /*
@@ -147,19 +147,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart4"
-#define ALT_STDERR_BASE 0x21040
+#define ALT_STDERR_BASE 0x21060
 #define ALT_STDERR_DEV jtag_uart4
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart4"
-#define ALT_STDIN_BASE 0x21040
+#define ALT_STDIN_BASE 0x21060
 #define ALT_STDIN_DEV jtag_uart4
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart4"
-#define ALT_STDOUT_BASE 0x21040
+#define ALT_STDOUT_BASE 0x21060
 #define ALT_STDOUT_DEV jtag_uart4
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -207,7 +207,7 @@
 #define ALT_MODULE_CLASS_fifo1to4_out altera_avalon_fifo
 #define FIFO1TO4_OUT_AVALONMM_AVALONMM_DATA_WIDTH 32
 #define FIFO1TO4_OUT_AVALONMM_AVALONST_DATA_WIDTH 32
-#define FIFO1TO4_OUT_BASE 0x21048
+#define FIFO1TO4_OUT_BASE 0x21068
 #define FIFO1TO4_OUT_BITS_PER_SYMBOL 16
 #define FIFO1TO4_OUT_CHANNEL_WIDTH 8
 #define FIFO1TO4_OUT_ERROR_WIDTH 8
@@ -239,7 +239,7 @@
 #define ALT_MODULE_CLASS_fifo3to4_in_csr altera_avalon_fifo
 #define FIFO3TO4_IN_CSR_AVALONMM_AVALONMM_DATA_WIDTH 32
 #define FIFO3TO4_IN_CSR_AVALONMM_AVALONST_DATA_WIDTH 32
-#define FIFO3TO4_IN_CSR_BASE 0x41020
+#define FIFO3TO4_IN_CSR_BASE 0x21020
 #define FIFO3TO4_IN_CSR_BITS_PER_SYMBOL 16
 #define FIFO3TO4_IN_CSR_CHANNEL_WIDTH 8
 #define FIFO3TO4_IN_CSR_ERROR_WIDTH 8
@@ -271,7 +271,7 @@
 #define ALT_MODULE_CLASS_fifo3to4_out altera_avalon_fifo
 #define FIFO3TO4_OUT_AVALONMM_AVALONMM_DATA_WIDTH 32
 #define FIFO3TO4_OUT_AVALONMM_AVALONST_DATA_WIDTH 32
-#define FIFO3TO4_OUT_BASE 0x21050
+#define FIFO3TO4_OUT_BASE 0x21070
 #define FIFO3TO4_OUT_BITS_PER_SYMBOL 16
 #define FIFO3TO4_OUT_CHANNEL_WIDTH 8
 #define FIFO3TO4_OUT_ERROR_WIDTH 8
@@ -303,7 +303,7 @@
 #define ALT_MODULE_CLASS_fifo4to5_in altera_avalon_fifo
 #define FIFO4TO5_IN_AVALONMM_AVALONMM_DATA_WIDTH 32
 #define FIFO4TO5_IN_AVALONMM_AVALONST_DATA_WIDTH 32
-#define FIFO4TO5_IN_BASE 0x2104c
+#define FIFO4TO5_IN_BASE 0x2106c
 #define FIFO4TO5_IN_BITS_PER_SYMBOL 16
 #define FIFO4TO5_IN_CHANNEL_WIDTH 8
 #define FIFO4TO5_IN_ERROR_WIDTH 8
@@ -375,7 +375,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart4 altera_avalon_jtag_uart
-#define JTAG_UART4_BASE 0x21040
+#define JTAG_UART4_BASE 0x21060
 #define JTAG_UART4_IRQ 16
 #define JTAG_UART4_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART4_NAME "/dev/jtag_uart4"
@@ -428,7 +428,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1717006939
+#define SYSID_TIMESTAMP 1718075753
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 
@@ -439,7 +439,7 @@
 
 #define ALT_MODULE_CLASS_timer4 altera_avalon_timer
 #define TIMER4_ALWAYS_RUN 0
-#define TIMER4_BASE 0x21020
+#define TIMER4_BASE 0x21040
 #define TIMER4_COUNTER_SIZE 32
 #define TIMER4_FIXED_PERIOD 0
 #define TIMER4_FREQ 50000000

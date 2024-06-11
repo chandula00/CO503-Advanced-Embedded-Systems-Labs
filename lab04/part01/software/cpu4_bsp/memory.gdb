@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu4' in SOPC Builder design 'MSoC'
 # SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
 #
-# Generated: Thu May 30 12:30:47 IST 2024
+# Generated: Mon Jun 10 19:09:10 IST 2024
 
 # DO NOT MODIFY THIS FILE
 #

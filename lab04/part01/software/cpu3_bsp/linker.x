@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu3' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
  *
- * Generated: Wed May 29 23:57:52 IST 2024
+ * Generated: Tue Jun 11 08:52:07 IST 2024
  */
 
 /*
@@ -50,12 +50,12 @@
 
 MEMORY
 {
-    reset : ORIGIN = 0x20000, LENGTH = 32
-    mem3 : ORIGIN = 0x20020, LENGTH = 94176
+    reset : ORIGIN = 0x40000, LENGTH = 32
+    mem3 : ORIGIN = 0x40020, LENGTH = 94176
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_mem3 = 0x20000;
+__alt_mem_mem3 = 0x40000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -367,7 +367,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x37000;
+__alt_data_end = 0x57000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -383,4 +383,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x37000 );
+PROVIDE( __alt_heap_limit    = 0x57000 );

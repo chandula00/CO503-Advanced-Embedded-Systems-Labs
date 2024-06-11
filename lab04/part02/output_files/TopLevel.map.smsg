@@ -1,0 +1,94 @@
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_052.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_052.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_050.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_050.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_048.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_048.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_044.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_044.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_042.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_042.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_040.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_040.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_036.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_036.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_034.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_034.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_033.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_033.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_029.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_029.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_027.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_027.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_026.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_026.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_020.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_020.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_018.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_018.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_016.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_016.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_015.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_015.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_013.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_013.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_011.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_011.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_005.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_005.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_002.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router_002.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_id_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_011.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_011.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_010.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_010.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_009.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_009.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_008.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_008.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_007.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_007.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_006.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_006.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_005.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_005.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_004.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_004.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_003.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_003.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_002.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_002.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_001.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router_001.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at MSoC_mm_interconnect_0_addr_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu1.v(1605): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu1.v(1607): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu1.v(1763): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu1.v(2587): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu2.v(1605): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu2.v(1607): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu2.v(1763): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu2.v(2587): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu3.v(1605): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu3.v(1607): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu3.v(1763): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu3.v(2587): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu4.v(1605): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu4.v(1607): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu4.v(1763): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu4.v(2587): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu5.v(1605): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu5.v(1607): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu5.v(1763): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu5.v(2587): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu6.v(1605): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu6.v(1607): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu6.v(1763): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_cpu6.v(2587): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_sdram_controller.v(316): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_sdram_controller.v(326): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_sdram_controller.v(336): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at MSoC_sdram_controller.v(680): conditional expression evaluates to a constant

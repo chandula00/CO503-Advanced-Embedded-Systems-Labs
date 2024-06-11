@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu2' in SOPC Builder design 'MSoC'
 # SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/MSoC.sopcinfo
 #
-# Generated: Wed May 29 23:57:12 IST 2024
+# Generated: Sun Jun 09 23:26:45 IST 2024
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,4 +47,4 @@
 # by allowing GDB to cache memory contents on the host.
 
 # mem2
-memory 0x20000 0x37000 cache
+memory 0x10000 0x20000 cache
