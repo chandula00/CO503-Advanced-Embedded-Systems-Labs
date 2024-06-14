@@ -11301,3 +11301,46 @@ org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: No registers.[No registers.]
 	at java.util.Observable.notifyObservers(Unknown Source)
 	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
 	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+!SESSION 2024-06-13 23:37:52.387 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data E:\Education\Academic\workspaces\CO503-Advanced-Embedded-Systems-Labs\lab04\part01 -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:40:14.865
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x100010f0 --id=0x4 --timestamp=1718075753 /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu0/cpu0.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:40:18.987
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x100010f0 --id=0x4 --timestamp=1718075753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:40:37.326
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --accept-bad-sysid --sidp=0x100010f0 /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu2/cpu2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:40:40.017
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=1 --tcpport=auto --accept-bad-sysid --sidp=0x100010f0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:41:00.192
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=2 --sidp=0x100010f0 --id=0x4 --timestamp=1718075753 /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu3/cpu3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:41:03.260
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=2 --tcpport=auto --sidp=0x100010f0 --id=0x4 --timestamp=1718075753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:41:14.509
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=3 --sidp=0x100010f0 --id=0x4 --timestamp=1718075753 /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu4/cpu4.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:41:17.498
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=3 --tcpport=auto --sidp=0x100010f0 --id=0x4 --timestamp=1718075753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:41:28.088
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=4 --sidp=0x100010f0 --id=0x4 --timestamp=1718075753 /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu5/cpu5.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:41:31.430
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=4 --tcpport=auto --sidp=0x100010f0 --id=0x4 --timestamp=1718075753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:41:43.519
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=5 --sidp=0x100010f0 --id=0x4 --timestamp=1718075753 /cygdrive/e/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part01/software/cpu6/cpu6.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-06-13 23:41:46.603
+!MESSAGE Executing: [F:/altera/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=5 --tcpport=auto --sidp=0x100010f0 --id=0x4 --timestamp=1718075753]

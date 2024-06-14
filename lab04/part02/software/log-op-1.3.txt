@@ -1,0 +1,222 @@
+Starting CPU1
+
+Reading from file: image0.bmp
+Name Send
+Block Number - 1
+Block Number - 2
+Block Number - 3
+Block Number - 4
+Block Number - 5
+Block Number - 6
+Block Number - 7
+Block Number - 8
+Block Number - 9
+Block Number - 10
+Block Number - 11
+Block Number - 12
+Block Number - 13
+Block Number - 14
+Block Number - 15
+Block Number - 16
+Block Number - 17
+Block Number - 18
+Block Number - 19
+Block Number - 20
+Block Number - 21
+Block Number - 22
+Time taken for encoding: 17.320000 seconds
+Throughput: 7582.45 bytes per second
+End of the Image!
+
+Reading from file: image1.bmp
+Name Send
+Block Number - 1
+Block Number - 2
+Block Number - 3
+Block Number - 4
+Block Number - 5
+Block Number - 6
+Block Number - 7
+Block Number - 8
+Block Number - 9
+Block Number - 10
+Block Number - 11
+Block Number - 12
+Block Number - 13
+Block Number - 14
+Block Number - 15
+Block Number - 16
+Block Number - 17
+Block Number - 18
+Block Number - 19
+Block Number - 20
+Block Number - 21
+Block Number - 22
+Block Number - 23
+Block Number - 24
+Block Number - 25
+Block Number - 26
+Block Number - 27
+Block Number - 28
+Block Number - 29
+Block Number - 30
+Block Number - 31
+Block Number - 32
+Block Number - 33
+Block Number - 34
+Block Number - 35
+Block Number - 36
+Block Number - 37
+Block Number - 38
+Block Number - 39
+Block Number - 40
+Block Number - 41
+Block Number - 42
+Block Number - 43
+Block Number - 44
+Block Number - 45
+Block Number - 46
+Block Number - 47
+Block Number - 48
+Block Number - 49
+Block Number - 50
+Block Number - 51
+Block Number - 52
+Block Number - 53
+Block Number - 54
+Block Number - 55
+Block Number - 56
+Block Number - 57
+Block Number - 58
+Block Number - 59
+Block Number - 60
+Block Number - 61
+Block Number - 62
+Block Number - 63
+Block Number - 64
+Time taken for encoding: 97.512000 seconds
+Throughput: 8064.98 bytes per second
+End of the Image!
+
+Reading from file: image2.bmp
+Name Send
+Block Number - 1
+Block Number - 2
+Block Number - 3
+Block Number - 4
+Block Number - 5
+Block Number - 6
+Block Number - 7
+Block Number - 8
+Block Number - 9
+Block Number - 10
+Block Number - 11
+Block Number - 12
+Block Number - 13
+Block Number - 14
+Block Number - 15
+Block Number - 16
+Block Number - 17
+Block Number - 18
+Block Number - 19
+Block Number - 20
+Block Number - 21
+Block Number - 22
+Block Number - 23
+Block Number - 24
+Block Number - 25
+Block Number - 26
+Block Number - 27
+Block Number - 28
+Block Number - 29
+Block Number - 30
+Block Number - 31
+Block Number - 32
+Time taken for encoding: 26.921000 seconds
+Throughput: 0.00 bytes per second
+End of the Image!
+
+Reading from file: image3.bmp
+Name Send
+Block Number - 1
+Block Number - 2
+Block Number - 3
+Block Number - 4
+Block Number - 5
+Block Number - 6
+Block Number - 7
+Block Number - 8
+Block Number - 9
+Block Number - 10
+Block Number - 11
+Block Number - 12
+Block Number - 13
+Block Number - 14
+Block Number - 15
+Block Number - 16
+Block Number - 17
+Block Number - 18
+Block Number - 19
+Block Number - 20
+Block Number - 21
+Block Number - 22
+Block Number - 23
+Block Number - 24
+Block Number - 25
+Block Number - 26
+Block Number - 27
+Block Number - 28
+Block Number - 29
+Block Number - 30
+Block Number - 31
+Block Number - 32
+Time taken for encoding: 23.603000 seconds
+Throughput: 8329.79 bytes per second
+End of the Image!
+
+Reading from file: image4.bmp
+Name Send
+Block Number - 1
+Block Number - 2
+Block Number - 3
+Block Number - 4
+Block Number - 5
+Block Number - 6
+Block Number - 7
+Block Number - 8
+Block Number - 9
+Block Number - 10
+Block Number - 11
+Block Number - 12
+Block Number - 13
+Block Number - 14
+Block Number - 15
+Block Number - 16
+Time taken for encoding: 6.283000 seconds
+Throughput: 7823.01 bytes per second
+End of the Image!
+
+Reading from file: image5.bmp
+Name Send
+Block Number - 1
+Block Number - 2
+Block Number - 3
+Block Number - 4
+Block Number - 5
+Block Number - 6
+Block Number - 7
+Block Number - 8
+Block Number - 9
+Block Number - 10
+Block Number - 11
+Block Number - 12
+Block Number - 13
+Block Number - 14
+Block Number - 15
+Block Number - 16
+Time taken for encoding: 6.121000 seconds
+Throughput: 8030.06 bytes per second
+End of the Image!
+
+Done!
+

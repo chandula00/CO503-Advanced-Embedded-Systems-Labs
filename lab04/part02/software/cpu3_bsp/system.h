@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu3' in SOPC Builder design 'MSoC'
  * SOPC Builder design path: E:/Education/Academic/workspaces/CO503-Advanced-Embedded-Systems-Labs/lab04/part02/MSoC.sopcinfo
  *
- * Generated: Tue Jun 11 10:25:22 IST 2024
+ * Generated: Thu Jun 13 22:30:26 IST 2024
  */
 
 /*
@@ -119,6 +119,16 @@
 
 
 /*
+ * Custom instruction macros
+ *
+ */
+
+#define ALT_CI_DCT_COMPONENT_0(n,A,B) __builtin_custom_inii(ALT_CI_DCT_COMPONENT_0_N+(n&ALT_CI_DCT_COMPONENT_0_N_MASK),(A),(B))
+#define ALT_CI_DCT_COMPONENT_0_N 0x0
+#define ALT_CI_DCT_COMPONENT_0_N_MASK ((1<<5)-1)
+
+
+/*
  * Define for each module class mastered by the CPU
  *
  */
@@ -129,6 +139,7 @@
 #define __ALTERA_AVALON_SYSID_QSYS
 #define __ALTERA_AVALON_TIMER
 #define __ALTERA_NIOS2_QSYS
+#define __DCT_COMPONENT
 
 
 /*
@@ -372,7 +383,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1718081232
+#define SYSID_TIMESTAMP 1718297392
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 

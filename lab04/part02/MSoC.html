@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2024.06.11.10:17:13</td>
+    <td class="l">2024.06.13.22:19:55</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -5683,7 +5683,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_clk">clk</a>
       </td>
       <td class="from">clk&#160;&#160;</td>
-      <td class="main" rowspan="47">cpu3</td>
+      <td class="main" rowspan="50">cpu3</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk</td>
@@ -5916,6 +5916,22 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="to">&#160;&#160;control_slave</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">custom_instruction_master&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_DCT_Component">DCT_Component</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;nios_custom_instruction_slave</td>
      </tr>
     </table>
    </div>
@@ -6420,7 +6436,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">customInstSlavesSystemInfo</td>
-        <td class="parametervalue">&lt;info/&gt;</td>
+        <td class="parametervalue">&lt;info&gt;&lt;slave name="dct_component_0" baseAddress="0" addressSpan="32" clockCycleType="VARIABLE" /&gt;&lt;/info&gt;</td>
        </tr>
        <tr>
         <td class="parametername">deviceFeaturesSystemInfo</td>
@@ -13815,7 +13831,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">timestamp</td>
-        <td class="parametervalue">1718081232</td>
+        <td class="parametervalue">1718297392</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_CLK_CLOCK_RATE</td>
@@ -13848,7 +13864,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">TIMESTAMP</td>
-        <td class="parametervalue">1718081232</td>
+        <td class="parametervalue">1718297392</td>
        </tr>
       </table>
      </td>
@@ -14866,10 +14882,91 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     </tr>
    </table>
   </div>
+  <a name="module_DCT_Component"> </a>
+  <div>
+   <hr/>
+   <h2>DCT_Component</h2>DCT_Component v1.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_cpu3">cpu3</a>
+      </td>
+      <td class="from">custom_instruction_master&#160;&#160;</td>
+      <td class="main" rowspan="2">DCT_Component</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;nios_custom_instruction_slave</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">c1</td>
+        <td class="parametervalue">1420</td>
+       </tr>
+       <tr>
+        <td class="parametername">c2</td>
+        <td class="parametervalue">1338</td>
+       </tr>
+       <tr>
+        <td class="parametername">c3</td>
+        <td class="parametervalue">1204</td>
+       </tr>
+       <tr>
+        <td class="parametername">c5</td>
+        <td class="parametervalue">805</td>
+       </tr>
+       <tr>
+        <td class="parametername">c6</td>
+        <td class="parametervalue">554</td>
+       </tr>
+       <tr>
+        <td class="parametername">c7</td>
+        <td class="parametervalue">283</td>
+       </tr>
+       <tr>
+        <td class="parametername">s1</td>
+        <td class="parametervalue">3</td>
+       </tr>
+       <tr>
+        <td class="parametername">s2</td>
+        <td class="parametervalue">10</td>
+       </tr>
+       <tr>
+        <td class="parametername">s3</td>
+        <td class="parametervalue">13</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">UNKNOWN</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
   <table class="blueBar">
    <tr>
-    <td class="l">generation took 0.00 seconds</td>
-    <td class="r">rendering took 0.44 seconds</td>
+    <td class="l">generation took 0.01 seconds</td>
+    <td class="r">rendering took 0.50 seconds</td>
    </tr>
   </table>
  </body>

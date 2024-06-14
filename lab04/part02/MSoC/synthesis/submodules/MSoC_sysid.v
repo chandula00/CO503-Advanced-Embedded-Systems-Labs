@@ -36,7 +36,7 @@ module MSoC_sysid (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1718081232 : 8;
+  assign readdata = address ? 1718297392 : 8;
 
 endmodule
 

@@ -4,7 +4,7 @@
 #include "FIFO.h"
 #include <time.h>
 
-FILE *log_file;
+// FILE *log_file;
 
 void delay(int n)
 {
@@ -53,7 +53,7 @@ void DCT(void)
 	// 		printf("\n");
 	// }
 
-	start_time = clock();
+	// start_time = clock();
 
 	for (i = 8; i > 0; i--)
 	{
@@ -135,8 +135,8 @@ void DCT(void)
 	// 		printf("\n");
 	// }
 
-	end_time = clock();
-	fprintf(log_file, "Time taken for DCT encoding: %f\n", (double)(end_time - start_time) / CLOCKS_PER_SEC);
+	// end_time = clock();
+	// fprintf(log_file, "Time taken for DCT encoding: %f\n", (double)(end_time - start_time) / CLOCKS_PER_SEC);
 
 	/* write out to queue */
 	for (i = 0; i < 64; i++)
@@ -150,12 +150,12 @@ int main(void)
 {
 	printf("Starting CPU3\n");
 
-	log_file = fopen("/mnt/host/files/log.txt", "w");
-	if (log_file == NULL)
-	{
-		fprintf(stderr, "Error opening log file\n");
-		return 1;
-	}
+	// log_file = fopen("/mnt/host/files/log.txt", "w");
+	// if (log_file == NULL)
+	// {
+	// 	fprintf(stderr, "Error opening log file\n");
+	// 	return 1;
+	// }
 
 	/* Initialize FIFO */
 	delay(100000);
